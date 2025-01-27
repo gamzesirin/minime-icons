@@ -1,0 +1,51 @@
+{
+	"name": "@minime/icons",
+	"version": "1.0.0",
+	"description": "Modern ve minimal tasarımlı ikon kütüphanesi",
+	"main": "dist/index.js",
+	"module": "dist/index.esm.js",
+	"types": "dist/index.d.ts",
+	"sideEffects": false,
+	"scripts": {
+		"build": "rollup -c",
+		"dev": "rollup -c -w",
+		"lint": "eslint . --ext .ts,.tsx",
+		"test": "jest",
+		"prepublishOnly": "npm run build"
+	},
+	"files": [
+		"dist"
+	],
+	"keywords": [
+		"icons",
+		"svg",
+		"react",
+		"vue",
+		"svelte",
+		"typescript",
+		"minimal",
+		"modern"
+	],
+	"peerDependencies": {
+		"react": "^18.0.0",
+		"react-dom": "^18.0.0"
+	},
+	"devDependencies": {
+		"@rollup/plugin-commonjs": "^25.0.0",
+		"@rollup/plugin-node-resolve": "^15.0.0",
+		"@rollup/plugin-typescript": "^11.0.0",
+		"@types/react": "^18.0.0",
+		"@typescript-eslint/eslint-plugin": "^6.0.0",
+		"@typescript-eslint/parser": "^6.0.0",
+		"eslint": "^8.0.0",
+		"rollup": "^3.0.0",
+		"rollup-plugin-dts": "^5.0.0",
+		"typescript": "^5.0.0"
+	},
+	"author": "Minime Icons Team",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/minime/icons"
+	}
+}
