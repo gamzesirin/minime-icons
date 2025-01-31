@@ -1,36 +1,114 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+---
 
-## Getting Started
+## 🌟 Genel Bakış
 
-First, run the development server:
+**Minime Icons**, dijital ve dijital olmayan projeleriniz için **1000+ vektör (SVG) ikon** sağlayan açık kaynaklı bir kütüphanedir. Her ikon, **okunabilirlik, tutarlılık ve piksel mükemmelliği** düşünülerek tasarlanmıştır.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+🎨 **Outlined ve Filled stillerde** 📏 **24x24 grid üzerine inşa edilmiş** 💡 **Minimal ve modern tasarım anlayışı**
+
+---
+
+## ✨ Özellikler
+
+✅ **1000+ SVG İkon** – Geniş bir ikon koleksiyonu ✅ **Özelleştirilebilir** – Boyut, renk, kalınlık ✅ **Tree-shaking Desteği** – Gereksiz kodları kaldırarak optimize edilmiş paketleme ✅ **TypeScript Desteği** – Güvenli ve ölçeklenebilir kod ✅ **ESM ve CommonJS Desteği** – Tüm modern modül sistemleriyle uyumlu ✅ **Tema Desteği** – Aydınlık & Karanlık modlar ✅ **React, Vue ve Diğer Frameworkler ile Uyumlu** ✅ **Sürekli Güncellenen Yeni İkonlar** 🚀
+
+---
+
+## 📦 Kurulum
+
+Minime Icons'u projenize dahil etmek için aşağıdaki komutlardan birini kullanabilirsiniz:
+
+```sh
+npm install minime-icons
+# veya
+yarn add minime-icons
+# veya
+pnpm add minime-icons
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⚡ Kullanım
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### React ile Kullanım
 
-## Learn More
+```jsx
+import { HomeIcon } from 'minime-icons/react'
 
-To learn more about Next.js, take a look at the following resources:
+function App() {
+	return <HomeIcon size={24} color="currentColor" strokeWidth={2} />
+}
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Vue ile Kullanım
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```vue
+<script setup>
+import { HomeIcon } from 'minime-icons/vue'
+</script>
 
-## Deploy on Vercel
+<template>
+	<HomeIcon :size="24" color="currentColor" :stroke-width="2" />
+</template>
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### CSS ile Özelleştirme
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```css
+.icon {
+	width: 24px;
+	height: 24px;
+	stroke: currentColor;
+	stroke-width: 2;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	fill: none;
+}
+```
+
+---
+
+## 🤝 Katkıda Bulunma
+
+Projeye katkıda bulunmak için:
+
+1. 🚀 Depoyu fork edin
+2. 🌱 Yeni bir branch oluşturun: `git checkout -b feature/yeni-ozellik`
+3. 🎯 Değişikliklerinizi commit edin: `git commit -m 'feat: yeni özellik eklendi'`
+4. 🔄 Branch’inizi push edin: `git push origin feature/yeni-ozellik`
+5. 📩 Bir Pull Request oluşturun
+
+---
+
+## 🎨 İkon İsteği
+
+Eğer ihtiyacınız olan bir ikon henüz mevcut değilse, **GitHub Issues** üzerinden yeni bir istek oluşturabilirsiniz:
+
+📌 **Başlık:** `Icon request: <İkon Adı>` 📌 **Açıklama:** İkonun nasıl görünmesini istediğinizi tarif edebilirsiniz.
+
+---
+
+## 📜 Lisans
+
+Bu proje **MIT lisansı** altında sunulmaktadır. Daha fazla bilgi için [LICENSE](LICENSE) dosyasına göz atabilirsiniz.
+
+---
+
+## ❤️ Destek Olun
+
+Minime Icons’un gelişmesine yardımcı olmak için:
+
+- ⭐ **GitHub'da yıldız verin**
+- 📢 **Projeyi arkadaşlarınızla paylaşın**
+- 🐛 **Hataları bildirin**
+- 💡 **Yeni özellik önerilerinde bulunun**
+
+---
+
+## 🔗 Bağlantılar
+
+🔹 [Website](https://minime-icons.dev)\
+🔹 [Dokümantasyon](https://minime-icons.dev/docs)\
+🔹 [GitHub](https://github.com/yourusername/minime-icons)
+
+🚀 **Minime Icons ile projelerinizi güçlendirin!**
