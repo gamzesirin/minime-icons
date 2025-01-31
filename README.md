@@ -1,12 +1,8 @@
----
-
 ## 🌟 Genel Bakış
 
 **Minime Icons**, dijital ve dijital olmayan projeleriniz için **1000+ vektör (SVG) ikon** sağlayan açık kaynaklı bir kütüphanedir. Her ikon, **okunabilirlik, tutarlılık ve piksel mükemmelliği** düşünülerek tasarlanmıştır.
 
 🎨 **Outlined ve Filled stillerde** 📏 **24x24 grid üzerine inşa edilmiş** 💡 **Minimal ve modern tasarım anlayışı**
-
----
 
 ## ✨ Özellikler
 
