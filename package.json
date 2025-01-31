@@ -1,51 +1,35 @@
 {
-	"name": "@minime/icons",
+	"name": "minime-icons",
 	"version": "1.0.0",
-	"description": "Modern ve minimal tasarımlı ikon kütüphanesi",
-	"main": "dist/index.js",
-	"module": "dist/index.esm.js",
-	"types": "dist/index.d.ts",
-	"sideEffects": false,
+	"private": true,
 	"scripts": {
-		"build": "rollup -c",
-		"dev": "rollup -c -w",
-		"lint": "eslint . --ext .ts,.tsx",
-		"test": "jest",
-		"prepublishOnly": "npm run build"
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
 	},
-	"files": [
-		"dist"
-	],
-	"keywords": [
-		"icons",
-		"svg",
-		"react",
-		"vue",
-		"svelte",
-		"typescript",
-		"minimal",
-		"modern"
-	],
-	"peerDependencies": {
-		"react": "^18.0.0",
-		"react-dom": "^18.0.0"
+	"dependencies": {
+		"@radix-ui/react-dialog": "^1.0.0",
+		"@radix-ui/react-slot": "^1.0.0",
+		"@radix-ui/react-slider": "^1.0.0",
+		"@radix-ui/react-tabs": "^1.0.0",
+		"class-variance-authority": "^0.7.0",
+		"clsx": "^2.0.0",
+		"lucide-react": "^0.300.0",
+		"next": "14.0.4",
+		"next-themes": "^0.2.0",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"sonner": "^1.0.0",
+		"tailwind-merge": "^2.0.0",
+		"tailwindcss": "^3.4.0"
 	},
 	"devDependencies": {
-		"@rollup/plugin-commonjs": "^25.0.0",
-		"@rollup/plugin-node-resolve": "^15.0.0",
-		"@rollup/plugin-typescript": "^11.0.0",
-		"@types/react": "^18.0.0",
-		"@typescript-eslint/eslint-plugin": "^6.0.0",
-		"@typescript-eslint/parser": "^6.0.0",
-		"eslint": "^8.0.0",
-		"rollup": "^3.0.0",
-		"rollup-plugin-dts": "^5.0.0",
+		"@types/node": "^20.0.0",
+		"@types/react": "^18.2.0",
+		"@types/react-dom": "^18.2.0",
+		"autoprefixer": "^10.0.0",
+		"postcss": "^8.0.0",
 		"typescript": "^5.0.0"
-	},
-	"author": "Minime Icons Team",
-	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/minime/icons"
 	}
 }
