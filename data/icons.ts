@@ -1,7 +1,25 @@
 import { Icon } from '@/types/Icon'
 import * as Icons from '@/icons'
+import { SparklesIcon } from '@/icons/SparklesIcon'
+import { LayoutGridIcon } from '@/icons/LayoutGridIcon'
+import { LayoutListIcon } from '@/icons/LayoutListIcon'
+import { LayoutColumnsIcon } from '@/icons/LayoutColumnsIcon'
+import { ChevronUpIcon } from '@/icons/ChevronUpIcon'
+import { ChevronDownIcon } from '@/icons/ChevronDownIcon'
+import { CursorClickIcon } from '@/icons/CursorClickIcon'
 
-export const categories = ['Temel', 'Medya', 'Dosya', 'Kullanıcı', 'İletişim', 'Sosyal Medya', 'Diğer'] as const
+export const categories = [
+	'Temel',
+	'Medya',
+	'Dosya',
+	'Kullanıcı',
+	'İletişim',
+	'Sosyal Medya',
+	'Düzen',
+	'Navigasyon',
+	'Etkileşim',
+	'Diğer'
+] as const
 
 export type Category = (typeof categories)[number]
 
@@ -248,6 +266,61 @@ export const IconList: IconData[] = [
 		component: Icons.LinkedinIcon,
 		category: 'Sosyal Medya',
 		tags: ['linkedin', 'iş', 'profesyonel']
+	},
+
+	// Düzen kategorisi için yeni ikonlar
+	{
+		id: 'layout-grid',
+		name: 'LayoutGridIcon',
+		component: LayoutGridIcon,
+		category: 'Düzen',
+		tags: ['grid', 'ızgara', 'düzen']
+	},
+	{
+		id: 'layout-list',
+		name: 'LayoutListIcon',
+		component: LayoutListIcon,
+		category: 'Düzen',
+		tags: ['liste', 'düzen']
+	},
+	{
+		id: 'layout-columns',
+		name: 'LayoutColumnsIcon',
+		component: LayoutColumnsIcon,
+		category: 'Düzen',
+		tags: ['sütunlar', 'düzen']
+	},
+
+	// Navigasyon kategorisi için yeni ikonlar
+	{
+		id: 'chevron-up',
+		name: 'ChevronUpIcon',
+		component: ChevronUpIcon,
+		category: 'Navigasyon',
+		tags: ['yukarı', 'ok']
+	},
+	{
+		id: 'chevron-down',
+		name: 'ChevronDownIcon',
+		component: ChevronDownIcon,
+		category: 'Navigasyon',
+		tags: ['aşağı', 'ok']
+	},
+
+	// Etkileşim kategorisi için yeni ikonlar
+	{
+		id: 'sparkles',
+		name: 'SparklesIcon',
+		component: SparklesIcon,
+		category: 'Etkileşim',
+		tags: ['parıltı', 'yıldız', 'efekt']
+	},
+	{
+		id: 'cursor-click',
+		name: 'CursorClickIcon',
+		component: CursorClickIcon,
+		category: 'Etkileşim',
+		tags: ['tıklama', 'imleç']
 	},
 
 	// Diğer İkonlar
