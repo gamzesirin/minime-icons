@@ -2,8 +2,9 @@
 
 import React from 'react'
 import Link from 'next/link'
-import { ThemeToggle } from '../components/ThemeToggle'
-import { HomeIcon, PackageIcon, PaintbrushIcon, UsersIcon, TreePineIcon, PaletteIcon } from 'lucide-react'
+import { HomeIcon } from '@/icons/HomeIcon'
+
+import { PackageIcon, PaintbrushIcon, UsersIcon, TreePineIcon, PaletteIcon } from 'lucide-react'
 
 const features = [
 	{
@@ -36,24 +37,6 @@ const features = [
 export default function Home() {
 	return (
 		<div className="min-h-screen bg-background">
-			<header className="container mx-auto py-6 px-4">
-				<nav className="flex justify-between items-center">
-					<Link href="/" className="text-2xl font-bold flex items-center gap-2">
-						<HomeIcon className="w-6 h-6" />
-						Minime Icons
-					</Link>
-					<div className="flex items-center gap-4">
-						<Link href="/docs/installation" className="hover:text-primary">
-							Docs
-						</Link>
-						<Link href="/icons" className="hover:text-primary">
-							Icons
-						</Link>
-						<ThemeToggle />
-					</div>
-				</nav>
-			</header>
-
 			<main>
 				<section className="py-20 text-center">
 					<div className="container mx-auto px-4">
@@ -63,7 +46,7 @@ export default function Home() {
 						<p className="text-xl text-muted-foreground mb-8">Modern ve kullanımı kolay ikon kütüphanesi.</p>
 						<div className="flex justify-center gap-4">
 							<Link
-								href="/docs/installation"
+								href="/docs/getting-started"
 								className="px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
 							>
 								Get Started

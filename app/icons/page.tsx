@@ -65,54 +65,6 @@ export default function IconsPage() {
 
 	return (
 		<div className="flex h-screen overflow-hidden">
-			{/* Sidebar */}
-			<div className="w-64 border-r bg-background flex flex-col">
-				<div className="p-4 border-b sticky top-0 bg-background z-10">
-					<div className="flex items-center justify-between mb-4">
-						<Link href="/" className="flex items-center space-x-2">
-							<HomeIcon className="h-6 w-6" />
-							<span className="font-bold inline-block">Minime Icon</span>
-						</Link>
-						<ThemeToggle />
-					</div>
-					<div className="relative">
-						<Search className="absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />
-						<Input
-							placeholder="İkon ara..."
-							value={searchQuery}
-							onChange={(e) => setSearchQuery(e.target.value)}
-							className="pl-8"
-						/>
-					</div>
-				</div>
-				<div className="p-4 space-y-1 overflow-auto">
-					<button
-						onClick={() => setSelectedCategory(null)}
-						className={`w-full text-left px-2 py-1.5 rounded-md text-sm transition-colors ${
-							!selectedCategory ? 'bg-secondary text-foreground' : 'text-muted-foreground hover:bg-secondary/50'
-						}`}
-					>
-						Tüm İkonlar ({IconList.length})
-					</button>
-					{categories.map((category) => {
-						const count = IconList.filter((icon) => icon.category === category).length
-						return (
-							<button
-								key={category}
-								onClick={() => setSelectedCategory(category)}
-								className={`w-full text-left px-2 py-1.5 rounded-md text-sm transition-colors ${
-									selectedCategory === category
-										? 'bg-secondary text-foreground'
-										: 'text-muted-foreground hover:bg-secondary/50'
-								}`}
-							>
-								{category} ({count})
-							</button>
-						)
-					})}
-				</div>
-			</div>
-
 			{/* Main Content */}
 			<div className="flex-1 overflow-auto">
 				<div className="sticky top-0 bg-background border-b z-10">
