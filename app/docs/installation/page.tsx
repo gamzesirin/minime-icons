@@ -1,12 +1,8 @@
 'use client'
 
-import { HomeIcon } from '@/icons/HomeIcon'
 import { Button } from '@/components/ui/button'
-import { Copy, Search } from 'lucide-react'
+import { Copy } from 'lucide-react'
 import { toast } from 'sonner'
-import Link from 'next/link'
-import { ThemeToggle } from '@/components/theme-toggle'
-import { Input } from '@/components/ui/input'
 
 export default function InstallationPage() {
 	const handleCopyCode = async (code: string) => {
@@ -18,9 +14,9 @@ export default function InstallationPage() {
 		}
 	}
 
-	const npmCode = 'npm install @minime/icons'
-	const yarnCode = 'yarn add @minime/icons'
-	const pnpmCode = 'pnpm add @minime/icons'
+	const npmCode = 'npm install @gamzesirin/minime-icons'
+	const yarnCode = 'yarn add @gamzesirin/minime-icons'
+	const pnpmCode = 'pnpm add @gamzesirin/minime-icons'
 
 	return (
 		<div className="min-h-screen bg-background">

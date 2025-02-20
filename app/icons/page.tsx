@@ -1,17 +1,17 @@
 'use client'
 
 import * as React from 'react'
-import { HomeIcon } from '@/icons/HomeIcon'
-import { Search, Copy } from 'lucide-react'
-import Link from 'next/link'
-import { ThemeToggle } from '@/components/theme-toggle'
+
+import { Copy } from 'lucide-react'
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog'
 import { Slider } from '@/components/ui/slider'
-import { IconList, categories } from '@/data/icons'
+import { IconList } from '@/data/icons'
 import { toast } from 'sonner'
 import { IconData } from '@/data/icons'
+import { IconSidebar } from '@/components/sidebar/IconSidebar'
+import { IconCard } from '@/components/ui/icon-card'
 
 export default function IconsPage() {
 	const [mounted, setMounted] = React.useState(false)
@@ -63,68 +63,37 @@ export default function IconsPage() {
 		return `import { ${icon.name} } from '@minime/icons'`
 	}
 
-	return (
-		<div className="flex h-screen overflow-hidden">
-			{/* Main Content */}
-			<div className="flex-1 overflow-auto">
-				<div className="sticky top-0 bg-background border-b z-10">
-					<div className="container py-4 space-y-4">
-						<div className="flex items-center gap-8">
-							<div className="flex-1 space-y-2">
-								<div className="flex items-center justify-between">
-									<label className="text-sm font-medium">Boyut</label>
-									<span className="text-sm text-muted-foreground">{size}px</span>
-								</div>
-								<Slider
-									value={[size]}
-									onValueChange={(value) => setSize(value[0])}
-									min={16}
-									max={48}
-									step={1}
-									className="w-full"
-								/>
-							</div>
-							<div className="flex items-center gap-2">
-								<label className="text-sm font-medium">Renk</label>
-								<Input type="color" value={color} onChange={(e) => setColor(e.target.value)} className="w-20 h-8 p-1" />
-							</div>
-							<div className="flex-1 space-y-2">
-								<div className="flex items-center justify-between">
-									<label className="text-sm font-medium">Çizgi Kalınlığı</label>
-									<span className="text-sm text-muted-foreground">{strokeWidth}</span>
-								</div>
-								<Slider
-									value={[strokeWidth]}
-									onValueChange={(value) => setStrokeWidth(value[0])}
-									min={1}
-									max={4}
-									step={0.5}
-									className="w-full"
-								/>
-							</div>
-						</div>
-					</div>
-				</div>
+	// Tüm ikonları etkileyen global stil
+	const globalIconStyle = {
+		strokeWidth: strokeWidth
+	}
 
+	return (
+		<>
+			<IconSidebar
+				size={size}
+				setSize={setSize}
+				color={color}
+				setColor={setColor}
+				strokeWidth={strokeWidth}
+				setStrokeWidth={setStrokeWidth}
+			/>
+
+			{/* Main Content */}
+			<div className="flex-1 overflow-y-auto scrollbar-hide">
 				<div className="container py-8">
 					<div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4">
-						{filteredIcons.map((icon) => {
-							const IconComponent = icon.component
-							return (
-								<button
-									key={icon.id}
-									onClick={() => setSelectedIcon(icon)}
-									className="group p-4 rounded-lg border bg-card hover:bg-accent transition-colors"
-								>
-									<div className="flex flex-col items-center">
-										<div className="mb-2">
-											<IconComponent size={size} color={color} style={{ strokeWidth }} />
-										</div>
-										<span className="text-xs text-muted-foreground group-hover:text-foreground">{icon.name}</span>
-									</div>
-								</button>
-							)
-						})}
+						{filteredIcons.map((icon) => (
+							<IconCard
+								key={icon.id}
+								icon={icon.component}
+								name={icon.name}
+								onClick={() => setSelectedIcon(icon)}
+								size={size}
+								color={color}
+								strokeWidth={strokeWidth}
+							/>
+						))}
 					</div>
 				</div>
 			</div>
@@ -138,7 +107,7 @@ export default function IconsPage() {
 					{selectedIcon && (
 						<div className="space-y-6">
 							<div className="flex items-center justify-center p-8 bg-accent/50 rounded-lg">
-								<selectedIcon.component size={48} color={color} style={{ strokeWidth }} />
+								<selectedIcon.component size={48} color={color} strokeWidth={strokeWidth} />
 							</div>
 
 							<div className="space-y-4">
@@ -189,6 +158,6 @@ export default function IconsPage() {
 					)}
 				</DialogContent>
 			</Dialog>
-		</div>
+		</>
 	)
 }

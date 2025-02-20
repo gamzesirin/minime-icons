@@ -20,8 +20,12 @@
 		],
 		"paths": {
 			"@/*": ["./*"]
-		}
+		},
+		"typeRoots": ["./node_modules/@types", "./types"],
+		"baseUrl": ".",
+		"outDir": "dist",
+		"declaration": true
 	},
-	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-	"exclude": ["node_modules"]
+	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "types/**/*.d.ts", "lib/**/*.ts"],
+	"exclude": ["node_modules", "dist"]
 }

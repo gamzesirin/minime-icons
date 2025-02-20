@@ -1,11 +1,5 @@
 'use client'
 
-import { HomeIcon } from '@/icons/HomeIcon'
-import { Search } from 'lucide-react'
-import Link from 'next/link'
-import { ThemeToggle } from '@/components/theme-toggle'
-import { Input } from '@/components/ui/input'
-
 export default function AboutPage() {
 	return (
 		<div className="min-h-screen bg-background">
@@ -15,9 +9,10 @@ export default function AboutPage() {
 					<section className="space-y-4">
 						<h1 className="text-4xl font-bold">Minime Icons Nedir?</h1>
 						<p className="text-lg text-muted-foreground leading-relaxed">
-							Minime Icons, dijital ve dijital olmayan projelerde kullanılmak üzere 1000+ vektör (svg) dosyası sağlayan
-							açık kaynaklı bir ikon kütüphanesidir. Kütüphane, tasarımcıların ve geliştiricilerin projelerine ikonları
-							kolayca entegre etmelerini sağlamak için çeşitli resmi paketler sunmaktadır.
+							Minime Icons (@gamzesirin/minime-icons), dijital ve dijital olmayan projelerde kullanılmak üzere 1000+
+							vektör (svg) dosyası sağlayan açık kaynaklı bir ikon kütüphanesidir. Kütüphane, tasarımcıların ve
+							geliştiricilerin projelerine ikonları kolayca entegre etmelerini sağlamak için çeşitli resmi paketler
+							sunmaktadır.
 						</p>
 					</section>
 

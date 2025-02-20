@@ -1,11 +1,7 @@
 'use client'
 
 import * as React from 'react'
-import { HomeIcon } from '@/icons/HomeIcon'
-import { Search } from 'lucide-react'
-import Link from 'next/link'
-import { ThemeToggle } from '@/components/theme-toggle'
-import { Input } from '@/components/ui/input'
+
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 
 export default function GettingStartedPage() {
@@ -56,7 +52,9 @@ export default function GettingStartedPage() {
 									<div>
 										<h3 className="text-xl font-medium mb-2">1. Kurulum</h3>
 										<p className="text-muted-foreground mb-4">İlk olarak, Minime Icons paketini projenize ekleyin:</p>
-										<pre className="p-4 rounded-lg bg-muted font-mono text-sm">npm install @minime/icons</pre>
+										<pre className="p-4 rounded-lg bg-muted font-mono text-sm">
+											npm install @gamzesirin/minime-icons
+										</pre>
 									</div>
 
 									<div>
@@ -64,7 +62,7 @@ export default function GettingStartedPage() {
 										<p className="text-muted-foreground mb-4">
 											İkonları doğrudan içe aktarın ve bileşen olarak kullanın:
 										</p>
-										<pre className="p-4 rounded-lg bg-muted font-mono text-sm whitespace-pre">{`import { HomeIcon, SearchIcon } from '@minime/icons'
+										<pre className="p-4 rounded-lg bg-muted font-mono text-sm whitespace-pre">{`import { HomeIcon, SearchIcon } from '@gamzesirin/minime-icons'
 
 function App() {
   return (
@@ -115,7 +113,7 @@ function App() {
 											Tree-shaking özelliği sayesinde sadece kullandığınız ikonlar bundle&apos;a dahil edilir:
 										</p>
 										<pre className="p-4 rounded-lg bg-muted font-mono text-sm whitespace-pre">{`// Sadece HomeIcon bundle'a dahil edilir
-import { HomeIcon } from '@minime/icons'`}</pre>
+import { HomeIcon } from '@gamzesirin/minime-icons'`}</pre>
 									</div>
 								</div>
 							</section>
@@ -128,7 +126,9 @@ import { HomeIcon } from '@minime/icons'`}</pre>
 									<div>
 										<h3 className="text-xl font-medium mb-2">1. Kurulum</h3>
 										<p className="text-muted-foreground mb-4">Next.js projenize Minime Icons&apos;u ekleyin:</p>
-										<pre className="p-4 rounded-lg bg-muted font-mono text-sm">npm install @minime/icons</pre>
+										<pre className="p-4 rounded-lg bg-muted font-mono text-sm">
+											npm install @gamzesirin/minime-icons
+										</pre>
 									</div>
 
 									<div>
@@ -136,7 +136,7 @@ import { HomeIcon } from '@minime/icons'`}</pre>
 										<p className="text-muted-foreground mb-4">İkonları client component&apos;lerde kullanmak için:</p>
 										<pre className="p-4 rounded-lg bg-muted font-mono text-sm whitespace-pre">{`'use client'
 
-import { HomeIcon } from '@minime/icons'
+import { HomeIcon } from '@gamzesirin/minime-icons'
 
 export default function Header() {
   return (
@@ -152,7 +152,7 @@ export default function Header() {
 										<p className="text-muted-foreground mb-4">
 											Server component&apos;lerde de ikonları doğrudan kullanabilirsiniz:
 										</p>
-										<pre className="p-4 rounded-lg bg-muted font-mono text-sm whitespace-pre">{`import { HomeIcon } from '@minime/icons'
+										<pre className="p-4 rounded-lg bg-muted font-mono text-sm whitespace-pre">{`import { HomeIcon } from '@gamzesirin/minime-icons'
 
 export default function Page() {
   return (
@@ -181,14 +181,16 @@ export default function Page() {
 									<div>
 										<h3 className="text-xl font-medium mb-2">1. Kurulum</h3>
 										<p className="text-muted-foreground mb-4">Vue projenize Minime Icons&apos;u ekleyin:</p>
-										<pre className="p-4 rounded-lg bg-muted font-mono text-sm">npm install @minime/icons-vue</pre>
+										<pre className="p-4 rounded-lg bg-muted font-mono text-sm">
+											npm install @gamzesirin/minime-icons-vue
+										</pre>
 									</div>
 
 									<div>
 										<h3 className="text-xl font-medium mb-2">2. Kullanım</h3>
 										<p className="text-muted-foreground mb-4">Vue bileşenlerinde ikonları kullanmak için:</p>
 										<pre className="p-4 rounded-lg bg-muted font-mono text-sm whitespace-pre">{`<script setup>
-import { HomeIcon } from '@minime/icons-vue'
+import { HomeIcon } from '@gamzesirin/minime-icons-vue'
 </script>
 
 <template>
@@ -206,14 +208,16 @@ import { HomeIcon } from '@minime/icons-vue'
 									<div>
 										<h3 className="text-xl font-medium mb-2">1. Kurulum</h3>
 										<p className="text-muted-foreground mb-4">Svelte projenize Minime Icons&apos;u ekleyin:</p>
-										<pre className="p-4 rounded-lg bg-muted font-mono text-sm">npm install @minime/icons-svelte</pre>
+										<pre className="p-4 rounded-lg bg-muted font-mono text-sm">
+											npm install @gamzesirin/minime-icons-svelte
+										</pre>
 									</div>
 
 									<div>
 										<h3 className="text-xl font-medium mb-2">2. Kullanım</h3>
 										<p className="text-muted-foreground mb-4">Svelte bileşenlerinde ikonları kullanmak için:</p>
 										<pre className="p-4 rounded-lg bg-muted font-mono text-sm whitespace-pre">{`<script>
-import { HomeIcon } from '@minime/icons-svelte'
+import { HomeIcon } from '@gamzesirin/minime-icons-svelte'
 </script>
 
 <HomeIcon size={24} color="currentColor" strokeWidth={2} />`}</pre>
