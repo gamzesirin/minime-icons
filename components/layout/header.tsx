@@ -2,7 +2,6 @@
 
 import Link from 'next/link'
 import { ThemeToggle } from '@/components/theme-toggle'
-import { HomeIcon } from '../icons/HomeIcon'
 
 interface HeaderProps {
 	showSearch?: boolean
@@ -14,7 +13,6 @@ export function Header({ showSearch = true }: HeaderProps) {
 			<div className="container flex h-14 items-center justify-between">
 				<div className="flex items-center gap-4">
 					<Link href="/" className="flex items-center space-x-2">
-						<HomeIcon className="h-6 w-6" />
 						<span className="font-bold inline-block">Minime Icon</span>
 					</Link>
 					<nav className="flex items-center space-x-6 text-sm font-medium">
@@ -32,7 +30,7 @@ export function Header({ showSearch = true }: HeaderProps) {
 
 				<div className="flex items-center gap-4">
 					<Link href="/icons" className="hover:text-primary">
-						Icons
+						İkonlar
 					</Link>
 					<ThemeToggle />
 				</div>
