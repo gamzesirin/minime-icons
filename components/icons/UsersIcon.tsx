@@ -1,12 +1,7 @@
 import React from 'react'
 import { IconProps } from '@/types/Icon-type'
 
-export const UsersIcon: React.FC<IconProps> = ({
-	size = 24,
-	color = 'currentColor',
-	strokeWidth = 2,
-	className = ''
-}) => {
+export const UsersIcon = ({ size = 24, color = 'currentColor', strokeWidth = 2 }: IconProps) => {
 	return (
 		<svg
 			width={size}
@@ -17,7 +12,6 @@ export const UsersIcon: React.FC<IconProps> = ({
 			strokeWidth={strokeWidth}
 			strokeLinecap="round"
 			strokeLinejoin="round"
-			className={className}
 		>
 			<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
 			<circle cx="9" cy="7" r="4" />
