@@ -1,7 +1,7 @@
 import React from 'react'
 import { IconProps } from '@/types/Icon-type'
 
-export const UserIcon: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className = '' }) => {
+export const UserIcon = ({ size = 24, color = 'currentColor', strokeWidth = 2 }: IconProps) => {
 	return (
 		<svg
 			width={size}
@@ -9,12 +9,12 @@ export const UserIcon: React.FC<IconProps> = ({ size = 24, color = 'currentColor
 			viewBox="0 0 24 24"
 			fill="none"
 			stroke={color}
-			strokeWidth="2"
+			strokeWidth={strokeWidth}
 			strokeLinecap="round"
 			strokeLinejoin="round"
-			className={className}
 		>
-			<path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+			<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+			<circle cx="12" cy="7" r="4" />
 		</svg>
 	)
 }

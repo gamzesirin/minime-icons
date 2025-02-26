@@ -1,6 +1,6 @@
 import { IconProps } from '@/types/Icon-type'
 
-export function HeartIcon({ size = 24, color = 'currentColor', strokeWidth = 2 }: IconProps) {
+export const HeartIcon = ({ size = 24, color = 'currentColor', strokeWidth = 2 }: IconProps) => {
 	return (
 		<svg
 			width={size}
