@@ -1,6 +1,6 @@
 import { IconProps } from '@/types/Icon-type'
 
-export function PhoneIcon({ size = 24, color = 'currentColor', strokeWidth = 2 }: IconProps) {
+export const PhoneIcon = ({ size = 24, color = 'currentColor', strokeWidth = 2 }: IconProps) => {
 	return (
 		<svg
 			width={size}
