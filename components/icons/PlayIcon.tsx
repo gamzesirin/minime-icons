@@ -1,6 +1,6 @@
 import { IconProps } from '@/types/Icon-type'
 
-export const PlayIcon = ({ size = 24, color = 'currentColor', strokeWidth = 2 }: IconProps) => {
+export function PlayIcon({ size = 24, color = 'currentColor', strokeWidth = 2 }: IconProps) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -13,7 +13,8 @@ export const PlayIcon = ({ size = 24, color = 'currentColor', strokeWidth = 2 }:
 			strokeLinecap="round"
 			strokeLinejoin="round"
 		>
-			<polygon points="5 3 19 12 5 21 5 3" />
+			<circle cx="12" cy="12" r="10" />
+			<polygon points="10 8 16 12 10 16 10 8" />
 		</svg>
 	)
 }
