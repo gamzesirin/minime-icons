@@ -7,7 +7,7 @@ import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog'
 import { Slider } from '@/components/ui/slider'
-import { IconList } from '@/data/icons'
+import { IconList, categories } from '@/data/icons'
 import { toast } from 'sonner'
 import { IconData } from '@/data/icons'
 import { IconSidebar } from '@/components/sidebar/IconSidebar'
@@ -40,10 +40,21 @@ export default function IconsPage() {
 	}
 
 	const filteredIcons = IconList.filter((icon) => {
+		if (!searchQuery && !selectedCategory) return true
+
+		const searchTerms = searchQuery.toLowerCase().trim().split(/\s+/)
+
 		const matchesSearch =
-			icon.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-			icon.tags.some((tag) => tag.toLowerCase().includes(searchQuery.toLowerCase()))
+			searchQuery === '' ||
+			searchTerms.every(
+				(term) =>
+					icon.name.toLowerCase().includes(term) ||
+					icon.tags.some((tag) => tag.toLowerCase().includes(term)) ||
+					icon.category.toLowerCase().includes(term)
+			)
+
 		const matchesCategory = !selectedCategory || icon.category === selectedCategory
+
 		return matchesSearch && matchesCategory
 	})
 
@@ -82,6 +93,35 @@ export default function IconsPage() {
 			{/* Main Content */}
 			<div className="flex-1 overflow-y-auto scrollbar-hide">
 				<div className="container py-8">
+					{/* Arama ve Filtreleme */}
+					<div className="mb-8 space-y-4">
+						<div className="flex gap-4 items-center">
+							<Input
+								type="search"
+								placeholder="İkon ara..."
+								className="max-w-sm"
+								value={searchQuery}
+								onChange={(e) => setSearchQuery(e.target.value)}
+							/>
+							<select
+								className="px-3 py-2 rounded-md border bg-background"
+								value={selectedCategory || ''}
+								onChange={(e) => setSelectedCategory(e.target.value || null)}
+							>
+								<option value="">Tüm Kategoriler</option>
+								{categories.map((category) => (
+									<option key={category} value={category}>
+										{category}
+									</option>
+								))}
+							</select>
+						</div>
+						{filteredIcons.length === 0 && (
+							<p className="text-muted-foreground text-center py-8">Aramanızla eşleşen ikon bulunamadı.</p>
+						)}
+						{filteredIcons.length > 0 && <p className="text-muted-foreground">{filteredIcons.length} ikon bulundu</p>}
+					</div>
+
 					<div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4">
 						{filteredIcons.map((icon) => (
 							<IconCard
@@ -106,11 +146,68 @@ export default function IconsPage() {
 					</DialogHeader>
 					{selectedIcon && (
 						<div className="space-y-6">
-							<div className="flex items-center justify-center p-8 bg-accent/50 rounded-lg">
-								<selectedIcon.component size={48} color={color} strokeWidth={strokeWidth} />
-							</div>
-
 							<div className="space-y-4">
+								<div>
+									<div className="flex items-center justify-between mb-2">
+										<span className="text-sm font-medium">Playground</span>
+									</div>
+									<div className="p-8 rounded-lg bg-accent/50 space-y-6">
+										<div className="flex items-center justify-center">
+											<selectedIcon.component size={size} color={color} strokeWidth={strokeWidth} />
+										</div>
+
+										<div className="space-y-4">
+											<div>
+												<label className="text-sm font-medium block mb-2">Boyut</label>
+												<div className="flex gap-4 items-center">
+													<Slider
+														value={[size]}
+														onValueChange={(value) => setSize(value[0])}
+														min={12}
+														max={64}
+														step={4}
+														className="flex-1"
+													/>
+													<span className="text-sm w-12 text-right">{size}px</span>
+												</div>
+											</div>
+
+											<div>
+												<label className="text-sm font-medium block mb-2">Renk</label>
+												<div className="flex gap-4 items-center">
+													<Input
+														type="color"
+														value={color}
+														onChange={(e) => setColor(e.target.value)}
+														className="w-16 h-8 p-0 border-0"
+													/>
+													<Input
+														type="text"
+														value={color}
+														onChange={(e) => setColor(e.target.value)}
+														className="flex-1"
+													/>
+												</div>
+											</div>
+
+											<div>
+												<label className="text-sm font-medium block mb-2">Çizgi Kalınlığı</label>
+												<div className="flex gap-4 items-center">
+													<Slider
+														value={[strokeWidth]}
+														onValueChange={(value) => setStrokeWidth(value[0])}
+														min={0.5}
+														max={4}
+														step={0.5}
+														className="flex-1"
+													/>
+													<span className="text-sm w-12 text-right">{strokeWidth}</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
 								<div>
 									<div className="flex items-center justify-between mb-2">
 										<span className="text-sm font-medium">Basit Kullanım</span>
