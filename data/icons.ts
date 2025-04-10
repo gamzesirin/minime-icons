@@ -433,35 +433,21 @@ export const IconList: IconData[] = [
 		category: 'Diğer',
 		tags: ['ayarlar', 'tercihler', 'yapılandırma']
 	},
-	{
-		id: 'tag',
-		name: 'TagIcon',
-		component: TagIcon,
-		category: 'Diğer',
-		tags: ['etiket', 'fiyat', 'işaret']
-	},
-	{
-		id: 'credit-card',
-		name: 'CreditCardIcon',
-		component: CreditCardIcon,
-		category: 'Diğer',
-		tags: ['kredi kartı', 'ödeme', 'banka']
-	},
-	{
-		id: 'shopping-cart',
-		name: 'ShoppingCartIcon',
-		component: ShoppingCartIcon,
-		category: 'Diğer',
-		tags: ['sepet', 'alışveriş', 'market']
-	},
 
-	// E-ticaret kategorisine yeni ikonlar
+	// E-ticaret İkonları
 	{
 		id: 'shopping-cart',
 		name: 'ShoppingCartIcon',
 		component: ShoppingCartIcon,
 		category: 'E-ticaret',
 		tags: ['sepet', 'alışveriş', 'market', 'satın al']
+	},
+	{
+		id: 'credit-card',
+		name: 'CreditCardIcon',
+		component: CreditCardIcon,
+		category: 'E-ticaret',
+		tags: ['kredi kartı', 'ödeme', 'banka', 'para']
 	},
 	{
 		id: 'tag',
@@ -492,11 +478,11 @@ export const IconList: IconData[] = [
 		tags: ['hediye', 'kutlama', 'özel', 'paket']
 	},
 	{
-		id: 'credit-card',
-		name: 'CreditCardIcon',
-		component: CreditCardIcon,
+		id: 'dollar-sign',
+		name: 'DollarSignIcon',
+		component: DollarSignIcon,
 		category: 'E-ticaret',
-		tags: ['kredi kartı', 'ödeme', 'banka', 'para']
+		tags: ['dolar', 'para', 'ödeme', 'fiyat']
 	},
 
 	// Düzenleme kategorisine yeni ikonlar
@@ -529,15 +515,6 @@ export const IconList: IconData[] = [
 		component: DownloadCloudIcon,
 		category: 'Dosya',
 		tags: ['indir', 'bulut', 'depolama']
-	},
-
-	// E-ticaret kategorisine yeni ikonlar
-	{
-		id: 'dollar-sign',
-		name: 'DollarSignIcon',
-		component: DollarSignIcon,
-		category: 'E-ticaret',
-		tags: ['dolar', 'para', 'ödeme', 'fiyat']
 	},
 
 	// Sosyal Medya kategorisine yeni ikonlar

@@ -1,50 +1,57 @@
 'use client'
 
-import { IconProps } from '@/types/Icon-type'
-import { GlowingEffect } from './glowing-effect'
+import { useState } from 'react'
+import { Icon } from '@/types/Icon-type'
+import { copyToClipboard } from '@/utils/copyToClipboard'
 
 interface IconCardProps {
-	icon: React.ComponentType<IconProps>
 	name: string
-	onClick?: () => void
+	icon: Icon
 	size?: number
 	color?: string
 	strokeWidth?: number
+	onClick?: () => void
 }
 
 export function IconCard({
-	icon: Icon,
 	name,
-	onClick,
+	icon: IconComponent,
 	size = 24,
 	color = 'currentColor',
-	strokeWidth = 2
+	strokeWidth = 2,
+	onClick
 }: IconCardProps) {
+	const [copied, setCopied] = useState(false)
+
+	const handleClick = async () => {
+		if (onClick) {
+			onClick()
+		} else {
+			await copyToClipboard(`import { ${name} } from 'minime-icons'`)
+			setCopied(true)
+			setTimeout(() => setCopied(false), 2000)
+		}
+	}
+
 	return (
-		<button
-			onClick={onClick}
-			className="group relative p-4 rounded-lg border bg-card hover:bg-accent/50 transition-all duration-300"
+		<div
+			className="p-4 border rounded-lg flex flex-col items-center justify-center hover:border-primary transition-colors dark:border-gray-700 cursor-pointer group"
+			onClick={handleClick}
 		>
-			<GlowingEffect
-				glow={true}
-				disabled={false}
-				blur={20}
-				spread={60}
-				proximity={100}
-				inactiveZone={0.5}
-				movementDuration={0.5}
-				borderWidth={2}
-				variant="default"
-				className="opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-			/>
-			<div className="flex flex-col items-center relative z-10">
-				<div className="mb-2 transition-transform duration-300 group-hover:scale-110">
-					<Icon size={size} color={color} strokeWidth={strokeWidth} />
-				</div>
-				<span className="text-xs text-muted-foreground group-hover:text-foreground transition-colors duration-300">
-					{name}
-				</span>
+			<div className="relative">
+				<IconComponent
+					size={size}
+					color={color}
+					strokeWidth={strokeWidth}
+					className="mb-2 group-hover:text-primary transition-colors"
+				/>
+				{copied && (
+					<div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-primary text-white px-2 py-1 rounded text-xs">
+						Kopyalandı!
+					</div>
+				)}
 			</div>
-		</button>
+			<span className="text-sm text-center group-hover:text-primary transition-colors">{name}</span>
+		</div>
 	)
 }
