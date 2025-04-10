@@ -146,68 +146,11 @@ export default function IconsPage() {
 					</DialogHeader>
 					{selectedIcon && (
 						<div className="space-y-6">
+							<div className="flex items-center justify-center p-8 bg-accent/50 rounded-lg">
+								<selectedIcon.component size={48} color={color} strokeWidth={strokeWidth} />
+							</div>
+
 							<div className="space-y-4">
-								<div>
-									<div className="flex items-center justify-between mb-2">
-										<span className="text-sm font-medium">Playground</span>
-									</div>
-									<div className="p-8 rounded-lg bg-accent/50 space-y-6">
-										<div className="flex items-center justify-center">
-											<selectedIcon.component size={size} color={color} strokeWidth={strokeWidth} />
-										</div>
-
-										<div className="space-y-4">
-											<div>
-												<label className="text-sm font-medium block mb-2">Boyut</label>
-												<div className="flex gap-4 items-center">
-													<Slider
-														value={[size]}
-														onValueChange={(value) => setSize(value[0])}
-														min={12}
-														max={64}
-														step={4}
-														className="flex-1"
-													/>
-													<span className="text-sm w-12 text-right">{size}px</span>
-												</div>
-											</div>
-
-											<div>
-												<label className="text-sm font-medium block mb-2">Renk</label>
-												<div className="flex gap-4 items-center">
-													<Input
-														type="color"
-														value={color}
-														onChange={(e) => setColor(e.target.value)}
-														className="w-16 h-8 p-0 border-0"
-													/>
-													<Input
-														type="text"
-														value={color}
-														onChange={(e) => setColor(e.target.value)}
-														className="flex-1"
-													/>
-												</div>
-											</div>
-
-											<div>
-												<label className="text-sm font-medium block mb-2">Çizgi Kalınlığı</label>
-												<div className="flex gap-4 items-center">
-													<Slider
-														value={[strokeWidth]}
-														onValueChange={(value) => setStrokeWidth(value[0])}
-														min={0.5}
-														max={4}
-														step={0.5}
-														className="flex-1"
-													/>
-													<span className="text-sm w-12 text-right">{strokeWidth}</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
 								<div>
 									<div className="flex items-center justify-between mb-2">
 										<span className="text-sm font-medium">Basit Kullanım</span>
