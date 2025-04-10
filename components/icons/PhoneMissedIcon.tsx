@@ -1,7 +1,7 @@
 import React from 'react'
 import { IconProps } from '@/types/Icon-type'
 
-export const PhoneMissedIcon: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className = '', style }) => {
+export const PhoneMissedIcon = ({ size = 24, color = 'currentColor', strokeWidth = 2 }: IconProps) => {
 	return (
 		<svg
 			width={size}
@@ -9,11 +9,9 @@ export const PhoneMissedIcon: React.FC<IconProps> = ({ size = 24, color = 'curre
 			viewBox="0 0 24 24"
 			fill="none"
 			stroke={color}
-			strokeWidth="2"
+			strokeWidth={strokeWidth}
 			strokeLinecap="round"
 			strokeLinejoin="round"
-			className={className}
-			style={style}
 		>
 			<line x1="23" y1="1" x2="17" y2="7" />
 			<line x1="17" y1="1" x2="23" y2="7" />

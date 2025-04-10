@@ -1,12 +1,7 @@
 import React from 'react'
 import { IconProps } from '@/types/Icon-type'
 
-export const PhoneOutgoingIcon: React.FC<IconProps> = ({
-	size = 24,
-	color = 'currentColor',
-	className = '',
-	style
-}) => {
+export const PhoneOutgoingIcon = ({ size = 24, color = 'currentColor', strokeWidth = 2 }: IconProps) => {
 	return (
 		<svg
 			width={size}
@@ -14,11 +9,9 @@ export const PhoneOutgoingIcon: React.FC<IconProps> = ({
 			viewBox="0 0 24 24"
 			fill="none"
 			stroke={color}
-			strokeWidth="2"
+			strokeWidth={strokeWidth}
 			strokeLinecap="round"
 			strokeLinejoin="round"
-			className={className}
-			style={style}
 		>
 			<polyline points="23 7 23 1 17 1" />
 			<line x1="16" y1="8" x2="23" y2="1" />
