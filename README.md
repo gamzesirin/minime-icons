@@ -39,13 +39,13 @@ pnpm add @gamzesirin/minime-icons
 import { HomeIcon, SearchIcon, UserIcon } from '@gamzesirin/minime-icons'
 
 function App() {
-  return (
-    <div>
-      <HomeIcon />
-      <SearchIcon size={24} />
-      <UserIcon color="#3B82F6" strokeWidth={1.5} />
-    </div>
-  )
+	return (
+		<div>
+			<HomeIcon />
+			<SearchIcon size={24} />
+			<UserIcon color="#3B82F6" strokeWidth={1.5} />
+		</div>
+	)
 }
 ```
 
@@ -55,12 +55,12 @@ Tüm ikonlar aşağıdaki props'ları destekler:
 
 ```tsx
 interface IconProps {
-  size?: number        // İkon boyutu (varsayılan: 24)
-  color?: string       // İkon rengi (varsayılan: currentColor)  
-  strokeWidth?: number // Çizgi kalınlığı (varsayılan: 2)
-  className?: string   // CSS sınıfı
-  style?: CSSProperties // Inline stil
-  // ...diğer SVG props'ları
+	size?: number // İkon boyutu (varsayılan: 24)
+	color?: string // İkon rengi (varsayılan: currentColor)
+	strokeWidth?: number // Çizgi kalınlığı (varsayılan: 2)
+	className?: string // CSS sınıfı
+	style?: CSSProperties // Inline stil
+	// ...diğer SVG props'ları
 }
 ```
 
@@ -70,7 +70,7 @@ interface IconProps {
 // Boyut özelleştirme
 <HomeIcon size={32} />
 
-// Renk özelleştirme  
+// Renk özelleştirme
 <SearchIcon color="#10B981" />
 
 // Çizgi kalınlığı
@@ -86,37 +86,45 @@ interface IconProps {
 ### Mevcut İkonlar
 
 #### 🏠 Temel İkonlar
+
 - `HomeIcon` - Ana sayfa
 - `SearchIcon` - Arama
-- `MenuIcon` - Menü  
+- `MenuIcon` - Menü
 - `CloseIcon` - Kapat
 - `SettingsIcon` - Ayarlar
 
 #### ➡️ Ok İkonları
+
 - `ArrowLeftIcon`, `ArrowRightIcon`, `ArrowUpIcon`, `ArrowDownIcon`
 - `ChevronUpIcon`, `ChevronDownIcon`
 
 #### 🎵 Medya İkonları
+
 - `PlayIcon`, `PauseIcon`, `StopIcon`
 - `MusicIcon`, `VideoIcon`, `HeadphonesIcon`
 
 #### 📁 Dosya İkonları
+
 - `FileIcon`, `FolderIcon`, `SaveIcon`
 - `DownloadIcon`, `DownloadCloudIcon`, `TrashIcon`
 
 #### 👤 Kullanıcı İkonları
+
 - `UserIcon`, `UsersIcon`
 - `UserPlusIcon`, `UserMinusIcon`
 
 #### 📞 İletişim İkonları
+
 - `MailIcon`, `PhoneIcon`, `PhoneCallIcon`
 - `PhoneIncomingIcon`, `PhoneOutgoingIcon`, `PhoneMissedIcon`
 
 #### 🌐 Sosyal Medya İkonları
+
 - `TwitterIcon`, `GithubIcon`, `LinkedinIcon`
 - `InstagramIcon`, `DribbbleIcon`
 
 #### 🛒 E-ticaret İkonları
+
 - `ShoppingCartIcon`, `CreditCardIcon`, `TagIcon`
 - `PackageIcon`, `GiftIcon`, `DiscountIcon`
 
@@ -127,17 +135,12 @@ Ve daha fazlası! [Tüm ikonları görmek için demo siteyi ziyaret edin](https:
 ### Kategori ve Arama
 
 ```tsx
-import { 
-  IconList, 
-  categories,
-  getIconsByCategory, 
-  searchIcons 
-} from '@gamzesirin/minime-icons'
+import { IconList, categories, getIconsByCategory, searchIcons } from '@gamzesirin/minime-icons'
 
 // Tüm ikonları listele
 console.log(IconList)
 
-// Kategorileri listele  
+// Kategorileri listele
 console.log(categories)
 
 // Medya kategorisindeki ikonları al
@@ -174,7 +177,7 @@ npm run build:lib
 
 ## 🤝 Katkıda Bulunma
 
-Katkılarınızı memnuniyetle karşılıyoruz! 
+Katkılarınızı memnuniyetle karşılıyoruz!
 
 1. Bu repository'yi fork edin
 2. Feature branch oluşturun (`git checkout -b feature/amazing-feature`)
@@ -191,14 +194,10 @@ Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICE
 **Gamze Şirin**
 
 - GitHub: [@gamzesirin](https://github.com/gamzesirin)
-- Website: [gamzesirin.com](https://gamzesirin.com)
+- Website: [gamzesirin.com](https://gamzesirin.com.tr)
 
 ## 🙏 Teşekkürler
 
 - Tüm katkıda bulunan geliştiricilere
 - React ve Next.js ekiplerine
 - Açık kaynak topluluğuna
-
----
-
-❤️ Made with love by [Gamze Şirin](https://gamzesirin.com)
