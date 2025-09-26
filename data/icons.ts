@@ -71,6 +71,7 @@ import { KeyIcon } from '@/components/icons/KeyIcon'
 import { LayersIcon } from '@/components/icons/LayersIcon'
 import { LayoutIcon } from '@/components/icons/LayoutIcon'
 import { LifeBuoyIcon } from '@/components/icons/LifeBuoyIcon'
+import { BookmarkIcon } from '@/components/icons/BookmarkIcon'
 
 export const categories = [
 	'Temel',
@@ -649,5 +650,12 @@ export const IconList: IconData[] = [
 		component: LifeBuoyIcon,
 		category: 'Diğer',
 		tags: ['can simidi', 'yardım', 'destek']
+	},
+	{
+		id: 'bookmark',
+		name: 'BookmarkIcon',
+		component: BookmarkIcon,
+		category: 'Temel',
+		tags: ['yer imi', 'kaydet', 'işaretle']
 	}
 ]
