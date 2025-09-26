@@ -1,0 +1,14 @@
+{
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		"target": "es2020",
+		"module": "esnext",
+		"moduleResolution": "node",
+		"declaration": true,
+		"outDir": "dist",
+		"incremental": false,
+		"noEmit": false
+	},
+	"include": ["lib/**/*", "types/**/*", "components/icons/**/*"],
+	"exclude": ["node_modules", "dist", "**/*.test.ts", "**/*.test.tsx"]
+}

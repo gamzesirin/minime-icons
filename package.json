@@ -2,7 +2,16 @@
 	"name": "@gamzesirin/minime-icons",
 	"version": "1.0.0",
 	"description": "Modern ve minimal tasarlanmış SVG ikon kütüphanesi. React ve Next.js ile kolayca kullanın.",
-	"keywords": ["icons", "react", "svg", "typescript", "minime", "ui", "minimal", "modern"],
+	"keywords": [
+		"icons",
+		"react",
+		"svg",
+		"typescript",
+		"minime",
+		"ui",
+		"minimal",
+		"modern"
+	],
 	"author": "Gamze Şirin",
 	"license": "MIT",
 	"homepage": "https://minime-icons.vercel.app",
@@ -25,7 +34,7 @@
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
-		"build:lib": "tsup lib/index.ts --format cjs,esm --dts --clean",
+		"build:lib": "tsup lib/index.ts --format cjs,esm --dts --clean --tsconfig tsconfig.build.json",
 		"start": "next start",
 		"lint": "next lint",
 		"typecheck": "tsc --noEmit",
@@ -43,12 +52,12 @@
 		"react": ">=16.8.0",
 		"react-dom": ">=16.8.0"
 	},
-	"dependencies": {},
 	"devDependencies": {
 		"@radix-ui/react-dialog": "^1.1.6",
 		"@radix-ui/react-slider": "^1.0.0",
 		"@radix-ui/react-slot": "^1.0.0",
 		"@radix-ui/react-tabs": "^1.0.0",
+		"@swc/core": "^1.13.19",
 		"@types/node": "^20.0.0",
 		"@types/react": "^18.2.0",
 		"@types/react-dom": "^18.2.0",

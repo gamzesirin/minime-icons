@@ -9,7 +9,7 @@ export default function AboutPage() {
 					<section className="space-y-4">
 						<h1 className="text-4xl font-bold">Minime Icons Nedir?</h1>
 						<p className="text-lg text-muted-foreground leading-relaxed">
-							Minime Icons (@gamzesirin/minime-icons), dijital ve dijital olmayan projelerde kullanılmak üzere 1000+
+							Minime Icons (@gamzesirin/minime-icons), dijital ve dijital olmayan projelerde kullanılmak üzere 100+
 							vektör (svg) dosyası sağlayan açık kaynaklı bir ikon kütüphanesidir. Kütüphane, tasarımcıların ve
 							geliştiricilerin projelerine ikonları kolayca entegre etmelerini sağlamak için çeşitli resmi paketler
 							sunmaktadır.
@@ -50,13 +50,13 @@ export default function AboutPage() {
 					<section className="space-y-4">
 						<h2 className="text-2xl font-semibold">Özellikler</h2>
 						<ul className="space-y-3 text-muted-foreground list-disc pl-6">
-							<li>1000+ SVG ikonu</li>
+							<li>100+ SVG ikonu</li>
 							<li>Tamamen özelleştirilebilir (boyut, renk, kalınlık)</li>
 							<li>Tree-shaking desteği</li>
 							<li>TypeScript desteği</li>
 							<li>ESM ve CommonJS desteği</li>
 							<li>Tema desteği (aydınlık/karanlık mod)</li>
-							<li>React, Vue ve diğer framework&apos;ler için destek</li>
+							<li>React ve Next.js desteği</li>
 							<li>Düzenli güncellemeler ve yeni ikonlar</li>
 						</ul>
 					</section>

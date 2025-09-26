@@ -1,4 +1,4 @@
-import { IconMetadata } from '@/types/icon-type'
+import { IconMetadata } from '@/lib'
 
 export const iconMetadata: Record<string, IconMetadata> = {
 	// Temel İkonlar
@@ -22,7 +22,7 @@ export const iconMetadata: Record<string, IconMetadata> = {
 		category: 'Interface',
 		keywords: ['kapat', 'çarpı', 'iptal', 'close', 'cancel', 'x']
 	},
-	
+
 	// Ok İkonları
 	ArrowLeftIcon: {
 		name: 'Arrow Left',

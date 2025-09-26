@@ -41,8 +41,6 @@ export default function GettingStartedPage() {
 						<TabsList>
 							<TabsTrigger value="react">React</TabsTrigger>
 							<TabsTrigger value="nextjs">Next.js</TabsTrigger>
-							<TabsTrigger value="vue">Vue</TabsTrigger>
-							<TabsTrigger value="svelte">Svelte</TabsTrigger>
 						</TabsList>
 
 						<TabsContent value="react" className="space-y-8">
@@ -174,57 +172,6 @@ export default function Page() {
 							</section>
 						</TabsContent>
 
-						<TabsContent value="vue" className="space-y-8">
-							<section className="space-y-4">
-								<h2 className="text-2xl font-semibold">Vue Projesinde Kullanım</h2>
-								<div className="space-y-6">
-									<div>
-										<h3 className="text-xl font-medium mb-2">1. Kurulum</h3>
-										<p className="text-muted-foreground mb-4">Vue projenize Minime Icons&apos;u ekleyin:</p>
-										<pre className="p-4 rounded-lg bg-muted font-mono text-sm">
-											npm install @gamzesirin/minime-icons-vue
-										</pre>
-									</div>
-
-									<div>
-										<h3 className="text-xl font-medium mb-2">2. Kullanım</h3>
-										<p className="text-muted-foreground mb-4">Vue bileşenlerinde ikonları kullanmak için:</p>
-										<pre className="p-4 rounded-lg bg-muted font-mono text-sm whitespace-pre">{`<script setup>
-import { HomeIcon } from '@gamzesirin/minime-icons-vue'
-</script>
-
-<template>
-  <HomeIcon :size="24" color="currentColor" :stroke-width="2" />
-</template>`}</pre>
-									</div>
-								</div>
-							</section>
-						</TabsContent>
-
-						<TabsContent value="svelte" className="space-y-8">
-							<section className="space-y-4">
-								<h2 className="text-2xl font-semibold">Svelte Projesinde Kullanım</h2>
-								<div className="space-y-6">
-									<div>
-										<h3 className="text-xl font-medium mb-2">1. Kurulum</h3>
-										<p className="text-muted-foreground mb-4">Svelte projenize Minime Icons&apos;u ekleyin:</p>
-										<pre className="p-4 rounded-lg bg-muted font-mono text-sm">
-											npm install @gamzesirin/minime-icons-svelte
-										</pre>
-									</div>
-
-									<div>
-										<h3 className="text-xl font-medium mb-2">2. Kullanım</h3>
-										<p className="text-muted-foreground mb-4">Svelte bileşenlerinde ikonları kullanmak için:</p>
-										<pre className="p-4 rounded-lg bg-muted font-mono text-sm whitespace-pre">{`<script>
-import { HomeIcon } from '@gamzesirin/minime-icons-svelte'
-</script>
-
-<HomeIcon size={24} color="currentColor" strokeWidth={2} />`}</pre>
-									</div>
-								</div>
-							</section>
-						</TabsContent>
 					</Tabs>
 
 					<section className="space-y-4">

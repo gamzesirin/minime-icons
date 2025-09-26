@@ -13,7 +13,7 @@ const features = [
 	{
 		icon: <Sparkles className="h-4 w-4" />,
 		title: 'Modern & Minimal',
-		description: 'Her ihtiyaca uygun, modern ve minimal tasarlanmış 300+ SVG ikon.',
+		description: 'Her ihtiyaca uygun, modern ve minimal tasarlanmış 100+ SVG ikon.',
 		area: 'md:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5]'
 	},
 	{
