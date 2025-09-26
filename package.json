@@ -17,7 +17,7 @@
 	"homepage": "https://minime-icons.vercel.app",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/gamzesirin/minime-icons"
+		"url": "git+https://github.com/gamzesirin/minime-icons.git"
 	},
 	"bugs": {
 		"url": "https://github.com/gamzesirin/minime-icons/issues"
