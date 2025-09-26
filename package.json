@@ -1,15 +1,36 @@
 {
 	"name": "@gamzesirin/minime-icons",
 	"version": "1.0.0",
+	"description": "Modern ve minimal tasarlanmış SVG ikon kütüphanesi. React ve Next.js ile kolayca kullanın.",
+	"keywords": ["icons", "react", "svg", "typescript", "minime", "ui", "minimal", "modern"],
+	"author": "Gamze Şirin",
+	"license": "MIT",
+	"homepage": "https://minime-icons.vercel.app",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/gamzesirin/minime-icons"
+	},
+	"bugs": {
+		"url": "https://github.com/gamzesirin/minime-icons/issues"
+	},
 	"main": "./dist/index.js",
 	"module": "./dist/index.mjs",
 	"types": "./dist/index.d.ts",
+	"files": [
+		"dist",
+		"README.md",
+		"package.json"
+	],
+	"sideEffects": false,
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
+		"build:lib": "tsup lib/index.ts --format cjs,esm --dts --clean",
 		"start": "next start",
 		"lint": "next lint",
-		"prepublish": "tsup lib/index.ts --format cjs,esm --dts"
+		"typecheck": "tsc --noEmit",
+		"prepublishOnly": "npm run build:lib",
+		"test": "echo \"No tests yet\" && exit 0"
 	},
 	"exports": {
 		".": {
@@ -18,17 +39,28 @@
 			"require": "./dist/index.js"
 		}
 	},
-	"dependencies": {
+	"peerDependencies": {
+		"react": ">=16.8.0",
+		"react-dom": ">=16.8.0"
+	},
+	"dependencies": {},
+	"devDependencies": {
 		"@radix-ui/react-dialog": "^1.1.6",
 		"@radix-ui/react-slider": "^1.0.0",
 		"@radix-ui/react-slot": "^1.0.0",
 		"@radix-ui/react-tabs": "^1.0.0",
+		"@types/node": "^20.0.0",
+		"@types/react": "^18.2.0",
+		"@types/react-dom": "^18.2.0",
+		"@types/three": "^0.173.0",
+		"autoprefixer": "^10.0.0",
 		"class-variance-authority": "^0.7.1",
 		"clsx": "^2.1.1",
 		"lucide-react": "^0.300.0",
 		"motion": "^12.4.3",
 		"next": "14.0.4",
 		"next-themes": "^0.2.0",
+		"postcss": "^8.0.0",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"sonner": "^1.0.0",
@@ -37,16 +69,8 @@
 		"tailwindcss": "^3.4.0",
 		"tailwindcss-animate": "^1.0.7",
 		"three": "^0.173.0",
-		"vanta": "^0.5.24"
-	},
-	"devDependencies": {
-		"@types/node": "^20.0.0",
-		"@types/react": "^18.2.0",
-		"@types/react-dom": "^18.2.0",
-		"@types/three": "^0.173.0",
-		"autoprefixer": "^10.0.0",
-		"postcss": "^8.0.0",
+		"tsup": "^8.0.1",
 		"typescript": "^5.0.0",
-		"tsup": "^8.0.1"
+		"vanta": "^0.5.24"
 	}
 }

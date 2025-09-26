@@ -88,18 +88,18 @@ export default function Home() {
 			<main>
 				<section
 					ref={vantaRef}
-					className="relative min-h-[600px] flex items-center justify-center bg-background dark:bg-background"
+					className="relative min-h-[500px] md:min-h-[600px] flex items-center justify-center bg-background dark:bg-background"
 				>
 					<div className="absolute inset-0 z-0 opacity-50" />
 					<div className="container relative z-10 mx-auto px-4 text-center">
-						<h1 className="text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/50">
+						<h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 sm:mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/50 leading-tight">
 							Güzel & <br /> minimal ikonlar
 						</h1>
-						<p className="text-xl text-muted-foreground mb-8">Modern ve kullanımı kolay ikon kütüphanesi.</p>
-						<div className="flex justify-center gap-4">
+						<p className="text-lg sm:text-xl text-muted-foreground mb-6 sm:mb-8 max-w-2xl mx-auto">Modern ve kullanımı kolay ikon kütüphanesi.</p>
+						<div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 max-w-md sm:max-w-none mx-auto">
 							<Button
 								size="lg"
-								className="bg-primary/90 hover:bg-primary text-primary-foreground shadow-lg hover:shadow-xl transition-all"
+								className="bg-primary/90 hover:bg-primary text-primary-foreground shadow-lg hover:shadow-xl transition-all w-full sm:w-auto"
 								asChild
 							>
 								<Link href="/docs/getting-started">Başlarken</Link>
@@ -107,7 +107,7 @@ export default function Home() {
 							<Button
 								size="lg"
 								variant="outline"
-								className="backdrop-blur-sm bg-background/50 hover:bg-background/80 shadow-lg hover:shadow-xl transition-all"
+								className="backdrop-blur-sm bg-background/50 hover:bg-background/80 shadow-lg hover:shadow-xl transition-all w-full sm:w-auto"
 								asChild
 							>
 								<Link href="/icons">İkonları Keşfet</Link>
@@ -116,19 +116,19 @@ export default function Home() {
 					</div>
 				</section>
 
-				<section className="py-20">
+				<section className="py-12 sm:py-16 md:py-20">
 					<div className="container mx-auto px-4">
-						<ul className="grid grid-cols-1 grid-rows-none gap-4 md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:max-h-[34rem] xl:grid-rows-2">
+						<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
 							{features.map((feature, index) => (
 								<FeatureCard
 									key={index}
-									area={feature.area}
 									icon={feature.icon}
 									title={feature.title}
 									description={feature.description}
+									area=""
 								/>
 							))}
-						</ul>
+						</div>
 					</div>
 				</section>
 			</main>

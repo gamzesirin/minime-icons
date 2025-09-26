@@ -69,9 +69,9 @@ export default function IconsPage() {
 
 	const getIconCode = (icon: IconData, withProps: boolean = false) => {
 		if (withProps) {
-			return `import { ${icon.name} } from '@minime/icons'\n\n<${icon.name}\n  size={${size}}\n  color="${color}"\n  strokeWidth={${strokeWidth}}\n/>`
+			return `import { ${icon.name} } from '@gamzesirin/minime-icons'\n\n<${icon.name}\n  size={${size}}\n  color="${color}"\n  strokeWidth={${strokeWidth}}\n/>`
 		}
-		return `import { ${icon.name} } from '@minime/icons'`
+		return `import { ${icon.name} } from '@gamzesirin/minime-icons'`
 	}
 
 	// Tüm ikonları etkileyen global stil
@@ -81,6 +81,7 @@ export default function IconsPage() {
 
 	return (
 		<>
+		<div className="min-h-screen bg-background">
 			<IconSidebar
 				size={size}
 				setSize={setSize}
@@ -91,20 +92,20 @@ export default function IconsPage() {
 			/>
 
 			{/* Main Content */}
-			<div className="flex-1 overflow-y-auto scrollbar-hide">
-				<div className="container py-8">
+			<div className="lg:ml-[240px]">
+				<div className="container py-4 sm:py-6 lg:py-8">
 					{/* Arama ve Filtreleme */}
-					<div className="mb-8 space-y-4">
-						<div className="flex gap-4 items-center">
+					<div className="mb-6 sm:mb-8 space-y-4">
+						<div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
 							<Input
 								type="search"
 								placeholder="İkon ara..."
-								className="max-w-sm"
+								className="w-full sm:max-w-sm"
 								value={searchQuery}
 								onChange={(e) => setSearchQuery(e.target.value)}
 							/>
 							<select
-								className="px-3 py-2 rounded-md border bg-background"
+								className="px-3 py-2 rounded-md border bg-background w-full sm:w-auto min-w-[180px]"
 								value={selectedCategory || ''}
 								onChange={(e) => setSelectedCategory(e.target.value || null)}
 							>
@@ -119,10 +120,12 @@ export default function IconsPage() {
 						{filteredIcons.length === 0 && (
 							<p className="text-muted-foreground text-center py-8">Aramanızla eşleşen ikon bulunamadı.</p>
 						)}
-						{filteredIcons.length > 0 && <p className="text-muted-foreground">{filteredIcons.length} ikon bulundu</p>}
+						{filteredIcons.length > 0 && (
+							<p className="text-muted-foreground text-sm">{filteredIcons.length} ikon bulundu</p>
+						)}
 					</div>
 
-					<div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4">
+					<div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 gap-2 sm:gap-3 lg:gap-4">
 						{filteredIcons.map((icon) => (
 							<IconCard
 								key={icon.id}
@@ -137,16 +140,17 @@ export default function IconsPage() {
 					</div>
 				</div>
 			</div>
+		</div>
 
-			{/* Icon Detail Modal */}
+		{/* Icon Detail Modal */}
 			<Dialog open={!!selectedIcon} onOpenChange={() => setSelectedIcon(null)}>
-				<DialogContent className="max-w-xl">
+				<DialogContent className="max-w-xl mx-4 sm:mx-auto max-h-[90vh] overflow-y-auto">
 					<DialogHeader>
-						<DialogTitle>{selectedIcon?.name}</DialogTitle>
+						<DialogTitle className="text-lg sm:text-xl">{selectedIcon?.name}</DialogTitle>
 					</DialogHeader>
 					{selectedIcon && (
-						<div className="space-y-6">
-							<div className="flex items-center justify-center p-8 bg-accent/50 rounded-lg">
+						<div className="space-y-4 sm:space-y-6">
+							<div className="flex items-center justify-center p-6 sm:p-8 bg-accent/50 rounded-lg">
 								<selectedIcon.component size={48} color={color} strokeWidth={strokeWidth} />
 							</div>
 
@@ -159,7 +163,7 @@ export default function IconsPage() {
 											Kopyala
 										</Button>
 									</div>
-									<pre className="p-4 rounded-lg bg-muted font-mono text-sm overflow-x-auto">
+									<pre className="p-3 sm:p-4 rounded-lg bg-muted font-mono text-xs sm:text-sm overflow-x-auto">
 										{getIconCode(selectedIcon)}
 									</pre>
 								</div>
@@ -172,14 +176,14 @@ export default function IconsPage() {
 											Kopyala
 										</Button>
 									</div>
-									<pre className="p-4 rounded-lg bg-muted font-mono text-sm overflow-x-auto whitespace-pre">
+									<pre className="p-3 sm:p-4 rounded-lg bg-muted font-mono text-xs sm:text-sm overflow-x-auto whitespace-pre">
 										{getIconCode(selectedIcon, true)}
 									</pre>
 								</div>
 							</div>
 
-							<div className="flex gap-4">
-								<div>
+							<div className="flex flex-col sm:flex-row gap-4">
+								<div className="flex-shrink-0">
 									<span className="text-sm font-medium block mb-2">Kategori</span>
 									<div className="inline-block px-2 py-1 rounded-md bg-accent text-xs">{selectedIcon.category}</div>
 								</div>

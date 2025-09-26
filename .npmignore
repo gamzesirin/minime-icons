@@ -1,0 +1,44 @@
+# Next.js
+.next/
+.vercel/
+
+# Dependencies
+node_modules/
+
+# Development files
+*.log
+*.tgz
+.DS_Store
+.env*
+
+# IDE
+.vscode/
+.idea/
+
+# Testing
+coverage/
+
+# Build directories (keep only dist for NPM)
+build/
+
+# Documentation and demo files
+app/
+components/ui/
+components/layout/
+components/sidebar/
+components/global/
+public/
+styles/
+
+# Config files
+next.config.js
+tailwind.config.js
+postcss.config.js
+tsconfig.json
+
+# Git
+.git/
+.gitignore
+
+# Utils (not needed in package)
+utils/
