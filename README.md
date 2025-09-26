@@ -120,10 +120,9 @@ interface IconProps {
 - `ShoppingCartIcon`, `CreditCardIcon`, `TagIcon`
 - `PackageIcon`, `GiftIcon`, `DiscountIcon`
 
-#### 🔢 Sayı İkonları
-- `Number0Icon` - `Number9Icon`
-
 Ve daha fazlası! [Tüm ikonları görmek için demo siteyi ziyaret edin](https://minime-icons.vercel.app/icons).
+
+**Toplam:** 100+ ikon mevcut
 
 ### Kategori ve Arama
 
