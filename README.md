@@ -1,110 +1,205 @@
-## 🌟 Genel Bakış
+# @gamzesirin/minime-icons
 
-**Minime Icons**, dijital ve dijital olmayan projeleriniz için **1000+ vektör (SVG) ikon** sağlayan açık kaynaklı bir kütüphanedir. Her ikon, **okunabilirlik, tutarlılık ve piksel mükemmelliği** düşünülerek tasarlanmıştır.
+Modern ve minimal tasarlanmış SVG ikon kütüphanesi. React ve Next.js projelerinizde kolayca kullanabileceğiniz 100+ güzel ikon.
 
-🎨 **Outlined ve Filled stillerde** 📏 **24x24 grid üzerine inşa edilmiş** 💡 **Minimal ve modern tasarım anlayışı**
+[![npm version](https://img.shields.io/npm/v/@gamzesirin/minime-icons)](https://www.npmjs.com/package/@gamzesirin/minime-icons)
+[![npm downloads](https://img.shields.io/npm/dm/@gamzesirin/minime-icons)](https://www.npmjs.com/package/@gamzesirin/minime-icons)
+[![license](https://img.shields.io/github/license/gamzesirin/minime-icons)](https://github.com/gamzesirin/minime-icons/blob/main/LICENSE)
 
 ## ✨ Özellikler
 
-✅ **1000+ SVG İkon** – Geniş bir ikon koleksiyonu ✅ **Özelleştirilebilir** – Boyut, renk, kalınlık ✅ **Tree-shaking Desteği** – Gereksiz kodları kaldırarak optimize edilmiş paketleme ✅ **TypeScript Desteği** – Güvenli ve ölçeklenebilir kod ✅ **ESM ve CommonJS Desteği** – Tüm modern modül sistemleriyle uyumlu ✅ **Tema Desteği** – Aydınlık & Karanlık modlar ✅ **React, Vue ve Diğer Frameworkler ile Uyumlu** ✅ **Sürekli Güncellenen Yeni İkonlar** 🚀
-
----
+- **🎨 Modern & Minimal**: Her ihtiyaca uygun, temiz ve minimal tasarlanmış SVG ikonlar
+- **⚡ Yüksek Performans**: Optimize edilmiş SVG dosyalar ile maksimum performans
+- **🎛️ Özelleştirilebilir**: Boyut, renk ve çizgi kalınlığı gibi özellikleri kolayca değiştirin
+- **📦 Kolay Entegrasyon**: React, Next.js ve diğer modern framework'ler ile hızlı entegrasyon
+- **🔍 Arama Destekli**: Kategoriler ve anahtar kelimeler ile kolayca ikon arayın
+- **📱 Responsive**: Tüm ekran boyutlarında mükemmel görünüm
+- **🌙 Dark Mode**: Karanlık tema desteği
+- **💯 TypeScript**: Tam TypeScript desteği
 
 ## 📦 Kurulum
 
-Minime Icons'u projenize dahil etmek için aşağıdaki komutlardan birini kullanabilirsiniz:
-
-```sh
-npm install minime-icons
-# veya
-yarn add minime-icons
-# veya
-pnpm add minime-icons
+```bash
+npm install @gamzesirin/minime-icons
 ```
 
----
+```bash
+yarn add @gamzesirin/minime-icons
+```
 
-## ⚡ Kullanım
+```bash
+pnpm add @gamzesirin/minime-icons
+```
 
-### React ile Kullanım
+## 🚀 Kullanım
 
-```jsx
-import { HomeIcon } from 'minime-icons/react'
+### Temel Kullanım
+
+```tsx
+import { HomeIcon, SearchIcon, UserIcon } from '@gamzesirin/minime-icons'
 
 function App() {
-	return <HomeIcon size={24} color="currentColor" strokeWidth={2} />
+  return (
+    <div>
+      <HomeIcon />
+      <SearchIcon size={24} />
+      <UserIcon color="#3B82F6" strokeWidth={1.5} />
+    </div>
+  )
 }
 ```
 
-### Vue ile Kullanım
+### Icon Props
 
-```vue
-<script setup>
-import { HomeIcon } from 'minime-icons/vue'
-</script>
+Tüm ikonlar aşağıdaki props'ları destekler:
 
-<template>
-	<HomeIcon :size="24" color="currentColor" :stroke-width="2" />
-</template>
-```
-
-### CSS ile Özelleştirme
-
-```css
-.icon {
-	width: 24px;
-	height: 24px;
-	stroke: currentColor;
-	stroke-width: 2;
-	stroke-linecap: round;
-	stroke-linejoin: round;
-	fill: none;
+```tsx
+interface IconProps {
+  size?: number        // İkon boyutu (varsayılan: 24)
+  color?: string       // İkon rengi (varsayılan: currentColor)  
+  strokeWidth?: number // Çizgi kalınlığı (varsayılan: 2)
+  className?: string   // CSS sınıfı
+  style?: CSSProperties // Inline stil
+  // ...diğer SVG props'ları
 }
 ```
 
----
+### Kullanım Örnekleri
+
+```tsx
+// Boyut özelleştirme
+<HomeIcon size={32} />
+
+// Renk özelleştirme  
+<SearchIcon color="#10B981" />
+
+// Çizgi kalınlığı
+<UserIcon strokeWidth={1.5} />
+
+// CSS sınıfı ile
+<HeartIcon className="text-red-500 hover:scale-110 transition-transform" />
+
+// Inline stil ile
+<StarIcon style={{ color: '#F59E0B', fontSize: '2rem' }} />
+```
+
+### Mevcut İkonlar
+
+#### 🏠 Temel İkonlar
+- `HomeIcon` - Ana sayfa
+- `SearchIcon` - Arama
+- `MenuIcon` - Menü  
+- `CloseIcon` - Kapat
+- `SettingsIcon` - Ayarlar
+
+#### ➡️ Ok İkonları
+- `ArrowLeftIcon`, `ArrowRightIcon`, `ArrowUpIcon`, `ArrowDownIcon`
+- `ChevronUpIcon`, `ChevronDownIcon`
+
+#### 🎵 Medya İkonları
+- `PlayIcon`, `PauseIcon`, `StopIcon`
+- `MusicIcon`, `VideoIcon`, `HeadphonesIcon`
+
+#### 📁 Dosya İkonları
+- `FileIcon`, `FolderIcon`, `SaveIcon`
+- `DownloadIcon`, `DownloadCloudIcon`, `TrashIcon`
+
+#### 👤 Kullanıcı İkonları
+- `UserIcon`, `UsersIcon`
+- `UserPlusIcon`, `UserMinusIcon`
+
+#### 📞 İletişim İkonları
+- `MailIcon`, `PhoneIcon`, `PhoneCallIcon`
+- `PhoneIncomingIcon`, `PhoneOutgoingIcon`, `PhoneMissedIcon`
+
+#### 🌐 Sosyal Medya İkonları
+- `TwitterIcon`, `GithubIcon`, `LinkedinIcon`
+- `InstagramIcon`, `DribbbleIcon`
+
+#### 🛒 E-ticaret İkonları
+- `ShoppingCartIcon`, `CreditCardIcon`, `TagIcon`
+- `PackageIcon`, `GiftIcon`, `DiscountIcon`
+
+#### 🔢 Sayı İkonları
+- `Number0Icon` - `Number9Icon`
+
+Ve daha fazlası! [Tüm ikonları görmek için demo siteyi ziyaret edin](https://minime-icons.vercel.app/icons).
+
+### Kategori ve Arama
+
+```tsx
+import { 
+  IconList, 
+  categories,
+  getIconsByCategory, 
+  searchIcons 
+} from '@gamzesirin/minime-icons'
+
+// Tüm ikonları listele
+console.log(IconList)
+
+// Kategorileri listele  
+console.log(categories)
+
+// Medya kategorisindeki ikonları al
+const mediaIcons = getIconsByCategory('Media')
+
+// İkon ara
+const searchResults = searchIcons('home')
+```
+
+## 🎨 Demo ve Dökümantasyon
+
+[**🌐 Demo Sitesi**](https://minime-icons.vercel.app) - Tüm ikonları keşfedin ve interaktif olarak test edin
+
+- 📋 [Kurulum](https://minime-icons.vercel.app/docs/installation)
+- 🚀 [Başlangıç](https://minime-icons.vercel.app/docs/getting-started)
+- 🎨 [Özelleştirme](https://minime-icons.vercel.app/docs/customization)
+- ℹ️ [Hakkında](https://minime-icons.vercel.app/docs/about)
+
+## 💻 Geliştirme
+
+```bash
+# Projeyi klonlayın
+git clone https://github.com/gamzesirin/minime-icons.git
+
+# Bağımlılıkları yükleyin
+npm install
+
+# Geliştirme sunucusunu başlatın
+npm run dev
+
+# Kütüphaneyi derleyin
+npm run build:lib
+```
 
 ## 🤝 Katkıda Bulunma
 
-Projeye katkıda bulunmak için:
+Katkılarınızı memnuniyetle karşılıyoruz! 
 
-1. 🚀 Depoyu fork edin
-2. 🌱 Yeni bir branch oluşturun: `git checkout -b feature/yeni-ozellik`
-3. 🎯 Değişikliklerinizi commit edin: `git commit -m 'feat: yeni özellik eklendi'`
-4. 🔄 Branch’inizi push edin: `git push origin feature/yeni-ozellik`
-5. 📩 Bir Pull Request oluşturun
+1. Bu repository'yi fork edin
+2. Feature branch oluşturun (`git checkout -b feature/amazing-feature`)
+3. Değişikliklerinizi commit edin (`git commit -m 'feat: add amazing feature'`)
+4. Branch'inizi push edin (`git push origin feature/amazing-feature`)
+5. Pull Request açın
 
----
+## 📄 Lisans
 
-## 🎨 İkon İsteği
+Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasını inceleyin.
 
-Eğer ihtiyacınız olan bir ikon henüz mevcut değilse, **GitHub Issues** üzerinden yeni bir istek oluşturabilirsiniz:
+## 👤 Yazar
 
-📌 **Başlık:** `Icon request: <İkon Adı>` 📌 **Açıklama:** İkonun nasıl görünmesini istediğinizi tarif edebilirsiniz.
+**Gamze Şirin**
 
----
+- GitHub: [@gamzesirin](https://github.com/gamzesirin)
+- Website: [gamzesirin.com](https://gamzesirin.com)
 
-## 📜 Lisans
+## 🙏 Teşekkürler
 
-Bu proje **MIT lisansı** altında sunulmaktadır. Daha fazla bilgi için [LICENSE](LICENSE) dosyasına göz atabilirsiniz.
-
----
-
-## ❤️ Destek Olun
-
-Minime Icons’un gelişmesine yardımcı olmak için:
-
-- ⭐ **GitHub'da yıldız verin**
-- 📢 **Projeyi arkadaşlarınızla paylaşın**
-- 🐛 **Hataları bildirin**
-- 💡 **Yeni özellik önerilerinde bulunun**
+- Tüm katkıda bulunan geliştiricilere
+- React ve Next.js ekiplerine
+- Açık kaynak topluluğuna
 
 ---
 
-## 🔗 Bağlantılar
-
-🔹 [Website](https://minime-icons.dev)\
-🔹 [Dokümantasyon](https://minime-icons.dev/docs)\
-🔹 [GitHub](https://github.com/yourusername/minime-icons)
-
-🚀 **Minime Icons ile projelerinizi güçlendirin!**
+❤️ Made with love by [Gamze Şirin](https://gamzesirin.com)
