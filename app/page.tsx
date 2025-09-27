@@ -100,11 +100,40 @@ export default function Home() {
 	useEffect(() => {
 		const interval = setInterval(() => {
 			setIconSizes((prev) => prev.map(() => Math.random() * 16 + 16))
-			setIconColors((prev) => prev.map(() => `hsl(${Math.random() * 360}, 70%, 50%)`))
+			setIconColors((prev) => prev.map((currentColor) => {
+				// Eğer mevcut renk siyah/beyaz ise, tema'ya uygun renk ver
+				if (currentColor === '#000000' || currentColor === 'black' || currentColor === 'rgb(0, 0, 0)') {
+					return resolvedTheme === 'dark' ? '#ffffff' : '#000000'
+				} else if (currentColor === '#ffffff' || currentColor === 'white' || currentColor === 'rgb(255, 255, 255)') {
+					return resolvedTheme === 'dark' ? '#ffffff' : '#000000'
+				} else {
+					// Renkli ikonlar için random renk
+					const hue = Math.random() * 360
+					const saturation = Math.random() * 50 + 50 // 50-100%
+					const lightness = Math.random() * 40 + 30 // 30-70%
+					return `hsl(${hue}, ${saturation}%, ${lightness}%)`
+				}
+			}))
 		}, 3000)
 
 		return () => clearInterval(interval)
-	}, [])
+	}, [resolvedTheme])
+
+	// Tema değiştiğinde icon renklerini hemen güncelle
+	useEffect(() => {
+		setIconColors(prev => prev.map(color => {
+			// Siyah renkler için kontrol
+			if (color === '#000000' || color === 'black' || color === 'rgb(0, 0, 0)') {
+				return resolvedTheme === 'dark' ? '#ffffff' : '#000000'
+			}
+			// Beyaz renkler için kontrol
+			if (color === '#ffffff' || color === 'white' || color === 'rgb(255, 255, 255)') {
+				return resolvedTheme === 'dark' ? '#ffffff' : '#000000'
+			}
+			// Diğer renkler değişmez
+			return color
+		}))
+	}, [resolvedTheme])
 
 	useEffect(() => {
 		if (!vantaEffect) {

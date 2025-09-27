@@ -13,6 +13,7 @@ import { IconData } from '@/data/icons'
 import { IconSidebar, IconSidebarMobile } from '@/components/sidebar/IconSidebar'
 import { IconCard } from '@/components/ui/icon-card'
 import { Header } from '@/components/layout/header'
+import { useTheme } from 'next-themes'
 
 export default function IconsPage() {
 	const [mounted, setMounted] = React.useState(false)
@@ -23,6 +24,7 @@ export default function IconsPage() {
 	const [color, setColor] = React.useState('#000000')
 	const [strokeWidth, setStrokeWidth] = React.useState(2)
 	const [sidebarOpen, setSidebarOpen] = React.useState(true)
+	const { resolvedTheme } = useTheme()
 
 	React.useEffect(() => {
 		setMounted(true)
@@ -40,6 +42,20 @@ export default function IconsPage() {
 			setSidebarOpen
 		}
 	}, [size, setSize, color, setColor, strokeWidth, setStrokeWidth, sidebarOpen, setSidebarOpen])
+
+	// Tema değiştiğinde renk uyumunu güncelle
+	React.useEffect(() => {
+		if (resolvedTheme) {
+			// Eğer renk siyah ise ve dark mode'daysa beyaz yap
+			if (color === '#000000' && resolvedTheme === 'dark') {
+				setColor('#ffffff')
+			}
+			// Eğer renk beyaz ise ve light mode'daysa siyah yap
+			else if (color === '#ffffff' && resolvedTheme === 'light') {
+				setColor('#000000')
+			}
+		}
+	}, [resolvedTheme])
 
 	if (!mounted) {
 		return (
