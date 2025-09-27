@@ -2320,9 +2320,1557 @@ function StarIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
   );
 }
 
+// components/icons/EyeIcon.tsx
+function EyeIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("path", { d: "M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" }),
+    /* @__PURE__ */ React.createElement("circle", { cx: "12", cy: "12", r: "3" })
+  );
+}
+
+// components/icons/EyeOffIcon.tsx
+function EyeOffIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("path", { d: "M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "1", y1: "1", x2: "23", y2: "23" })
+  );
+}
+
+// components/icons/FilterIcon.tsx
+function FilterIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("polygon", { points: "22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" })
+  );
+}
+
+// components/icons/SortIcon.tsx
+function SortIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("path", { d: "M3 6h18" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M6 12h12" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M9 18h6" })
+  );
+}
+
+// components/icons/RefreshIcon.tsx
+function RefreshIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("polyline", { points: "23 4 23 10 17 10" }),
+    /* @__PURE__ */ React.createElement("polyline", { points: "1 20 1 14 7 14" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15" })
+  );
+}
+
+// components/icons/MoreHorizontalIcon.tsx
+function MoreHorizontalIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("circle", { cx: "12", cy: "12", r: "1" }),
+    /* @__PURE__ */ React.createElement("circle", { cx: "19", cy: "12", r: "1" }),
+    /* @__PURE__ */ React.createElement("circle", { cx: "5", cy: "12", r: "1" })
+  );
+}
+
+// components/icons/MoreVerticalIcon.tsx
+function MoreVerticalIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("circle", { cx: "12", cy: "12", r: "1" }),
+    /* @__PURE__ */ React.createElement("circle", { cx: "12", cy: "5", r: "1" }),
+    /* @__PURE__ */ React.createElement("circle", { cx: "12", cy: "19", r: "1" })
+  );
+}
+
+// components/icons/GridIcon.tsx
+function GridIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("rect", { x: "3", y: "3", width: "7", height: "7" }),
+    /* @__PURE__ */ React.createElement("rect", { x: "14", y: "3", width: "7", height: "7" }),
+    /* @__PURE__ */ React.createElement("rect", { x: "14", y: "14", width: "7", height: "7" }),
+    /* @__PURE__ */ React.createElement("rect", { x: "3", y: "14", width: "7", height: "7" })
+  );
+}
+
+// components/icons/BriefcaseIcon.tsx
+function BriefcaseIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("rect", { x: "2", y: "7", width: "20", height: "14", rx: "2", ry: "2" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" })
+  );
+}
+
+// components/icons/TrendingUpIcon.tsx
+function TrendingUpIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("polyline", { points: "23 6 13.5 15.5 8.5 10.5 1 18" }),
+    /* @__PURE__ */ React.createElement("polyline", { points: "17 6 23 6 23 12" })
+  );
+}
+
+// components/icons/TrendingDownIcon.tsx
+function TrendingDownIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("polyline", { points: "23 18 13.5 8.5 8.5 13.5 1 6" }),
+    /* @__PURE__ */ React.createElement("polyline", { points: "17 18 23 18 23 12" })
+  );
+}
+
+// components/icons/BarChartIcon.tsx
+function BarChartIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("line", { x1: "12", y1: "20", x2: "12", y2: "10" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "18", y1: "20", x2: "18", y2: "4" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "6", y1: "20", x2: "6", y2: "16" })
+  );
+}
+
+// components/icons/PieChartIcon.tsx
+function PieChartIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("path", { d: "M21.21 15.89A10 10 0 1 1 8 2.83" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M22 12A10 10 0 0 0 12 2v10z" })
+  );
+}
+
+// components/icons/AwardIcon.tsx
+function AwardIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("circle", { cx: "12", cy: "8", r: "7" }),
+    /* @__PURE__ */ React.createElement("polyline", { points: "8.21 13.89 7 23 12 20 17 23 15.79 13.88" })
+  );
+}
+
+// components/icons/SunIcon.tsx
+function SunIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("circle", { cx: "12", cy: "12", r: "5" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "12", y1: "1", x2: "12", y2: "3" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "12", y1: "21", x2: "12", y2: "23" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "4.22", y1: "4.22", x2: "5.64", y2: "5.64" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "18.36", y1: "18.36", x2: "19.78", y2: "19.78" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "1", y1: "12", x2: "3", y2: "12" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "21", y1: "12", x2: "23", y2: "12" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "4.22", y1: "19.78", x2: "5.64", y2: "18.36" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "18.36", y1: "5.64", x2: "19.78", y2: "4.22" })
+  );
+}
+
+// components/icons/MoonIcon.tsx
+function MoonIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("path", { d: "M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" })
+  );
+}
+
+// components/icons/CloudIcon.tsx
+function CloudIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("path", { d: "M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" })
+  );
+}
+
+// components/icons/CloudRainIcon.tsx
+function CloudRainIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("line", { x1: "16", y1: "13", x2: "16", y2: "21" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "8", y1: "13", x2: "8", y2: "21" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "12", y1: "15", x2: "12", y2: "23" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M20 16.58A5 5 0 0 0 18 7h-1.26A8 8 0 1 0 4 15.25" })
+  );
+}
+
+// components/icons/ZapIcon.tsx
+function ZapIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("polygon", { points: "13 2 3 14 12 14 11 22 21 10 12 10 13 2" })
+  );
+}
+
+// components/icons/TerminalIcon.tsx
+function TerminalIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("polyline", { points: "4 17 10 11 4 5" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "12", y1: "19", x2: "20", y2: "19" })
+  );
+}
+
+// components/icons/DatabaseIcon.tsx
+function DatabaseIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("ellipse", { cx: "12", cy: "5", rx: "9", ry: "3" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3" })
+  );
+}
+
+// components/icons/GitBranchIcon.tsx
+function GitBranchIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("line", { x1: "6", y1: "3", x2: "6", y2: "15" }),
+    /* @__PURE__ */ React.createElement("circle", { cx: "18", cy: "6", r: "3" }),
+    /* @__PURE__ */ React.createElement("circle", { cx: "6", cy: "18", r: "3" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M18 9a9 9 0 0 1-9 9" })
+  );
+}
+
+// components/icons/BugIcon.tsx
+function BugIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("rect", { x: "8", y: "6", width: "8", height: "14", rx: "4" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M19 7s-1-2-7-2-7 2-7 2v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2z" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "1", y1: "9", x2: "4", y2: "9" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "20", y1: "9", x2: "23", y2: "9" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "1", y1: "15", x2: "4", y2: "15" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "20", y1: "15", x2: "23", y2: "15" })
+  );
+}
+
+// components/icons/ServerIcon.tsx
+function ServerIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("rect", { x: "2", y: "2", width: "20", height: "8", rx: "2", ry: "2" }),
+    /* @__PURE__ */ React.createElement("rect", { x: "2", y: "14", width: "20", height: "8", rx: "2", ry: "2" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "6", y1: "6", x2: "6.01", y2: "6" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "6", y1: "18", x2: "6.01", y2: "18" })
+  );
+}
+
+// components/icons/MessageCircleIcon.tsx
+function MessageCircleIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("path", { d: "M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" })
+  );
+}
+
+// components/icons/MessageSquareIcon.tsx
+function MessageSquareIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("path", { d: "M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" })
+  );
+}
+
+// components/icons/SendIcon.tsx
+function SendIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("line", { x1: "22", y1: "2", x2: "11", y2: "13" }),
+    /* @__PURE__ */ React.createElement("polygon", { points: "22 2 15 22 11 13 2 9 22 2" })
+  );
+}
+
+// components/icons/WifiIcon.tsx
+function WifiIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("path", { d: "M1.42 9a16 16 0 0 1 21.16 0" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M5 12.55a11 11 0 0 1 14.08 0" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M8.53 16.11a6 6 0 0 1 6.95 0" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "12", y1: "20", x2: "12.01", y2: "20" })
+  );
+}
+
+// components/icons/LockIcon.tsx
+function LockIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("rect", { x: "3", y: "11", width: "18", height: "11", rx: "2", ry: "2" }),
+    /* @__PURE__ */ React.createElement("circle", { cx: "12", cy: "16", r: "1" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M7 11V7a5 5 0 0 1 10 0v4" })
+  );
+}
+
+// components/icons/UnlockIcon.tsx
+function UnlockIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("rect", { x: "3", y: "11", width: "18", height: "11", rx: "2", ry: "2" }),
+    /* @__PURE__ */ React.createElement("circle", { cx: "12", cy: "16", r: "1" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M7 11V7a5 5 0 0 1 7.76-4.07" })
+  );
+}
+
+// components/icons/ShieldIcon.tsx
+function ShieldIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("path", { d: "M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" })
+  );
+}
+
+// components/icons/MapPinIcon.tsx
+function MapPinIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("path", { d: "M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" }),
+    /* @__PURE__ */ React.createElement("circle", { cx: "12", cy: "10", r: "3" })
+  );
+}
+
+// components/icons/GlobeIcon.tsx
+function GlobeIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("circle", { cx: "12", cy: "12", r: "10" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "2", y1: "12", x2: "22", y2: "12" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" })
+  );
+}
+
+// components/icons/CameraIcon.tsx
+function CameraIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("path", { d: "M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" }),
+    /* @__PURE__ */ React.createElement("circle", { cx: "12", cy: "13", r: "4" })
+  );
+}
+
+// components/icons/CornerDownLeftIcon.tsx
+function CornerDownLeftIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("polyline", { points: "9 10 4 15 9 20" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M20 4v7a4 4 0 0 1-4 4H4" })
+  );
+}
+
+// components/icons/CornerDownRightIcon.tsx
+function CornerDownRightIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("polyline", { points: "15 10 20 15 15 20" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M4 4v7a4 4 0 0 0 4 4h12" })
+  );
+}
+
+// components/icons/RotateCwIcon.tsx
+function RotateCwIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("polyline", { points: "23 4 23 10 17 10" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M20.49 15a9 9 0 1 1-2.12-9.36L23 10" })
+  );
+}
+
+// components/icons/ApiIcon.tsx
+function ApiIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("path", { d: "M14 12l-4 4" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M10 8l4 4" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M5 12h1.5" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M17.5 12H19" }),
+    /* @__PURE__ */ React.createElement("circle", { cx: "12", cy: "12", r: "10" })
+  );
+}
+
+// components/icons/CpuIcon.tsx
+function CpuIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("rect", { x: "4", y: "4", width: "16", height: "16", rx: "2" }),
+    /* @__PURE__ */ React.createElement("rect", { x: "9", y: "9", width: "6", height: "6" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "9", y1: "1", x2: "9", y2: "4" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "15", y1: "1", x2: "15", y2: "4" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "9", y1: "20", x2: "9", y2: "23" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "15", y1: "20", x2: "15", y2: "23" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "20", y1: "9", x2: "23", y2: "9" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "20", y1: "14", x2: "23", y2: "14" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "1", y1: "9", x2: "4", y2: "9" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "1", y1: "14", x2: "4", y2: "14" })
+  );
+}
+
+// components/icons/MonitorIcon.tsx
+function MonitorIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("rect", { x: "2", y: "3", width: "20", height: "14", rx: "2", ry: "2" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "8", y1: "21", x2: "16", y2: "21" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "12", y1: "17", x2: "12", y2: "21" })
+  );
+}
+
+// components/icons/SmartphoneIcon.tsx
+function SmartphoneIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("rect", { x: "5", y: "2", width: "14", height: "20", rx: "2", ry: "2" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "12", y1: "18", x2: "12.01", y2: "18" })
+  );
+}
+
+// components/icons/TabletIcon.tsx
+function TabletIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("rect", { x: "4", y: "2", width: "16", height: "20", rx: "2", ry: "2" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "12", y1: "18", x2: "12.01", y2: "18" })
+  );
+}
+
+// components/icons/HardHatIcon.tsx
+function HardHatIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("path", { d: "M2 18h20" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M10 18V5a6 6 0 0 1 12 0v13" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M4 15s-1-1-1-5 1-5 1-5" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M6 10h.01" })
+  );
+}
+
+// components/icons/WrenchIcon.tsx
+function WrenchIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("path", { d: "M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" })
+  );
+}
+
+// components/icons/Package2Icon.tsx
+function Package2Icon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("path", { d: "M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9Z" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M3 9V7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "12", y1: "5", x2: "12", y2: "9" })
+  );
+}
+
+// components/icons/ToggleLeftIcon.tsx
+function ToggleLeftIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("rect", { x: "1", y: "5", width: "22", height: "14", rx: "7", ry: "7" }),
+    /* @__PURE__ */ React.createElement("circle", { cx: "8", cy: "12", r: "3" })
+  );
+}
+
+// components/icons/ToggleRightIcon.tsx
+function ToggleRightIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("rect", { x: "1", y: "5", width: "22", height: "14", rx: "7", ry: "7" }),
+    /* @__PURE__ */ React.createElement("circle", { cx: "16", cy: "12", r: "3" })
+  );
+}
+
+// components/icons/SlidersIcon.tsx
+function SlidersIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("line", { x1: "4", y1: "21", x2: "4", y2: "14" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "4", y1: "10", x2: "4", y2: "3" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "12", y1: "21", x2: "12", y2: "12" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "12", y1: "8", x2: "12", y2: "3" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "20", y1: "21", x2: "20", y2: "16" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "20", y1: "12", x2: "20", y2: "3" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "1", y1: "14", x2: "7", y2: "14" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "9", y1: "8", x2: "15", y2: "8" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "17", y1: "16", x2: "23", y2: "16" })
+  );
+}
+
+// components/icons/AlertTriangleIcon.tsx
+function AlertTriangleIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("path", { d: "M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "12", y1: "9", x2: "12", y2: "13" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "12", y1: "17", x2: "12.01", y2: "17" })
+  );
+}
+
+// components/icons/AlertCircleIcon.tsx
+function AlertCircleIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("circle", { cx: "12", cy: "12", r: "10" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "12", y1: "8", x2: "12", y2: "12" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "12", y1: "16", x2: "12.01", y2: "16" })
+  );
+}
+
+// components/icons/CheckCircleIcon.tsx
+function CheckCircleIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("path", { d: "M22 11.08V12a10 10 0 1 1-5.93-9.14" }),
+    /* @__PURE__ */ React.createElement("polyline", { points: "22 4 12 14.01 9 11.01" })
+  );
+}
+
+// components/icons/XCircleIcon.tsx
+function XCircleIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("circle", { cx: "12", cy: "12", r: "10" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "15", y1: "9", x2: "9", y2: "15" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "9", y1: "9", x2: "15", y2: "15" })
+  );
+}
+
+// components/icons/VolumeIcon.tsx
+function VolumeIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("polygon", { points: "11 5 6 9 2 9 2 15 6 15 11 19 11 5" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07" })
+  );
+}
+
+// components/icons/VolumeXIcon.tsx
+function VolumeXIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("polygon", { points: "11 5 6 9 2 9 2 15 6 15 11 19 11 5" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "23", y1: "9", x2: "17", y2: "15" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "17", y1: "9", x2: "23", y2: "15" })
+  );
+}
+
+// components/icons/SkipBackIcon.tsx
+function SkipBackIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("polygon", { points: "19 20 9 12 19 4 19 20" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "5", y1: "19", x2: "5", y2: "5" })
+  );
+}
+
+// components/icons/SkipForwardIcon.tsx
+function SkipForwardIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("polygon", { points: "5 4 15 12 5 20 5 4" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "19", y1: "5", x2: "19", y2: "19" })
+  );
+}
+
+// components/icons/MicIcon.tsx
+function MicIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("path", { d: "M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M19 10v2a7 7 0 0 1-14 0v-2" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "12", y1: "19", x2: "12", y2: "23" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "8", y1: "23", x2: "16", y2: "23" })
+  );
+}
+
+// components/icons/MicOffIcon.tsx
+function MicOffIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("line", { x1: "1", y1: "1", x2: "23", y2: "23" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M9 9v3a3 3 0 0 0 5.12 2.12L9 9z" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M12 2a3 3 0 0 1 3 3v7.34L12 9.34V2z" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M5 12v2a7 7 0 0 0 14 0v-2" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "12", y1: "19", x2: "12", y2: "23" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "8", y1: "23", x2: "16", y2: "23" })
+  );
+}
+
+// components/icons/CarIcon.tsx
+function CarIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("path", { d: "M14 16H9m10 0h3v-3.15a1 1 0 0 0-.84-.99L18 11V8a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v3l-3.16 1.86a1 1 0 0 0-.84.99V16h3m16 0a2 2 0 1 1-4 0m4 0a2 2 0 1 0-4 0M6 16a2 2 0 1 1-4 0m4 0a2 2 0 1 0-4 0" })
+  );
+}
+
+// components/icons/PlaneIcon.tsx
+function PlaneIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("path", { d: "M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z" })
+  );
+}
+
+// components/icons/TrainIcon.tsx
+function TrainIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("rect", { x: "4", y: "4", width: "16", height: "16", rx: "2" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "4", y1: "12", x2: "20", y2: "12" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "12", y1: "4", x2: "12", y2: "20" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "4", y1: "8", x2: "8", y2: "8" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "16", y1: "8", x2: "20", y2: "8" })
+  );
+}
+
+// components/icons/BusIcon.tsx
+function BusIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("path", { d: "M8 6v6" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M15 6v6" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M2 12h19.6" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2V10H2v4.2c0 .4.1.8.2 1.2L3 18h3" }),
+    /* @__PURE__ */ React.createElement("circle", { cx: "7", cy: "18", r: "2" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M9 18h5" }),
+    /* @__PURE__ */ React.createElement("circle", { cx: "16", cy: "18", r: "2" })
+  );
+}
+
+// components/icons/BikeIcon.tsx
+function BikeIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("circle", { cx: "18.5", cy: "17.5", r: "3.5" }),
+    /* @__PURE__ */ React.createElement("circle", { cx: "5.5", cy: "17.5", r: "3.5" }),
+    /* @__PURE__ */ React.createElement("circle", { cx: "15", cy: "5", r: "1" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M12 17.5V14l-3-3 4-3 2 3h2" })
+  );
+}
+
+// components/icons/NavigationIcon.tsx
+function NavigationIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("polygon", { points: "3 11 22 2 13 21 11 13 3 11" })
+  );
+}
+
+// components/icons/WalletIcon.tsx
+function WalletIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("path", { d: "M17 14h.01" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M7 7h12a4 4 0 0 1 4 4v6a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4 0z" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M5 7V6a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v1" })
+  );
+}
+
+// components/icons/PercentIcon.tsx
+function PercentIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("line", { x1: "19", y1: "5", x2: "5", y2: "19" }),
+    /* @__PURE__ */ React.createElement("circle", { cx: "6.5", cy: "6.5", r: "2.5" }),
+    /* @__PURE__ */ React.createElement("circle", { cx: "17.5", cy: "17.5", r: "2.5" })
+  );
+}
+
+// components/icons/ReceiptIcon.tsx
+function ReceiptIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("path", { d: "M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1-2-1Z" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M12 6V4" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M12 20v-2" })
+  );
+}
+
+// components/icons/StoreIcon.tsx
+function StoreIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("path", { d: "M3 7v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v0z" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M3 7l2-4h14l2 4" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "12", y1: "11", x2: "12", y2: "19" })
+  );
+}
+
+// components/icons/TruckIcon.tsx
+function TruckIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("path", { d: "M10 17h4V5H2v12h3" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M20 17h2v-3.34a4 4 0 0 0-1.17-2.83L19 9h-5" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M14 17h1" }),
+    /* @__PURE__ */ React.createElement("circle", { cx: "7.5", cy: "17.5", r: "2.5" }),
+    /* @__PURE__ */ React.createElement("circle", { cx: "17.5", cy: "17.5", r: "2.5" })
+  );
+}
+
+// components/icons/CoffeeIcon.tsx
+function CoffeeIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("path", { d: "M18 8h1a4 4 0 0 1 0 8h-1" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "6", y1: "1", x2: "6", y2: "4" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "10", y1: "1", x2: "10", y2: "4" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "14", y1: "1", x2: "14", y2: "4" })
+  );
+}
+
+// components/icons/PizzaIcon.tsx
+function PizzaIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("path", { d: "M15 11h.01" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M11 15h.01" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M16 16h.01" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M2 16l20-6-6 20A2 2 0 0 1 14 32l-12-12a2 2 0 0 1 0-4z" })
+  );
+}
+
+// components/icons/AppleIcon.tsx
+function AppleIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("path", { d: "M12 20.94c1.5 0 2.75 1.06 4 1.06 3 0 6-8 6-12.22A4.91 4.91 0 0 0 17 5c-2.22 0-4 1.44-5 2-1-.56-2.78-2-5-2a4.9 4.9 0 0 0-5 4.78C2 14 5 22 8 22c1.25 0 2.5-1.06 4-1.06Z" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M10 2c1 .5 2 2 2 5" })
+  );
+}
+
+// components/icons/HeartPulseIcon.tsx
+function HeartPulseIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("path", { d: "M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M12 5L8 21l4-7 4 7-4-16" })
+  );
+}
+
+// components/icons/BoldIcon.tsx
+function BoldIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("path", { d: "M6 4h8a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M6 12h9a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z" })
+  );
+}
+
+// components/icons/UnderlineIcon.tsx
+function UnderlineIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("path", { d: "M6 3v7a6 6 0 0 0 6 6 6 6 0 0 0 6-6V3" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "4", y1: "21", x2: "20", y2: "21" })
+  );
+}
+
+// components/icons/AlignLeftIcon.tsx
+function AlignLeftIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("line", { x1: "3", y1: "6", x2: "21", y2: "6" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "3", y1: "12", x2: "15", y2: "12" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "3", y1: "18", x2: "18", y2: "18" })
+  );
+}
+
+// components/icons/AlignCenterIcon.tsx
+function AlignCenterIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+  return /* @__PURE__ */ React.createElement(
+    "svg",
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    },
+    /* @__PURE__ */ React.createElement("line", { x1: "3", y1: "6", x2: "21", y2: "6" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "6", y1: "12", x2: "18", y2: "12" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "3", y1: "18", x2: "21", y2: "18" })
+  );
+}
+
 // data/icons.ts
 var categories = [
   "Temel",
+  "Interface",
+  "Business",
+  "Weather",
+  "Development",
+  "Communication",
+  "Arrows",
+  "Transportation",
+  "Food",
+  "Editor",
   "Medya",
   "Dosya",
   "Kullan\u0131c\u0131",
@@ -2871,6 +4419,559 @@ var IconList = [
     component: BookmarkIcon,
     category: "Temel",
     tags: ["yer imi", "kaydet", "i\u015Faretle"]
+  },
+  // Interface kategorisi - Yeni ikonlar
+  {
+    id: "eye",
+    name: "EyeIcon",
+    component: EyeIcon,
+    category: "Interface",
+    tags: ["g\xF6z", "g\xF6r\xFCn\xFCr", "g\xF6r\xFCnt\xFCle"]
+  },
+  {
+    id: "eye-off",
+    name: "EyeOffIcon",
+    component: EyeOffIcon,
+    category: "Interface",
+    tags: ["g\xF6z", "gizle", "g\xF6r\xFCnmez"]
+  },
+  {
+    id: "filter",
+    name: "FilterIcon",
+    component: FilterIcon,
+    category: "Interface",
+    tags: ["filtre", "s\xFCz", "se\xE7"]
+  },
+  {
+    id: "sort",
+    name: "SortIcon",
+    component: SortIcon,
+    category: "Interface",
+    tags: ["s\u0131rala", "d\xFCzen"]
+  },
+  {
+    id: "refresh",
+    name: "RefreshIcon",
+    component: RefreshIcon,
+    category: "Interface",
+    tags: ["yenile", "g\xFCncelle", "tekrar"]
+  },
+  {
+    id: "more-horizontal",
+    name: "MoreHorizontalIcon",
+    component: MoreHorizontalIcon,
+    category: "Interface",
+    tags: ["daha fazla", "men\xFC", "se\xE7enekler"]
+  },
+  {
+    id: "more-vertical",
+    name: "MoreVerticalIcon",
+    component: MoreVerticalIcon,
+    category: "Interface",
+    tags: ["daha fazla", "men\xFC", "se\xE7enekler"]
+  },
+  {
+    id: "grid",
+    name: "GridIcon",
+    component: GridIcon,
+    category: "Interface",
+    tags: ["grid", "\u0131zgara", "tablo"]
+  },
+  // Business kategorisi - Yeni ikonlar
+  {
+    id: "briefcase",
+    name: "BriefcaseIcon",
+    component: BriefcaseIcon,
+    category: "Business",
+    tags: ["\xE7anta", "i\u015F", "evrak"]
+  },
+  {
+    id: "trending-up",
+    name: "TrendingUpIcon",
+    component: TrendingUpIcon,
+    category: "Business",
+    tags: ["art\u0131\u015F", "y\xFCkseli\u015F", "trend"]
+  },
+  {
+    id: "trending-down",
+    name: "TrendingDownIcon",
+    component: TrendingDownIcon,
+    category: "Business",
+    tags: ["d\xFC\u015F\xFC\u015F", "azal\u0131\u015F", "trend"]
+  },
+  {
+    id: "bar-chart",
+    name: "BarChartIcon",
+    component: BarChartIcon,
+    category: "Business",
+    tags: ["grafik", "\xE7ubuk", "istatistik"]
+  },
+  {
+    id: "pie-chart",
+    name: "PieChartIcon",
+    component: PieChartIcon,
+    category: "Business",
+    tags: ["pasta grafik", "istatistik", "veri"]
+  },
+  {
+    id: "award",
+    name: "AwardIcon",
+    component: AwardIcon,
+    category: "Business",
+    tags: ["\xF6d\xFCl", "ba\u015Far\u0131", "madalya"]
+  },
+  // Weather kategorisi - Yeni ikonlar
+  {
+    id: "sun",
+    name: "SunIcon",
+    component: SunIcon,
+    category: "Weather",
+    tags: ["g\xFCne\u015F", "ayd\u0131nl\u0131k", "g\xFCnd\xFCz"]
+  },
+  {
+    id: "moon",
+    name: "MoonIcon",
+    component: MoonIcon,
+    category: "Weather",
+    tags: ["ay", "gece", "karanl\u0131k"]
+  },
+  {
+    id: "cloud",
+    name: "CloudIcon",
+    component: CloudIcon,
+    category: "Weather",
+    tags: ["bulut", "hava", "bulutlu"]
+  },
+  {
+    id: "cloud-rain",
+    name: "CloudRainIcon",
+    component: CloudRainIcon,
+    category: "Weather",
+    tags: ["ya\u011Fmur", "bulut", "sa\u011Fanak"]
+  },
+  {
+    id: "zap",
+    name: "ZapIcon",
+    component: ZapIcon,
+    category: "Weather",
+    tags: ["\u015Fim\u015Fek", "elektrik", "enerji"]
+  },
+  // Development kategorisi - Yeni ikonlar
+  {
+    id: "terminal",
+    name: "TerminalIcon",
+    component: TerminalIcon,
+    category: "Development",
+    tags: ["terminal", "konsol", "komut"]
+  },
+  {
+    id: "database",
+    name: "DatabaseIcon",
+    component: DatabaseIcon,
+    category: "Development",
+    tags: ["veritaban\u0131", "veri", "depolama"]
+  },
+  {
+    id: "git-branch",
+    name: "GitBranchIcon",
+    component: GitBranchIcon,
+    category: "Development",
+    tags: ["git", "dal", "branch"]
+  },
+  {
+    id: "bug",
+    name: "BugIcon",
+    component: BugIcon,
+    category: "Development",
+    tags: ["hata", "b\xF6cek", "debug"]
+  },
+  {
+    id: "server",
+    name: "ServerIcon",
+    component: ServerIcon,
+    category: "Development",
+    tags: ["sunucu", "server", "host"]
+  },
+  // Communication kategorisi - Yeni ikonlar
+  {
+    id: "message-circle",
+    name: "MessageCircleIcon",
+    component: MessageCircleIcon,
+    category: "Communication",
+    tags: ["mesaj", "sohbet", "konu\u015Fma"]
+  },
+  {
+    id: "message-square",
+    name: "MessageSquareIcon",
+    component: MessageSquareIcon,
+    category: "Communication",
+    tags: ["mesaj", "sohbet", "konu\u015Fma"]
+  },
+  {
+    id: "send",
+    name: "SendIcon",
+    component: SendIcon,
+    category: "Communication",
+    tags: ["g\xF6nder", "ilet"]
+  },
+  {
+    id: "wifi",
+    name: "WifiIcon",
+    component: WifiIcon,
+    category: "Communication",
+    tags: ["wifi", "internet", "ba\u011Flant\u0131"]
+  },
+  // Other kategorisi - Yeni ikonlar
+  {
+    id: "lock",
+    name: "LockIcon",
+    component: LockIcon,
+    category: "Di\u011Fer",
+    tags: ["kilit", "g\xFCvenlik", "koruma"]
+  },
+  {
+    id: "unlock",
+    name: "UnlockIcon",
+    component: UnlockIcon,
+    category: "Di\u011Fer",
+    tags: ["kilit a\xE7", "g\xFCvenlik", "eri\u015Fim"]
+  },
+  {
+    id: "shield",
+    name: "ShieldIcon",
+    component: ShieldIcon,
+    category: "Di\u011Fer",
+    tags: ["kalkan", "koruma", "g\xFCvenlik"]
+  },
+  {
+    id: "map-pin",
+    name: "MapPinIcon",
+    component: MapPinIcon,
+    category: "Di\u011Fer",
+    tags: ["konum", "pin", "harita"]
+  },
+  {
+    id: "globe",
+    name: "GlobeIcon",
+    component: GlobeIcon,
+    category: "Di\u011Fer",
+    tags: ["d\xFCnya", "k\xFCre", "global"]
+  },
+  {
+    id: "camera",
+    name: "CameraIcon",
+    component: CameraIcon,
+    category: "Di\u011Fer",
+    tags: ["kamera", "foto\u011Fraf", "\xE7ek"]
+  },
+  // Arrows kategorisi - Yeni ikonlar
+  {
+    id: "corner-down-left",
+    name: "CornerDownLeftIcon",
+    component: CornerDownLeftIcon,
+    category: "Arrows",
+    tags: ["k\xF6\u015Fe", "sol", "a\u015Fa\u011F\u0131"]
+  },
+  {
+    id: "corner-down-right",
+    name: "CornerDownRightIcon",
+    component: CornerDownRightIcon,
+    category: "Arrows",
+    tags: ["k\xF6\u015Fe", "sa\u011F", "a\u015Fa\u011F\u0131"]
+  },
+  {
+    id: "rotate-cw",
+    name: "RotateCwIcon",
+    component: RotateCwIcon,
+    category: "Arrows",
+    tags: ["d\xF6nd\xFCr", "saat y\xF6n\xFC"]
+  },
+  // Development kategorisi - Yeni 40 ikon
+  {
+    id: "api",
+    name: "ApiIcon",
+    component: ApiIcon,
+    category: "Development",
+    tags: ["api", "aray\xFCz", "programlama"]
+  },
+  {
+    id: "cpu",
+    name: "CpuIcon",
+    component: CpuIcon,
+    category: "Development",
+    tags: ["cpu", "i\u015Flemci", "donan\u0131m"]
+  },
+  {
+    id: "monitor",
+    name: "MonitorIcon",
+    component: MonitorIcon,
+    category: "Development",
+    tags: ["monit\xF6r", "ekran", "bilgisayar"]
+  },
+  {
+    id: "smartphone",
+    name: "SmartphoneIcon",
+    component: SmartphoneIcon,
+    category: "Development",
+    tags: ["telefon", "ak\u0131ll\u0131 telefon", "mobil"]
+  },
+  {
+    id: "tablet",
+    name: "TabletIcon",
+    component: TabletIcon,
+    category: "Development",
+    tags: ["tablet", "mobil", "cihaz"]
+  },
+  {
+    id: "hard-hat",
+    name: "HardHatIcon",
+    component: HardHatIcon,
+    category: "Development",
+    tags: ["baret", "in\u015Faat", "g\xFCvenlik"]
+  },
+  {
+    id: "wrench",
+    name: "WrenchIcon",
+    component: WrenchIcon,
+    category: "Development",
+    tags: ["anahtar", "tamir", "ara\xE7"]
+  },
+  {
+    id: "package-2",
+    name: "Package2Icon",
+    component: Package2Icon,
+    category: "Development",
+    tags: ["paket", "kutu", "teslimat"]
+  },
+  // Interface kategorisi - Yeni ikonlar
+  {
+    id: "toggle-left",
+    name: "ToggleLeftIcon",
+    component: ToggleLeftIcon,
+    category: "Interface",
+    tags: ["a\xE7 kapat", "sol", "kapal\u0131"]
+  },
+  {
+    id: "toggle-right",
+    name: "ToggleRightIcon",
+    component: ToggleRightIcon,
+    category: "Interface",
+    tags: ["a\xE7 kapat", "sa\u011F", "a\xE7\u0131k"]
+  },
+  {
+    id: "sliders",
+    name: "SlidersIcon",
+    component: SlidersIcon,
+    category: "Interface",
+    tags: ["kayd\u0131r\u0131c\u0131", "ayar", "kontrol"]
+  },
+  {
+    id: "alert-triangle",
+    name: "AlertTriangleIcon",
+    component: AlertTriangleIcon,
+    category: "Interface",
+    tags: ["uyar\u0131", "dikkat", "tehlike"]
+  },
+  {
+    id: "alert-circle",
+    name: "AlertCircleIcon",
+    component: AlertCircleIcon,
+    category: "Interface",
+    tags: ["uyar\u0131", "bilgi", "dikkat"]
+  },
+  {
+    id: "check-circle",
+    name: "CheckCircleIcon",
+    component: CheckCircleIcon,
+    category: "Interface",
+    tags: ["onay", "ba\u015Far\u0131l\u0131", "tik"]
+  },
+  {
+    id: "x-circle",
+    name: "XCircleIcon",
+    component: XCircleIcon,
+    category: "Interface",
+    tags: ["hata", "kapat", "iptal"]
+  },
+  // Media kategorisi - Yeni ikonlar
+  {
+    id: "volume",
+    name: "VolumeIcon",
+    component: VolumeIcon,
+    category: "Medya",
+    tags: ["ses", "hoparl\xF6r", "volume"]
+  },
+  {
+    id: "volume-x",
+    name: "VolumeXIcon",
+    component: VolumeXIcon,
+    category: "Medya",
+    tags: ["sessiz", "kapal\u0131", "mute"]
+  },
+  {
+    id: "skip-back",
+    name: "SkipBackIcon",
+    component: SkipBackIcon,
+    category: "Medya",
+    tags: ["geri", "\xF6nceki", "previous"]
+  },
+  {
+    id: "skip-forward",
+    name: "SkipForwardIcon",
+    component: SkipForwardIcon,
+    category: "Medya",
+    tags: ["ileri", "sonraki", "next"]
+  },
+  {
+    id: "mic",
+    name: "MicIcon",
+    component: MicIcon,
+    category: "Medya",
+    tags: ["mikrofon", "ses", "kay\u0131t"]
+  },
+  {
+    id: "mic-off",
+    name: "MicOffIcon",
+    component: MicOffIcon,
+    category: "Medya",
+    tags: ["mikrofon kapal\u0131", "sessiz", "mute"]
+  },
+  // Transportation kategorisi - Yeni ikonlar
+  {
+    id: "car",
+    name: "CarIcon",
+    component: CarIcon,
+    category: "Transportation",
+    tags: ["araba", "otomobil", "ara\xE7"]
+  },
+  {
+    id: "plane",
+    name: "PlaneIcon",
+    component: PlaneIcon,
+    category: "Transportation",
+    tags: ["u\xE7ak", "havayolu", "seyahat"]
+  },
+  {
+    id: "train",
+    name: "TrainIcon",
+    component: TrainIcon,
+    category: "Transportation",
+    tags: ["tren", "ray", "ula\u015F\u0131m"]
+  },
+  {
+    id: "bus",
+    name: "BusIcon",
+    component: BusIcon,
+    category: "Transportation",
+    tags: ["otob\xFCs", "toplu ta\u015F\u0131ma", "ula\u015F\u0131m"]
+  },
+  {
+    id: "bike",
+    name: "BikeIcon",
+    component: BikeIcon,
+    category: "Transportation",
+    tags: ["bisiklet", "pedal", "spor"]
+  },
+  {
+    id: "navigation",
+    name: "NavigationIcon",
+    component: NavigationIcon,
+    category: "Transportation",
+    tags: ["navigasyon", "y\xF6n", "konum"]
+  },
+  // Business kategorisi - Yeni ikonlar
+  {
+    id: "wallet",
+    name: "WalletIcon",
+    component: WalletIcon,
+    category: "Business",
+    tags: ["c\xFCzdan", "para", "\xF6deme"]
+  },
+  {
+    id: "percent",
+    name: "PercentIcon",
+    component: PercentIcon,
+    category: "Business",
+    tags: ["y\xFCzde", "indirim", "oran"]
+  },
+  {
+    id: "receipt",
+    name: "ReceiptIcon",
+    component: ReceiptIcon,
+    category: "Business",
+    tags: ["fi\u015F", "makbuz", "fatura"]
+  },
+  {
+    id: "store",
+    name: "StoreIcon",
+    component: StoreIcon,
+    category: "Business",
+    tags: ["ma\u011Faza", "d\xFCkk\xE2n", "al\u0131\u015Fveri\u015F"]
+  },
+  {
+    id: "truck",
+    name: "TruckIcon",
+    component: TruckIcon,
+    category: "Business",
+    tags: ["kamyon", "nakliye", "teslimat"]
+  },
+  // Food kategorisi - Yeni ikonlar
+  {
+    id: "coffee",
+    name: "CoffeeIcon",
+    component: CoffeeIcon,
+    category: "Food",
+    tags: ["kahve", "i\xE7ecek", "fincan"]
+  },
+  {
+    id: "pizza",
+    name: "PizzaIcon",
+    component: PizzaIcon,
+    category: "Food",
+    tags: ["pizza", "yemek", "italyan"]
+  },
+  {
+    id: "apple",
+    name: "AppleIcon",
+    component: AppleIcon,
+    category: "Food",
+    tags: ["elma", "meyve", "sa\u011Fl\u0131k"]
+  },
+  {
+    id: "heart-pulse",
+    name: "HeartPulseIcon",
+    component: HeartPulseIcon,
+    category: "Food",
+    tags: ["kalp", "nab\u0131z", "sa\u011Fl\u0131k"]
+  },
+  // Editor kategorisi - Yeni ikonlar
+  {
+    id: "bold",
+    name: "BoldIcon",
+    component: BoldIcon,
+    category: "Editor",
+    tags: ["kal\u0131n", "yaz\u0131", "metin"]
+  },
+  {
+    id: "underline",
+    name: "UnderlineIcon",
+    component: UnderlineIcon,
+    category: "Editor",
+    tags: ["alt\u0131 \xE7izili", "yaz\u0131", "metin"]
+  },
+  {
+    id: "align-left",
+    name: "AlignLeftIcon",
+    component: AlignLeftIcon,
+    category: "Editor",
+    tags: ["sola hizala", "metin", "d\xFCzen"]
+  },
+  {
+    id: "align-center",
+    name: "AlignCenterIcon",
+    component: AlignCenterIcon,
+    category: "Editor",
+    tags: ["ortaya hizala", "metin", "d\xFCzen"]
   }
 ];
 
@@ -3254,6 +5355,405 @@ var iconMetadata = {
     name: "Key",
     category: "Other",
     keywords: ["anahtar", "\u015Fifre", "g\xFCvenlik", "key", "password", "security"]
+  },
+  // Interface - Yeni ikonlar
+  EyeIcon: {
+    name: "Eye",
+    category: "Interface",
+    keywords: ["g\xF6z", "g\xF6r\xFCn\xFCr", "g\xF6r\xFCnt\xFCle", "eye", "view", "visible", "show"]
+  },
+  EyeOffIcon: {
+    name: "Eye Off",
+    category: "Interface",
+    keywords: ["g\xF6z", "gizle", "g\xF6r\xFCnmez", "eye", "hide", "invisible", "hidden"]
+  },
+  FilterIcon: {
+    name: "Filter",
+    category: "Interface",
+    keywords: ["filtre", "s\xFCz", "se\xE7", "filter", "sort", "select"]
+  },
+  SortIcon: {
+    name: "Sort",
+    category: "Interface",
+    keywords: ["s\u0131rala", "d\xFCzen", "sort", "order", "arrange"]
+  },
+  RefreshIcon: {
+    name: "Refresh",
+    category: "Interface",
+    keywords: ["yenile", "g\xFCncelle", "tekrar", "refresh", "reload", "update"]
+  },
+  MoreHorizontalIcon: {
+    name: "More Horizontal",
+    category: "Interface",
+    keywords: ["daha fazla", "men\xFC", "se\xE7enekler", "more", "menu", "options"]
+  },
+  MoreVerticalIcon: {
+    name: "More Vertical",
+    category: "Interface",
+    keywords: ["daha fazla", "men\xFC", "se\xE7enekler", "more", "menu", "options"]
+  },
+  GridIcon: {
+    name: "Grid",
+    category: "Interface",
+    keywords: ["grid", "\u0131zgara", "tablo", "d\xFCzen", "layout"]
+  },
+  // Business - Yeni ikonlar
+  BriefcaseIcon: {
+    name: "Briefcase",
+    category: "Business",
+    keywords: ["\xE7anta", "i\u015F", "evrak", "briefcase", "work", "business"]
+  },
+  TrendingUpIcon: {
+    name: "Trending Up",
+    category: "Business",
+    keywords: ["art\u0131\u015F", "y\xFCkseli\u015F", "trend", "up", "growth", "increase"]
+  },
+  TrendingDownIcon: {
+    name: "Trending Down",
+    category: "Business",
+    keywords: ["d\xFC\u015F\xFC\u015F", "azal\u0131\u015F", "trend", "down", "decrease", "decline"]
+  },
+  BarChartIcon: {
+    name: "Bar Chart",
+    category: "Business",
+    keywords: ["grafik", "\xE7ubuk", "istatistik", "chart", "statistics", "data"]
+  },
+  PieChartIcon: {
+    name: "Pie Chart",
+    category: "Business",
+    keywords: ["pasta grafik", "istatistik", "veri", "pie", "chart", "statistics"]
+  },
+  AwardIcon: {
+    name: "Award",
+    category: "Business",
+    keywords: ["\xF6d\xFCl", "ba\u015Far\u0131", "madalya", "award", "achievement", "medal"]
+  },
+  // Weather - Yeni ikonlar
+  SunIcon: {
+    name: "Sun",
+    category: "Weather",
+    keywords: ["g\xFCne\u015F", "ayd\u0131nl\u0131k", "g\xFCnd\xFCz", "sun", "sunny", "day"]
+  },
+  MoonIcon: {
+    name: "Moon",
+    category: "Weather",
+    keywords: ["ay", "gece", "karanl\u0131k", "moon", "night", "dark"]
+  },
+  CloudIcon: {
+    name: "Cloud",
+    category: "Weather",
+    keywords: ["bulut", "hava", "bulutlu", "cloud", "weather", "cloudy"]
+  },
+  CloudRainIcon: {
+    name: "Cloud Rain",
+    category: "Weather",
+    keywords: ["ya\u011Fmur", "bulut", "sa\u011Fanak", "rain", "shower", "weather"]
+  },
+  ZapIcon: {
+    name: "Zap",
+    category: "Weather",
+    keywords: ["\u015Fim\u015Fek", "elektrik", "enerji", "zap", "lightning", "energy"]
+  },
+  // Development - Yeni ikonlar
+  TerminalIcon: {
+    name: "Terminal",
+    category: "Development",
+    keywords: ["terminal", "konsol", "komut", "command", "console", "cli"]
+  },
+  DatabaseIcon: {
+    name: "Database",
+    category: "Development",
+    keywords: ["veritaban\u0131", "veri", "depolama", "database", "data", "storage"]
+  },
+  GitBranchIcon: {
+    name: "Git Branch",
+    category: "Development",
+    keywords: ["git", "dal", "branch", "version", "control"]
+  },
+  BugIcon: {
+    name: "Bug",
+    category: "Development",
+    keywords: ["hata", "b\xF6cek", "debug", "bug", "error", "issue"]
+  },
+  ServerIcon: {
+    name: "Server",
+    category: "Development",
+    keywords: ["sunucu", "server", "host", "network", "infrastructure"]
+  },
+  // Communication - Yeni ikonlar
+  MessageCircleIcon: {
+    name: "Message Circle",
+    category: "Communication",
+    keywords: ["mesaj", "sohbet", "konu\u015Fma", "message", "chat", "conversation"]
+  },
+  MessageSquareIcon: {
+    name: "Message Square",
+    category: "Communication",
+    keywords: ["mesaj", "sohbet", "konu\u015Fma", "message", "chat", "conversation"]
+  },
+  SendIcon: {
+    name: "Send",
+    category: "Communication",
+    keywords: ["g\xF6nder", "ilet", "send", "submit", "deliver"]
+  },
+  WifiIcon: {
+    name: "Wifi",
+    category: "Communication",
+    keywords: ["wifi", "internet", "ba\u011Flant\u0131", "wireless", "connection"]
+  },
+  // Other - Yeni ikonlar
+  LockIcon: {
+    name: "Lock",
+    category: "Other",
+    keywords: ["kilit", "g\xFCvenlik", "koruma", "lock", "security", "protection"]
+  },
+  UnlockIcon: {
+    name: "Unlock",
+    category: "Other",
+    keywords: ["kilit a\xE7", "g\xFCvenlik", "eri\u015Fim", "unlock", "access", "open"]
+  },
+  ShieldIcon: {
+    name: "Shield",
+    category: "Other",
+    keywords: ["kalkan", "koruma", "g\xFCvenlik", "shield", "protection", "security"]
+  },
+  MapPinIcon: {
+    name: "Map Pin",
+    category: "Other",
+    keywords: ["konum", "pin", "harita", "location", "map", "position"]
+  },
+  GlobeIcon: {
+    name: "Globe",
+    category: "Other",
+    keywords: ["d\xFCnya", "k\xFCre", "global", "globe", "world", "earth"]
+  },
+  CameraIcon: {
+    name: "Camera",
+    category: "Other",
+    keywords: ["kamera", "foto\u011Fraf", "\xE7ek", "camera", "photo", "picture"]
+  },
+  // Arrows - Yeni ikonlar
+  CornerDownLeftIcon: {
+    name: "Corner Down Left",
+    category: "Arrows",
+    keywords: ["k\xF6\u015Fe", "sol", "a\u015Fa\u011F\u0131", "corner", "left", "down"]
+  },
+  CornerDownRightIcon: {
+    name: "Corner Down Right",
+    category: "Arrows",
+    keywords: ["k\xF6\u015Fe", "sa\u011F", "a\u015Fa\u011F\u0131", "corner", "right", "down"]
+  },
+  RotateCwIcon: {
+    name: "Rotate Clockwise",
+    category: "Arrows",
+    keywords: ["d\xF6nd\xFCr", "saat y\xF6n\xFC", "rotate", "clockwise", "turn"]
+  },
+  // Development - Yeni ikonlar
+  ApiIcon: {
+    name: "API",
+    category: "Development",
+    keywords: ["api", "aray\xFCz", "programlama", "interface", "integration"]
+  },
+  CpuIcon: {
+    name: "CPU",
+    category: "Development",
+    keywords: ["cpu", "i\u015Flemci", "donan\u0131m", "hardware", "processor"]
+  },
+  MonitorIcon: {
+    name: "Monitor",
+    category: "Development",
+    keywords: ["monit\xF6r", "ekran", "bilgisayar", "screen", "display"]
+  },
+  SmartphoneIcon: {
+    name: "Smartphone",
+    category: "Development",
+    keywords: ["telefon", "ak\u0131ll\u0131 telefon", "mobil", "mobile", "device"]
+  },
+  TabletIcon: {
+    name: "Tablet",
+    category: "Development",
+    keywords: ["tablet", "mobil", "cihaz", "device", "touchscreen"]
+  },
+  HardHatIcon: {
+    name: "Hard Hat",
+    category: "Development",
+    keywords: ["baret", "in\u015Faat", "g\xFCvenlik", "construction", "safety"]
+  },
+  WrenchIcon: {
+    name: "Wrench",
+    category: "Development",
+    keywords: ["anahtar", "tamir", "ara\xE7", "tool", "repair"]
+  },
+  Package2Icon: {
+    name: "Package 2",
+    category: "Development",
+    keywords: ["paket", "kutu", "teslimat", "box", "delivery"]
+  },
+  // Interface - Yeni ikonlar
+  ToggleLeftIcon: {
+    name: "Toggle Left",
+    category: "Interface",
+    keywords: ["a\xE7 kapat", "sol", "toggle", "switch", "off"]
+  },
+  ToggleRightIcon: {
+    name: "Toggle Right",
+    category: "Interface",
+    keywords: ["a\xE7 kapat", "sa\u011F", "toggle", "switch", "on"]
+  },
+  SlidersIcon: {
+    name: "Sliders",
+    category: "Interface",
+    keywords: ["kayd\u0131r\u0131c\u0131", "ayar", "kontrol", "settings", "control"]
+  },
+  AlertTriangleIcon: {
+    name: "Alert Triangle",
+    category: "Interface",
+    keywords: ["uyar\u0131", "dikkat", "tehlike", "warning", "danger"]
+  },
+  AlertCircleIcon: {
+    name: "Alert Circle",
+    category: "Interface",
+    keywords: ["uyar\u0131", "bilgi", "dikkat", "alert", "warning"]
+  },
+  CheckCircleIcon: {
+    name: "Check Circle",
+    category: "Interface",
+    keywords: ["onay", "ba\u015Far\u0131l\u0131", "tik", "success", "approved"]
+  },
+  XCircleIcon: {
+    name: "X Circle",
+    category: "Interface",
+    keywords: ["hata", "kapat", "iptal", "error", "cancel"]
+  },
+  // Media - Yeni ikonlar
+  VolumeIcon: {
+    name: "Volume",
+    category: "Media",
+    keywords: ["ses", "hoparl\xF6r", "volume", "speaker", "sound"]
+  },
+  VolumeXIcon: {
+    name: "Volume X",
+    category: "Media",
+    keywords: ["sessiz", "kapal\u0131", "mute", "silent", "off"]
+  },
+  SkipBackIcon: {
+    name: "Skip Back",
+    category: "Media",
+    keywords: ["geri", "\xF6nceki", "previous", "back", "rewind"]
+  },
+  SkipForwardIcon: {
+    name: "Skip Forward",
+    category: "Media",
+    keywords: ["ileri", "sonraki", "next", "forward", "skip"]
+  },
+  MicIcon: {
+    name: "Microphone",
+    category: "Media",
+    keywords: ["mikrofon", "ses", "kay\u0131t", "record", "voice"]
+  },
+  MicOffIcon: {
+    name: "Microphone Off",
+    category: "Media",
+    keywords: ["mikrofon kapal\u0131", "sessiz", "mute", "silent"]
+  },
+  // Transportation - Yeni ikonlar
+  CarIcon: {
+    name: "Car",
+    category: "Other",
+    keywords: ["araba", "otomobil", "ara\xE7", "vehicle", "transport"]
+  },
+  PlaneIcon: {
+    name: "Plane",
+    category: "Other",
+    keywords: ["u\xE7ak", "havayolu", "seyahat", "flight", "travel"]
+  },
+  TrainIcon: {
+    name: "Train",
+    category: "Other",
+    keywords: ["tren", "ray", "ula\u015F\u0131m", "railway", "transport"]
+  },
+  BusIcon: {
+    name: "Bus",
+    category: "Other",
+    keywords: ["otob\xFCs", "toplu ta\u015F\u0131ma", "ula\u015F\u0131m", "public", "transport"]
+  },
+  BikeIcon: {
+    name: "Bike",
+    category: "Other",
+    keywords: ["bisiklet", "pedal", "spor", "cycle", "exercise"]
+  },
+  NavigationIcon: {
+    name: "Navigation",
+    category: "Other",
+    keywords: ["navigasyon", "y\xF6n", "konum", "direction", "location"]
+  },
+  // Shopping - Yeni ikonlar
+  WalletIcon: {
+    name: "Wallet",
+    category: "Business",
+    keywords: ["c\xFCzdan", "para", "\xF6deme", "money", "payment"]
+  },
+  PercentIcon: {
+    name: "Percent",
+    category: "Business",
+    keywords: ["y\xFCzde", "indirim", "oran", "discount", "rate"]
+  },
+  ReceiptIcon: {
+    name: "Receipt",
+    category: "Business",
+    keywords: ["fi\u015F", "makbuz", "fatura", "invoice", "bill"]
+  },
+  StoreIcon: {
+    name: "Store",
+    category: "Business",
+    keywords: ["ma\u011Faza", "d\xFCkk\xE2n", "al\u0131\u015Fveri\u015F", "shop", "retail"]
+  },
+  TruckIcon: {
+    name: "Truck",
+    category: "Business",
+    keywords: ["kamyon", "nakliye", "teslimat", "delivery", "shipping"]
+  },
+  // Food & Health - Yeni ikonlar
+  CoffeeIcon: {
+    name: "Coffee",
+    category: "Other",
+    keywords: ["kahve", "i\xE7ecek", "fincan", "drink", "beverage"]
+  },
+  PizzaIcon: {
+    name: "Pizza",
+    category: "Other",
+    keywords: ["pizza", "yemek", "italyan", "food", "italian"]
+  },
+  AppleIcon: {
+    name: "Apple",
+    category: "Other",
+    keywords: ["elma", "meyve", "sa\u011Fl\u0131k", "fruit", "healthy"]
+  },
+  HeartPulseIcon: {
+    name: "Heart Pulse",
+    category: "Other",
+    keywords: ["kalp", "nab\u0131z", "sa\u011Fl\u0131k", "health", "medical"]
+  },
+  // Editor & Text - Yeni ikonlar
+  BoldIcon: {
+    name: "Bold",
+    category: "Development",
+    keywords: ["kal\u0131n", "yaz\u0131", "metin", "text", "formatting"]
+  },
+  UnderlineIcon: {
+    name: "Underline",
+    category: "Development",
+    keywords: ["alt\u0131 \xE7izili", "yaz\u0131", "metin", "text", "formatting"]
+  },
+  AlignLeftIcon: {
+    name: "Align Left",
+    category: "Development",
+    keywords: ["sola hizala", "metin", "d\xFCzen", "text", "alignment"]
+  },
+  AlignCenterIcon: {
+    name: "Align Center",
+    category: "Development",
+    keywords: ["ortaya hizala", "metin", "d\xFCzen", "text", "alignment"]
   }
 };
 var getIconsByCategory = (category) => {
