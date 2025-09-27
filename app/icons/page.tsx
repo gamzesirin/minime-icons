@@ -27,7 +27,19 @@ export default function IconsPage() {
 	React.useEffect(() => {
 		setMounted(true)
 		document.documentElement.removeAttribute('cz-shortcut-listen')
-	}, [])
+
+		// Header için iconSidebarProps'u global olarak sakla
+		;(window as any).iconSidebarProps = {
+			size,
+			setSize,
+			color,
+			setColor,
+			strokeWidth,
+			setStrokeWidth,
+			sidebarOpen,
+			setSidebarOpen
+		}
+	}, [size, setSize, color, setColor, strokeWidth, setStrokeWidth, sidebarOpen, setSidebarOpen])
 
 	if (!mounted) {
 		return (
@@ -94,7 +106,7 @@ export default function IconsPage() {
 
 	return (
 		<>
-			<div className="min-h-screen bg-background">
+			<div className="min-h-screen bg-background pt-14">
 				<IconSidebar {...iconSidebarProps} />
 
 				{/* Main Content */}
@@ -147,10 +159,6 @@ export default function IconsPage() {
 					</div>
 				</div>
 
-				{/* Mobile Settings Button - Fixed Position */}
-				<div className="lg:hidden fixed top-16 left-4 z-50 bg-background border rounded-lg shadow-lg">
-					<IconSidebarMobile {...iconSidebarProps} />
-				</div>
 			</div>
 
 			{/* Icon Detail Modal */}

@@ -60,7 +60,7 @@ export function IconSidebarMobile(props: IconSidebarMobileProps) {
 	return (
 		<Sheet>
 			<SheetTrigger asChild>
-				<Button variant="outline" size="sm" className="px-2">
+				<Button variant="ghost" size="icon" className="h-9 w-9" aria-label="İkon Ayarları">
 					<Settings className="h-4 w-4" />
 					<span className="sr-only">İkon Ayarları</span>
 				</Button>

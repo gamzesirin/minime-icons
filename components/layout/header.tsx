@@ -1,11 +1,12 @@
 'use client'
 
 import Link from 'next/link'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { usePathname } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { ThemeToggle } from '@/components/theme-toggle'
-import { MenuIcon, X } from 'lucide-react'
+import { MenuIcon, X, Settings } from 'lucide-react'
 import { IconSidebarMobile } from '@/components/sidebar/IconSidebar'
 
 interface IconSidebarProps {
@@ -19,11 +20,28 @@ interface IconSidebarProps {
 
 interface HeaderProps {
 	showSearch?: boolean
-	iconSidebarProps?: IconSidebarProps
 }
 
-export function Header({ showSearch = true, iconSidebarProps }: HeaderProps) {
+export function Header({ showSearch = true }: HeaderProps) {
 	const [isOpen, setIsOpen] = useState(false)
+	const [iconSidebarProps, setIconSidebarProps] = useState<any>(null)
+	const pathname = usePathname()
+	const isIconsPage = pathname === '/icons'
+
+	useEffect(() => {
+		if (isIconsPage && typeof window !== 'undefined') {
+			const checkForProps = () => {
+				if ((window as any).iconSidebarProps) {
+					setIconSidebarProps((window as any).iconSidebarProps)
+				} else {
+					setTimeout(checkForProps, 100)
+				}
+			}
+			checkForProps()
+		} else {
+			setIconSidebarProps(null)
+		}
+	}, [isIconsPage])
 
 	return (
 		<header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -61,7 +79,7 @@ export function Header({ showSearch = true, iconSidebarProps }: HeaderProps) {
 
 				{/* Mobile Actions */}
 				<div className="flex md:hidden items-center gap-2">
-					{iconSidebarProps && <IconSidebarMobile {...iconSidebarProps} />}
+					{isIconsPage && iconSidebarProps && <IconSidebarMobile {...iconSidebarProps} />}
 					<ThemeToggle />
 					<Sheet open={isOpen} onOpenChange={setIsOpen}>
 						<SheetTrigger asChild>
@@ -72,14 +90,6 @@ export function Header({ showSearch = true, iconSidebarProps }: HeaderProps) {
 						</SheetTrigger>
 						<SheetContent side="right" className="w-[280px] sm:w-[300px]">
 							<div className="flex flex-col space-y-6 mt-6">
-								<Link
-									href="/icons"
-									className="text-lg font-medium text-primary hover:text-primary/80"
-									onClick={() => setIsOpen(false)}
-								>
-									İkonlar
-								</Link>
-								<div className="border-b" />
 								<div className="flex flex-col space-y-4">
 									<Link
 										href="/docs/about"
@@ -108,6 +118,13 @@ export function Header({ showSearch = true, iconSidebarProps }: HeaderProps) {
 										onClick={() => setIsOpen(false)}
 									>
 										Özelleştirme
+									</Link>
+									<Link
+										href="/icons"
+										className="text-sm transition-colors hover:text-foreground text-muted-foreground"
+										onClick={() => setIsOpen(false)}
+									>
+										İkonlar
 									</Link>
 								</div>
 							</div>
