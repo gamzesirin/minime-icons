@@ -3,11 +3,19 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import { Paintbrush, Package, Sparkles, Users } from 'lucide-react'
+import { Paintbrush, Package, Sparkles, Users, ArrowRight } from 'lucide-react'
 import NET, { VantaEffect } from 'vanta/dist/vanta.net.min'
 import * as THREE from 'three'
 import FeatureCard from '@/components/global/FeaturedCard'
 import { useTheme } from 'next-themes'
+import { HeartIcon } from '@/components/icons/HeartIcon'
+import { StarIcon } from '@/components/icons/StarIcon'
+import { PlayIcon } from '@/components/icons/PlayIcon'
+import { SettingsIcon } from '@/components/icons/SettingsIcon'
+import { SearchIcon } from '@/components/icons/SearchIcon'
+import { HomeIcon } from '@/components/icons/HomeIcon'
+import { MailIcon } from '@/components/icons/MailIcon'
+import { BellIcon } from '@/components/icons/BellIcon'
 
 const features = [
 	{
@@ -36,10 +44,67 @@ const features = [
 	}
 ]
 
+const popularIcons = [
+	{ icon: HeartIcon, name: 'Heart', category: 'UI' },
+	{ icon: StarIcon, name: 'Star', category: 'UI' },
+	{ icon: PlayIcon, name: 'Play', category: 'Media' },
+	{ icon: SettingsIcon, name: 'Settings', category: 'UI' },
+	{ icon: SearchIcon, name: 'Search', category: 'UI' },
+	{ icon: HomeIcon, name: 'Home', category: 'Navigation' },
+	{ icon: MailIcon, name: 'Mail', category: 'Communication' },
+	{ icon: BellIcon, name: 'Bell', category: 'UI' }
+]
+
 export default function Home() {
 	const [vantaEffect, setVantaEffect] = useState<VantaEffect | null>(null)
+	const [currentText, setCurrentText] = useState('')
+	const [iconSizes, setIconSizes] = useState(Array(8).fill(24))
+	const [iconColors, setIconColors] = useState(Array(8).fill('#000000'))
 	const vantaRef = useRef<HTMLDivElement>(null)
 	const { resolvedTheme } = useTheme()
+
+	const texts = ['Güzel & minimal ikonlar', 'Modern tasarım sistemi', '100+ SVG ikon', 'Kolay entegrasyon']
+	const [textIndex, setTextIndex] = useState(0)
+	const [charIndex, setCharIndex] = useState(0)
+	const [isDeleting, setIsDeleting] = useState(false)
+
+	// Typing animation
+	useEffect(() => {
+		const currentFullText = texts[textIndex]
+		const timeout = setTimeout(
+			() => {
+				if (!isDeleting) {
+					if (charIndex < currentFullText.length) {
+						setCurrentText(currentFullText.slice(0, charIndex + 1))
+						setCharIndex(charIndex + 1)
+					} else {
+						setTimeout(() => setIsDeleting(true), 2000)
+					}
+				} else {
+					if (charIndex > 0) {
+						setCurrentText(currentFullText.slice(0, charIndex - 1))
+						setCharIndex(charIndex - 1)
+					} else {
+						setIsDeleting(false)
+						setTextIndex((textIndex + 1) % texts.length)
+					}
+				}
+			},
+			isDeleting ? 50 : 100
+		)
+
+		return () => clearTimeout(timeout)
+	}, [charIndex, isDeleting, textIndex, texts])
+
+	// Icon animations
+	useEffect(() => {
+		const interval = setInterval(() => {
+			setIconSizes((prev) => prev.map(() => Math.random() * 16 + 16))
+			setIconColors((prev) => prev.map(() => `hsl(${Math.random() * 360}, 70%, 50%)`))
+		}, 3000)
+
+		return () => clearInterval(interval)
+	}, [])
 
 	useEffect(() => {
 		if (!vantaEffect) {
@@ -82,37 +147,123 @@ export default function Home() {
 			<main>
 				<section
 					ref={vantaRef}
-					className="relative min-h-[500px] md:min-h-[600px] flex items-center justify-center bg-background dark:bg-background"
+					className="relative min-h-[700px] md:min-h-[800px] flex items-center justify-center bg-background dark:bg-background overflow-hidden"
 				>
 					<div className="absolute inset-0 z-0 opacity-50" />
+
 					<div className="container relative z-10 mx-auto px-4 text-center">
-						<h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 sm:mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/50 leading-tight">
-							Güzel & <br /> minimal ikonlar
-						</h1>
-						<p className="text-lg sm:text-xl text-muted-foreground mb-6 sm:mb-8 max-w-2xl mx-auto">Modern ve kullanımı kolay ikon kütüphanesi.</p>
-						<div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 max-w-md sm:max-w-none mx-auto">
+						<div className="mb-8">
+							<h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-4 sm:mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary via-purple-500 to-primary/50 leading-tight min-h-[120px] flex items-center justify-center">
+								{currentText}
+								<span className="animate-ping text-primary">|</span>
+							</h1>
+						</div>
+
+						<p className="text-xl sm:text-2xl text-muted-foreground mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed">
+							Modern projeleriniz için <span className="text-primary font-semibold">100+</span> özenle tasarlanmış SVG
+							ikon
+						</p>
+
+						<div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 max-w-md sm:max-w-none mx-auto mb-12">
 							<Button
 								size="lg"
-								className="bg-primary/90 hover:bg-primary text-primary-foreground shadow-lg hover:shadow-xl transition-all w-full sm:w-auto"
+								className="bg-gradient-to-r from-primary to-purple-600 hover:from-primary/90 hover:to-purple-600/90 text-white shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105 w-full sm:w-auto px-8 py-4 text-lg"
 								asChild
 							>
-								<Link href="/docs/getting-started">Başlarken</Link>
+								<Link href="/docs/getting-started" className="flex items-center gap-2">
+									Başlarken
+									<ArrowRight className="h-5 w-5" />
+								</Link>
 							</Button>
 							<Button
 								size="lg"
 								variant="outline"
-								className="backdrop-blur-sm bg-background/50 hover:bg-background/80 shadow-lg hover:shadow-xl transition-all w-full sm:w-auto"
+								className="backdrop-blur-sm bg-background/50 hover:bg-background/80 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 w-full sm:w-auto px-8 py-4 text-lg border-2"
 								asChild
 							>
-								<Link href="/icons">İkonları Keşfet</Link>
+								<Link href="/icons" className="flex items-center gap-2">
+									İkonları Keşfet
+									<Sparkles className="h-5 w-5" />
+								</Link>
 							</Button>
 						</div>
 					</div>
 				</section>
 
-				<section className="py-12 sm:py-16 md:py-20">
+				{/* Popular Icons Preview */}
+				<section className="py-20 bg-gradient-to-br from-background via-accent/5 to-background">
 					<div className="container mx-auto px-4">
-						<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
+						<div className="text-center mb-16">
+							<h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-600">
+								Popüler İkonlar
+							</h2>
+							<p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+								En çok kullanılan ikonlarımızı keşfedin ve canlı önizleme yapın
+							</p>
+						</div>
+
+						<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-6 mb-12">
+							{popularIcons.map((item, index) => {
+								const IconComponent = item.icon
+								return (
+									<div
+										key={index}
+										className="group relative bg-card border border-border rounded-2xl p-6 hover:border-primary/50 transition-all duration-300 hover:shadow-2xl hover:shadow-primary/10 transform hover:scale-105 cursor-pointer"
+									>
+										<div className="flex flex-col items-center space-y-4">
+											<div className="relative">
+												<div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-purple-600/20 rounded-full blur-xl group-hover:blur-2xl transition-all duration-300 opacity-0 group-hover:opacity-100"></div>
+												<div className="relative bg-accent/50 group-hover:bg-accent rounded-full p-4 transition-all duration-300">
+													<IconComponent
+														size={32}
+														className="text-foreground group-hover:text-primary transition-colors duration-300"
+													/>
+												</div>
+											</div>
+											<div className="text-center">
+												<h4 className="font-semibold text-sm group-hover:text-primary transition-colors">
+													{item.name}
+												</h4>
+												<p className="text-xs text-muted-foreground mt-1">{item.category}</p>
+											</div>
+										</div>
+
+										{/* Hover overlay */}
+										<div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+									</div>
+								)
+							})}
+						</div>
+
+						<div className="text-center">
+							<Button
+								size="lg"
+								variant="outline"
+								className="bg-background/50 backdrop-blur-sm hover:bg-accent hover:border-primary/50 transition-all duration-300"
+								asChild
+							>
+								<Link href="/icons" className="flex items-center gap-2">
+									Tüm İkonları Görüntüle
+									<ArrowRight className="h-4 w-4" />
+								</Link>
+							</Button>
+						</div>
+					</div>
+				</section>
+
+				{/* Features Section */}
+				<section className="py-20">
+					<div className="container mx-auto px-4">
+						<div className="text-center mb-16">
+							<h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-600">
+								Özellikler
+							</h2>
+							<p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+								Modern projeleriniz için ihtiyacınız olan her şey
+							</p>
+						</div>
+
+						<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
 							{features.map((feature, index) => (
 								<FeatureCard
 									key={index}
