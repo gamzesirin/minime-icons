@@ -392,6 +392,419 @@ export const iconMetadata: Record<string, IconMetadata> = {
 		name: 'Key',
 		category: 'Other',
 		keywords: ['anahtar', 'şifre', 'güvenlik', 'key', 'password', 'security']
+	},
+
+	// Interface - Yeni ikonlar
+	EyeIcon: {
+		name: 'Eye',
+		category: 'Interface',
+		keywords: ['göz', 'görünür', 'görüntüle', 'eye', 'view', 'visible', 'show']
+	},
+	EyeOffIcon: {
+		name: 'Eye Off',
+		category: 'Interface',
+		keywords: ['göz', 'gizle', 'görünmez', 'eye', 'hide', 'invisible', 'hidden']
+	},
+	FilterIcon: {
+		name: 'Filter',
+		category: 'Interface',
+		keywords: ['filtre', 'süz', 'seç', 'filter', 'sort', 'select']
+	},
+	SortIcon: {
+		name: 'Sort',
+		category: 'Interface',
+		keywords: ['sırala', 'düzen', 'sort', 'order', 'arrange']
+	},
+	RefreshIcon: {
+		name: 'Refresh',
+		category: 'Interface',
+		keywords: ['yenile', 'güncelle', 'tekrar', 'refresh', 'reload', 'update']
+	},
+	MoreHorizontalIcon: {
+		name: 'More Horizontal',
+		category: 'Interface',
+		keywords: ['daha fazla', 'menü', 'seçenekler', 'more', 'menu', 'options']
+	},
+	MoreVerticalIcon: {
+		name: 'More Vertical',
+		category: 'Interface',
+		keywords: ['daha fazla', 'menü', 'seçenekler', 'more', 'menu', 'options']
+	},
+	GridIcon: {
+		name: 'Grid',
+		category: 'Interface',
+		keywords: ['grid', 'ızgara', 'tablo', 'düzen', 'layout']
+	},
+
+	// Business - Yeni ikonlar
+	BriefcaseIcon: {
+		name: 'Briefcase',
+		category: 'Business',
+		keywords: ['çanta', 'iş', 'evrak', 'briefcase', 'work', 'business']
+	},
+	TrendingUpIcon: {
+		name: 'Trending Up',
+		category: 'Business',
+		keywords: ['artış', 'yükseliş', 'trend', 'up', 'growth', 'increase']
+	},
+	TrendingDownIcon: {
+		name: 'Trending Down',
+		category: 'Business',
+		keywords: ['düşüş', 'azalış', 'trend', 'down', 'decrease', 'decline']
+	},
+	BarChartIcon: {
+		name: 'Bar Chart',
+		category: 'Business',
+		keywords: ['grafik', 'çubuk', 'istatistik', 'chart', 'statistics', 'data']
+	},
+	PieChartIcon: {
+		name: 'Pie Chart',
+		category: 'Business',
+		keywords: ['pasta grafik', 'istatistik', 'veri', 'pie', 'chart', 'statistics']
+	},
+	AwardIcon: {
+		name: 'Award',
+		category: 'Business',
+		keywords: ['ödül', 'başarı', 'madalya', 'award', 'achievement', 'medal']
+	},
+
+	// Weather - Yeni ikonlar
+	SunIcon: {
+		name: 'Sun',
+		category: 'Weather',
+		keywords: ['güneş', 'aydınlık', 'gündüz', 'sun', 'sunny', 'day']
+	},
+	MoonIcon: {
+		name: 'Moon',
+		category: 'Weather',
+		keywords: ['ay', 'gece', 'karanlık', 'moon', 'night', 'dark']
+	},
+	CloudIcon: {
+		name: 'Cloud',
+		category: 'Weather',
+		keywords: ['bulut', 'hava', 'bulutlu', 'cloud', 'weather', 'cloudy']
+	},
+	CloudRainIcon: {
+		name: 'Cloud Rain',
+		category: 'Weather',
+		keywords: ['yağmur', 'bulut', 'sağanak', 'rain', 'shower', 'weather']
+	},
+	ZapIcon: {
+		name: 'Zap',
+		category: 'Weather',
+		keywords: ['şimşek', 'elektrik', 'enerji', 'zap', 'lightning', 'energy']
+	},
+
+	// Development - Yeni ikonlar
+	TerminalIcon: {
+		name: 'Terminal',
+		category: 'Development',
+		keywords: ['terminal', 'konsol', 'komut', 'command', 'console', 'cli']
+	},
+	DatabaseIcon: {
+		name: 'Database',
+		category: 'Development',
+		keywords: ['veritabanı', 'veri', 'depolama', 'database', 'data', 'storage']
+	},
+	GitBranchIcon: {
+		name: 'Git Branch',
+		category: 'Development',
+		keywords: ['git', 'dal', 'branch', 'version', 'control']
+	},
+	BugIcon: {
+		name: 'Bug',
+		category: 'Development',
+		keywords: ['hata', 'böcek', 'debug', 'bug', 'error', 'issue']
+	},
+	ServerIcon: {
+		name: 'Server',
+		category: 'Development',
+		keywords: ['sunucu', 'server', 'host', 'network', 'infrastructure']
+	},
+
+	// Communication - Yeni ikonlar
+	MessageCircleIcon: {
+		name: 'Message Circle',
+		category: 'Communication',
+		keywords: ['mesaj', 'sohbet', 'konuşma', 'message', 'chat', 'conversation']
+	},
+	MessageSquareIcon: {
+		name: 'Message Square',
+		category: 'Communication',
+		keywords: ['mesaj', 'sohbet', 'konuşma', 'message', 'chat', 'conversation']
+	},
+	SendIcon: {
+		name: 'Send',
+		category: 'Communication',
+		keywords: ['gönder', 'ilet', 'send', 'submit', 'deliver']
+	},
+	WifiIcon: {
+		name: 'Wifi',
+		category: 'Communication',
+		keywords: ['wifi', 'internet', 'bağlantı', 'wireless', 'connection']
+	},
+
+	// Other - Yeni ikonlar
+	LockIcon: {
+		name: 'Lock',
+		category: 'Other',
+		keywords: ['kilit', 'güvenlik', 'koruma', 'lock', 'security', 'protection']
+	},
+	UnlockIcon: {
+		name: 'Unlock',
+		category: 'Other',
+		keywords: ['kilit aç', 'güvenlik', 'erişim', 'unlock', 'access', 'open']
+	},
+	ShieldIcon: {
+		name: 'Shield',
+		category: 'Other',
+		keywords: ['kalkan', 'koruma', 'güvenlik', 'shield', 'protection', 'security']
+	},
+	MapPinIcon: {
+		name: 'Map Pin',
+		category: 'Other',
+		keywords: ['konum', 'pin', 'harita', 'location', 'map', 'position']
+	},
+	GlobeIcon: {
+		name: 'Globe',
+		category: 'Other',
+		keywords: ['dünya', 'küre', 'global', 'globe', 'world', 'earth']
+	},
+	CameraIcon: {
+		name: 'Camera',
+		category: 'Other',
+		keywords: ['kamera', 'fotoğraf', 'çek', 'camera', 'photo', 'picture']
+	},
+
+	// Arrows - Yeni ikonlar
+	CornerDownLeftIcon: {
+		name: 'Corner Down Left',
+		category: 'Arrows',
+		keywords: ['köşe', 'sol', 'aşağı', 'corner', 'left', 'down']
+	},
+	CornerDownRightIcon: {
+		name: 'Corner Down Right',
+		category: 'Arrows',
+		keywords: ['köşe', 'sağ', 'aşağı', 'corner', 'right', 'down']
+	},
+	RotateCwIcon: {
+		name: 'Rotate Clockwise',
+		category: 'Arrows',
+		keywords: ['döndür', 'saat yönü', 'rotate', 'clockwise', 'turn']
+	},
+
+	// Development - Yeni ikonlar
+	ApiIcon: {
+		name: 'API',
+		category: 'Development',
+		keywords: ['api', 'arayüz', 'programlama', 'interface', 'integration']
+	},
+	CpuIcon: {
+		name: 'CPU',
+		category: 'Development',
+		keywords: ['cpu', 'işlemci', 'donanım', 'hardware', 'processor']
+	},
+	MonitorIcon: {
+		name: 'Monitor',
+		category: 'Development',
+		keywords: ['monitör', 'ekran', 'bilgisayar', 'screen', 'display']
+	},
+	SmartphoneIcon: {
+		name: 'Smartphone',
+		category: 'Development',
+		keywords: ['telefon', 'akıllı telefon', 'mobil', 'mobile', 'device']
+	},
+	TabletIcon: {
+		name: 'Tablet',
+		category: 'Development',
+		keywords: ['tablet', 'mobil', 'cihaz', 'device', 'touchscreen']
+	},
+	HardHatIcon: {
+		name: 'Hard Hat',
+		category: 'Development',
+		keywords: ['baret', 'inşaat', 'güvenlik', 'construction', 'safety']
+	},
+	WrenchIcon: {
+		name: 'Wrench',
+		category: 'Development',
+		keywords: ['anahtar', 'tamir', 'araç', 'tool', 'repair']
+	},
+	Package2Icon: {
+		name: 'Package 2',
+		category: 'Development',
+		keywords: ['paket', 'kutu', 'teslimat', 'box', 'delivery']
+	},
+
+	// Interface - Yeni ikonlar
+	ToggleLeftIcon: {
+		name: 'Toggle Left',
+		category: 'Interface',
+		keywords: ['aç kapat', 'sol', 'toggle', 'switch', 'off']
+	},
+	ToggleRightIcon: {
+		name: 'Toggle Right',
+		category: 'Interface',
+		keywords: ['aç kapat', 'sağ', 'toggle', 'switch', 'on']
+	},
+	SlidersIcon: {
+		name: 'Sliders',
+		category: 'Interface',
+		keywords: ['kaydırıcı', 'ayar', 'kontrol', 'settings', 'control']
+	},
+	AlertTriangleIcon: {
+		name: 'Alert Triangle',
+		category: 'Interface',
+		keywords: ['uyarı', 'dikkat', 'tehlike', 'warning', 'danger']
+	},
+	AlertCircleIcon: {
+		name: 'Alert Circle',
+		category: 'Interface',
+		keywords: ['uyarı', 'bilgi', 'dikkat', 'alert', 'warning']
+	},
+	CheckCircleIcon: {
+		name: 'Check Circle',
+		category: 'Interface',
+		keywords: ['onay', 'başarılı', 'tik', 'success', 'approved']
+	},
+	XCircleIcon: {
+		name: 'X Circle',
+		category: 'Interface',
+		keywords: ['hata', 'kapat', 'iptal', 'error', 'cancel']
+	},
+
+	// Media - Yeni ikonlar
+	VolumeIcon: {
+		name: 'Volume',
+		category: 'Media',
+		keywords: ['ses', 'hoparlör', 'volume', 'speaker', 'sound']
+	},
+	VolumeXIcon: {
+		name: 'Volume X',
+		category: 'Media',
+		keywords: ['sessiz', 'kapalı', 'mute', 'silent', 'off']
+	},
+	SkipBackIcon: {
+		name: 'Skip Back',
+		category: 'Media',
+		keywords: ['geri', 'önceki', 'previous', 'back', 'rewind']
+	},
+	SkipForwardIcon: {
+		name: 'Skip Forward',
+		category: 'Media',
+		keywords: ['ileri', 'sonraki', 'next', 'forward', 'skip']
+	},
+	MicIcon: {
+		name: 'Microphone',
+		category: 'Media',
+		keywords: ['mikrofon', 'ses', 'kayıt', 'record', 'voice']
+	},
+	MicOffIcon: {
+		name: 'Microphone Off',
+		category: 'Media',
+		keywords: ['mikrofon kapalı', 'sessiz', 'mute', 'silent']
+	},
+
+	// Transportation - Yeni ikonlar
+	CarIcon: {
+		name: 'Car',
+		category: 'Other',
+		keywords: ['araba', 'otomobil', 'araç', 'vehicle', 'transport']
+	},
+	PlaneIcon: {
+		name: 'Plane',
+		category: 'Other',
+		keywords: ['uçak', 'havayolu', 'seyahat', 'flight', 'travel']
+	},
+	TrainIcon: {
+		name: 'Train',
+		category: 'Other',
+		keywords: ['tren', 'ray', 'ulaşım', 'railway', 'transport']
+	},
+	BusIcon: {
+		name: 'Bus',
+		category: 'Other',
+		keywords: ['otobüs', 'toplu taşıma', 'ulaşım', 'public', 'transport']
+	},
+	BikeIcon: {
+		name: 'Bike',
+		category: 'Other',
+		keywords: ['bisiklet', 'pedal', 'spor', 'cycle', 'exercise']
+	},
+	NavigationIcon: {
+		name: 'Navigation',
+		category: 'Other',
+		keywords: ['navigasyon', 'yön', 'konum', 'direction', 'location']
+	},
+
+	// Shopping - Yeni ikonlar
+	WalletIcon: {
+		name: 'Wallet',
+		category: 'Business',
+		keywords: ['cüzdan', 'para', 'ödeme', 'money', 'payment']
+	},
+	PercentIcon: {
+		name: 'Percent',
+		category: 'Business',
+		keywords: ['yüzde', 'indirim', 'oran', 'discount', 'rate']
+	},
+	ReceiptIcon: {
+		name: 'Receipt',
+		category: 'Business',
+		keywords: ['fiş', 'makbuz', 'fatura', 'invoice', 'bill']
+	},
+	StoreIcon: {
+		name: 'Store',
+		category: 'Business',
+		keywords: ['mağaza', 'dükkân', 'alışveriş', 'shop', 'retail']
+	},
+	TruckIcon: {
+		name: 'Truck',
+		category: 'Business',
+		keywords: ['kamyon', 'nakliye', 'teslimat', 'delivery', 'shipping']
+	},
+
+	// Food & Health - Yeni ikonlar
+	CoffeeIcon: {
+		name: 'Coffee',
+		category: 'Other',
+		keywords: ['kahve', 'içecek', 'fincan', 'drink', 'beverage']
+	},
+	PizzaIcon: {
+		name: 'Pizza',
+		category: 'Other',
+		keywords: ['pizza', 'yemek', 'italyan', 'food', 'italian']
+	},
+	AppleIcon: {
+		name: 'Apple',
+		category: 'Other',
+		keywords: ['elma', 'meyve', 'sağlık', 'fruit', 'healthy']
+	},
+	HeartPulseIcon: {
+		name: 'Heart Pulse',
+		category: 'Other',
+		keywords: ['kalp', 'nabız', 'sağlık', 'health', 'medical']
+	},
+
+	// Editor & Text - Yeni ikonlar
+	BoldIcon: {
+		name: 'Bold',
+		category: 'Development',
+		keywords: ['kalın', 'yazı', 'metin', 'text', 'formatting']
+	},
+	UnderlineIcon: {
+		name: 'Underline',
+		category: 'Development',
+		keywords: ['altı çizili', 'yazı', 'metin', 'text', 'formatting']
+	},
+	AlignLeftIcon: {
+		name: 'Align Left',
+		category: 'Development',
+		keywords: ['sola hizala', 'metin', 'düzen', 'text', 'alignment']
+	},
+	AlignCenterIcon: {
+		name: 'Align Center',
+		category: 'Development',
+		keywords: ['ortaya hizala', 'metin', 'düzen', 'text', 'alignment']
 	}
 }
 

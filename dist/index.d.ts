@@ -236,7 +236,7 @@ declare function SettingsIcon({ size, color, strokeWidth }: IconProps): react.JS
 
 declare function StarIcon({ size, color, strokeWidth }: IconProps): react.JSX.Element;
 
-declare const categories: readonly ["Temel", "Medya", "Dosya", "Kullanıcı", "İletişim", "Sosyal Medya", "Düzen", "Navigasyon", "Etkileşim", "E-ticaret", "Düzenleme", "Diğer", "Güvenlik"];
+declare const categories: readonly ["Temel", "Interface", "Business", "Weather", "Development", "Communication", "Arrows", "Transportation", "Food", "Editor", "Medya", "Dosya", "Kullanıcı", "İletişim", "Sosyal Medya", "Düzen", "Navigasyon", "Etkileşim", "E-ticaret", "Düzenleme", "Diğer", "Güvenlik"];
 type Category = (typeof categories)[number];
 interface IconData {
     id: string;

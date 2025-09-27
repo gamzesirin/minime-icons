@@ -73,8 +73,98 @@ import { LayoutIcon } from '@/components/icons/LayoutIcon'
 import { LifeBuoyIcon } from '@/components/icons/LifeBuoyIcon'
 import { BookmarkIcon } from '@/components/icons/BookmarkIcon'
 
+// Yeni ikonlar
+import { EyeIcon } from '@/components/icons/EyeIcon'
+import { EyeOffIcon } from '@/components/icons/EyeOffIcon'
+import { FilterIcon } from '@/components/icons/FilterIcon'
+import { SortIcon } from '@/components/icons/SortIcon'
+import { RefreshIcon } from '@/components/icons/RefreshIcon'
+import { MoreHorizontalIcon } from '@/components/icons/MoreHorizontalIcon'
+import { MoreVerticalIcon } from '@/components/icons/MoreVerticalIcon'
+import { GridIcon } from '@/components/icons/GridIcon'
+import { BriefcaseIcon } from '@/components/icons/BriefcaseIcon'
+import { TrendingUpIcon } from '@/components/icons/TrendingUpIcon'
+import { TrendingDownIcon } from '@/components/icons/TrendingDownIcon'
+import { BarChartIcon } from '@/components/icons/BarChartIcon'
+import { PieChartIcon } from '@/components/icons/PieChartIcon'
+import { AwardIcon } from '@/components/icons/AwardIcon'
+import { SunIcon } from '@/components/icons/SunIcon'
+import { MoonIcon } from '@/components/icons/MoonIcon'
+import { CloudIcon } from '@/components/icons/CloudIcon'
+import { CloudRainIcon } from '@/components/icons/CloudRainIcon'
+import { ZapIcon } from '@/components/icons/ZapIcon'
+import { TerminalIcon } from '@/components/icons/TerminalIcon'
+import { DatabaseIcon } from '@/components/icons/DatabaseIcon'
+import { GitBranchIcon } from '@/components/icons/GitBranchIcon'
+import { BugIcon } from '@/components/icons/BugIcon'
+import { ServerIcon } from '@/components/icons/ServerIcon'
+import { MessageCircleIcon } from '@/components/icons/MessageCircleIcon'
+import { MessageSquareIcon } from '@/components/icons/MessageSquareIcon'
+import { SendIcon } from '@/components/icons/SendIcon'
+import { WifiIcon } from '@/components/icons/WifiIcon'
+import { LockIcon } from '@/components/icons/LockIcon'
+import { UnlockIcon } from '@/components/icons/UnlockIcon'
+import { ShieldIcon } from '@/components/icons/ShieldIcon'
+import { MapPinIcon } from '@/components/icons/MapPinIcon'
+import { GlobeIcon } from '@/components/icons/GlobeIcon'
+import { CameraIcon } from '@/components/icons/CameraIcon'
+import { CornerDownLeftIcon } from '@/components/icons/CornerDownLeftIcon'
+import { CornerDownRightIcon } from '@/components/icons/CornerDownRightIcon'
+import { RotateCwIcon } from '@/components/icons/RotateCwIcon'
+
+// 40 Yeni İkon Import'ları
+import { ApiIcon } from '@/components/icons/ApiIcon'
+import { CpuIcon } from '@/components/icons/CpuIcon'
+import { MonitorIcon } from '@/components/icons/MonitorIcon'
+import { SmartphoneIcon } from '@/components/icons/SmartphoneIcon'
+import { TabletIcon } from '@/components/icons/TabletIcon'
+import { HardHatIcon } from '@/components/icons/HardHatIcon'
+import { WrenchIcon } from '@/components/icons/WrenchIcon'
+import { Package2Icon } from '@/components/icons/Package2Icon'
+import { ToggleLeftIcon } from '@/components/icons/ToggleLeftIcon'
+import { ToggleRightIcon } from '@/components/icons/ToggleRightIcon'
+import { SlidersIcon } from '@/components/icons/SlidersIcon'
+import { AlertTriangleIcon } from '@/components/icons/AlertTriangleIcon'
+import { AlertCircleIcon } from '@/components/icons/AlertCircleIcon'
+import { CheckCircleIcon } from '@/components/icons/CheckCircleIcon'
+import { XCircleIcon } from '@/components/icons/XCircleIcon'
+import { VolumeIcon } from '@/components/icons/VolumeIcon'
+import { VolumeXIcon } from '@/components/icons/VolumeXIcon'
+import { SkipBackIcon } from '@/components/icons/SkipBackIcon'
+import { SkipForwardIcon } from '@/components/icons/SkipForwardIcon'
+import { MicIcon } from '@/components/icons/MicIcon'
+import { MicOffIcon } from '@/components/icons/MicOffIcon'
+import { CarIcon } from '@/components/icons/CarIcon'
+import { PlaneIcon } from '@/components/icons/PlaneIcon'
+import { TrainIcon } from '@/components/icons/TrainIcon'
+import { BusIcon } from '@/components/icons/BusIcon'
+import { BikeIcon } from '@/components/icons/BikeIcon'
+import { NavigationIcon } from '@/components/icons/NavigationIcon'
+import { WalletIcon } from '@/components/icons/WalletIcon'
+import { PercentIcon } from '@/components/icons/PercentIcon'
+import { ReceiptIcon } from '@/components/icons/ReceiptIcon'
+import { StoreIcon } from '@/components/icons/StoreIcon'
+import { TruckIcon } from '@/components/icons/TruckIcon'
+import { CoffeeIcon } from '@/components/icons/CoffeeIcon'
+import { PizzaIcon } from '@/components/icons/PizzaIcon'
+import { AppleIcon } from '@/components/icons/AppleIcon'
+import { HeartPulseIcon } from '@/components/icons/HeartPulseIcon'
+import { BoldIcon } from '@/components/icons/BoldIcon'
+import { UnderlineIcon } from '@/components/icons/UnderlineIcon'
+import { AlignLeftIcon } from '@/components/icons/AlignLeftIcon'
+import { AlignCenterIcon } from '@/components/icons/AlignCenterIcon'
+
 export const categories = [
 	'Temel',
+	'Interface',
+	'Business',
+	'Weather',
+	'Development',
+	'Communication',
+	'Arrows',
+	'Transportation',
+	'Food',
+	'Editor',
 	'Medya',
 	'Dosya',
 	'Kullanıcı',
@@ -657,5 +747,572 @@ export const IconList: IconData[] = [
 		component: BookmarkIcon,
 		category: 'Temel',
 		tags: ['yer imi', 'kaydet', 'işaretle']
+	},
+
+	// Interface kategorisi - Yeni ikonlar
+	{
+		id: 'eye',
+		name: 'EyeIcon',
+		component: EyeIcon,
+		category: 'Interface',
+		tags: ['göz', 'görünür', 'görüntüle']
+	},
+	{
+		id: 'eye-off',
+		name: 'EyeOffIcon',
+		component: EyeOffIcon,
+		category: 'Interface',
+		tags: ['göz', 'gizle', 'görünmez']
+	},
+	{
+		id: 'filter',
+		name: 'FilterIcon',
+		component: FilterIcon,
+		category: 'Interface',
+		tags: ['filtre', 'süz', 'seç']
+	},
+	{
+		id: 'sort',
+		name: 'SortIcon',
+		component: SortIcon,
+		category: 'Interface',
+		tags: ['sırala', 'düzen']
+	},
+	{
+		id: 'refresh',
+		name: 'RefreshIcon',
+		component: RefreshIcon,
+		category: 'Interface',
+		tags: ['yenile', 'güncelle', 'tekrar']
+	},
+	{
+		id: 'more-horizontal',
+		name: 'MoreHorizontalIcon',
+		component: MoreHorizontalIcon,
+		category: 'Interface',
+		tags: ['daha fazla', 'menü', 'seçenekler']
+	},
+	{
+		id: 'more-vertical',
+		name: 'MoreVerticalIcon',
+		component: MoreVerticalIcon,
+		category: 'Interface',
+		tags: ['daha fazla', 'menü', 'seçenekler']
+	},
+	{
+		id: 'grid',
+		name: 'GridIcon',
+		component: GridIcon,
+		category: 'Interface',
+		tags: ['grid', 'ızgara', 'tablo']
+	},
+
+	// Business kategorisi - Yeni ikonlar
+	{
+		id: 'briefcase',
+		name: 'BriefcaseIcon',
+		component: BriefcaseIcon,
+		category: 'Business',
+		tags: ['çanta', 'iş', 'evrak']
+	},
+	{
+		id: 'trending-up',
+		name: 'TrendingUpIcon',
+		component: TrendingUpIcon,
+		category: 'Business',
+		tags: ['artış', 'yükseliş', 'trend']
+	},
+	{
+		id: 'trending-down',
+		name: 'TrendingDownIcon',
+		component: TrendingDownIcon,
+		category: 'Business',
+		tags: ['düşüş', 'azalış', 'trend']
+	},
+	{
+		id: 'bar-chart',
+		name: 'BarChartIcon',
+		component: BarChartIcon,
+		category: 'Business',
+		tags: ['grafik', 'çubuk', 'istatistik']
+	},
+	{
+		id: 'pie-chart',
+		name: 'PieChartIcon',
+		component: PieChartIcon,
+		category: 'Business',
+		tags: ['pasta grafik', 'istatistik', 'veri']
+	},
+	{
+		id: 'award',
+		name: 'AwardIcon',
+		component: AwardIcon,
+		category: 'Business',
+		tags: ['ödül', 'başarı', 'madalya']
+	},
+
+	// Weather kategorisi - Yeni ikonlar
+	{
+		id: 'sun',
+		name: 'SunIcon',
+		component: SunIcon,
+		category: 'Weather',
+		tags: ['güneş', 'aydınlık', 'gündüz']
+	},
+	{
+		id: 'moon',
+		name: 'MoonIcon',
+		component: MoonIcon,
+		category: 'Weather',
+		tags: ['ay', 'gece', 'karanlık']
+	},
+	{
+		id: 'cloud',
+		name: 'CloudIcon',
+		component: CloudIcon,
+		category: 'Weather',
+		tags: ['bulut', 'hava', 'bulutlu']
+	},
+	{
+		id: 'cloud-rain',
+		name: 'CloudRainIcon',
+		component: CloudRainIcon,
+		category: 'Weather',
+		tags: ['yağmur', 'bulut', 'sağanak']
+	},
+	{
+		id: 'zap',
+		name: 'ZapIcon',
+		component: ZapIcon,
+		category: 'Weather',
+		tags: ['şimşek', 'elektrik', 'enerji']
+	},
+
+	// Development kategorisi - Yeni ikonlar
+	{
+		id: 'terminal',
+		name: 'TerminalIcon',
+		component: TerminalIcon,
+		category: 'Development',
+		tags: ['terminal', 'konsol', 'komut']
+	},
+	{
+		id: 'database',
+		name: 'DatabaseIcon',
+		component: DatabaseIcon,
+		category: 'Development',
+		tags: ['veritabanı', 'veri', 'depolama']
+	},
+	{
+		id: 'git-branch',
+		name: 'GitBranchIcon',
+		component: GitBranchIcon,
+		category: 'Development',
+		tags: ['git', 'dal', 'branch']
+	},
+	{
+		id: 'bug',
+		name: 'BugIcon',
+		component: BugIcon,
+		category: 'Development',
+		tags: ['hata', 'böcek', 'debug']
+	},
+	{
+		id: 'server',
+		name: 'ServerIcon',
+		component: ServerIcon,
+		category: 'Development',
+		tags: ['sunucu', 'server', 'host']
+	},
+
+	// Communication kategorisi - Yeni ikonlar
+	{
+		id: 'message-circle',
+		name: 'MessageCircleIcon',
+		component: MessageCircleIcon,
+		category: 'Communication',
+		tags: ['mesaj', 'sohbet', 'konuşma']
+	},
+	{
+		id: 'message-square',
+		name: 'MessageSquareIcon',
+		component: MessageSquareIcon,
+		category: 'Communication',
+		tags: ['mesaj', 'sohbet', 'konuşma']
+	},
+	{
+		id: 'send',
+		name: 'SendIcon',
+		component: SendIcon,
+		category: 'Communication',
+		tags: ['gönder', 'ilet']
+	},
+	{
+		id: 'wifi',
+		name: 'WifiIcon',
+		component: WifiIcon,
+		category: 'Communication',
+		tags: ['wifi', 'internet', 'bağlantı']
+	},
+
+	// Other kategorisi - Yeni ikonlar
+	{
+		id: 'lock',
+		name: 'LockIcon',
+		component: LockIcon,
+		category: 'Diğer',
+		tags: ['kilit', 'güvenlik', 'koruma']
+	},
+	{
+		id: 'unlock',
+		name: 'UnlockIcon',
+		component: UnlockIcon,
+		category: 'Diğer',
+		tags: ['kilit aç', 'güvenlik', 'erişim']
+	},
+	{
+		id: 'shield',
+		name: 'ShieldIcon',
+		component: ShieldIcon,
+		category: 'Diğer',
+		tags: ['kalkan', 'koruma', 'güvenlik']
+	},
+	{
+		id: 'map-pin',
+		name: 'MapPinIcon',
+		component: MapPinIcon,
+		category: 'Diğer',
+		tags: ['konum', 'pin', 'harita']
+	},
+	{
+		id: 'globe',
+		name: 'GlobeIcon',
+		component: GlobeIcon,
+		category: 'Diğer',
+		tags: ['dünya', 'küre', 'global']
+	},
+	{
+		id: 'camera',
+		name: 'CameraIcon',
+		component: CameraIcon,
+		category: 'Diğer',
+		tags: ['kamera', 'fotoğraf', 'çek']
+	},
+
+	// Arrows kategorisi - Yeni ikonlar
+	{
+		id: 'corner-down-left',
+		name: 'CornerDownLeftIcon',
+		component: CornerDownLeftIcon,
+		category: 'Arrows',
+		tags: ['köşe', 'sol', 'aşağı']
+	},
+	{
+		id: 'corner-down-right',
+		name: 'CornerDownRightIcon',
+		component: CornerDownRightIcon,
+		category: 'Arrows',
+		tags: ['köşe', 'sağ', 'aşağı']
+	},
+	{
+		id: 'rotate-cw',
+		name: 'RotateCwIcon',
+		component: RotateCwIcon,
+		category: 'Arrows',
+		tags: ['döndür', 'saat yönü']
+	},
+
+	// Development kategorisi - Yeni 40 ikon
+	{
+		id: 'api',
+		name: 'ApiIcon',
+		component: ApiIcon,
+		category: 'Development',
+		tags: ['api', 'arayüz', 'programlama']
+	},
+	{
+		id: 'cpu',
+		name: 'CpuIcon',
+		component: CpuIcon,
+		category: 'Development',
+		tags: ['cpu', 'işlemci', 'donanım']
+	},
+	{
+		id: 'monitor',
+		name: 'MonitorIcon',
+		component: MonitorIcon,
+		category: 'Development',
+		tags: ['monitör', 'ekran', 'bilgisayar']
+	},
+	{
+		id: 'smartphone',
+		name: 'SmartphoneIcon',
+		component: SmartphoneIcon,
+		category: 'Development',
+		tags: ['telefon', 'akıllı telefon', 'mobil']
+	},
+	{
+		id: 'tablet',
+		name: 'TabletIcon',
+		component: TabletIcon,
+		category: 'Development',
+		tags: ['tablet', 'mobil', 'cihaz']
+	},
+	{
+		id: 'hard-hat',
+		name: 'HardHatIcon',
+		component: HardHatIcon,
+		category: 'Development',
+		tags: ['baret', 'inşaat', 'güvenlik']
+	},
+	{
+		id: 'wrench',
+		name: 'WrenchIcon',
+		component: WrenchIcon,
+		category: 'Development',
+		tags: ['anahtar', 'tamir', 'araç']
+	},
+	{
+		id: 'package-2',
+		name: 'Package2Icon',
+		component: Package2Icon,
+		category: 'Development',
+		tags: ['paket', 'kutu', 'teslimat']
+	},
+
+	// Interface kategorisi - Yeni ikonlar
+	{
+		id: 'toggle-left',
+		name: 'ToggleLeftIcon',
+		component: ToggleLeftIcon,
+		category: 'Interface',
+		tags: ['aç kapat', 'sol', 'kapalı']
+	},
+	{
+		id: 'toggle-right',
+		name: 'ToggleRightIcon',
+		component: ToggleRightIcon,
+		category: 'Interface',
+		tags: ['aç kapat', 'sağ', 'açık']
+	},
+	{
+		id: 'sliders',
+		name: 'SlidersIcon',
+		component: SlidersIcon,
+		category: 'Interface',
+		tags: ['kaydırıcı', 'ayar', 'kontrol']
+	},
+	{
+		id: 'alert-triangle',
+		name: 'AlertTriangleIcon',
+		component: AlertTriangleIcon,
+		category: 'Interface',
+		tags: ['uyarı', 'dikkat', 'tehlike']
+	},
+	{
+		id: 'alert-circle',
+		name: 'AlertCircleIcon',
+		component: AlertCircleIcon,
+		category: 'Interface',
+		tags: ['uyarı', 'bilgi', 'dikkat']
+	},
+	{
+		id: 'check-circle',
+		name: 'CheckCircleIcon',
+		component: CheckCircleIcon,
+		category: 'Interface',
+		tags: ['onay', 'başarılı', 'tik']
+	},
+	{
+		id: 'x-circle',
+		name: 'XCircleIcon',
+		component: XCircleIcon,
+		category: 'Interface',
+		tags: ['hata', 'kapat', 'iptal']
+	},
+
+	// Media kategorisi - Yeni ikonlar
+	{
+		id: 'volume',
+		name: 'VolumeIcon',
+		component: VolumeIcon,
+		category: 'Medya',
+		tags: ['ses', 'hoparlör', 'volume']
+	},
+	{
+		id: 'volume-x',
+		name: 'VolumeXIcon',
+		component: VolumeXIcon,
+		category: 'Medya',
+		tags: ['sessiz', 'kapalı', 'mute']
+	},
+	{
+		id: 'skip-back',
+		name: 'SkipBackIcon',
+		component: SkipBackIcon,
+		category: 'Medya',
+		tags: ['geri', 'önceki', 'previous']
+	},
+	{
+		id: 'skip-forward',
+		name: 'SkipForwardIcon',
+		component: SkipForwardIcon,
+		category: 'Medya',
+		tags: ['ileri', 'sonraki', 'next']
+	},
+	{
+		id: 'mic',
+		name: 'MicIcon',
+		component: MicIcon,
+		category: 'Medya',
+		tags: ['mikrofon', 'ses', 'kayıt']
+	},
+	{
+		id: 'mic-off',
+		name: 'MicOffIcon',
+		component: MicOffIcon,
+		category: 'Medya',
+		tags: ['mikrofon kapalı', 'sessiz', 'mute']
+	},
+
+	// Transportation kategorisi - Yeni ikonlar
+	{
+		id: 'car',
+		name: 'CarIcon',
+		component: CarIcon,
+		category: 'Transportation',
+		tags: ['araba', 'otomobil', 'araç']
+	},
+	{
+		id: 'plane',
+		name: 'PlaneIcon',
+		component: PlaneIcon,
+		category: 'Transportation',
+		tags: ['uçak', 'havayolu', 'seyahat']
+	},
+	{
+		id: 'train',
+		name: 'TrainIcon',
+		component: TrainIcon,
+		category: 'Transportation',
+		tags: ['tren', 'ray', 'ulaşım']
+	},
+	{
+		id: 'bus',
+		name: 'BusIcon',
+		component: BusIcon,
+		category: 'Transportation',
+		tags: ['otobüs', 'toplu taşıma', 'ulaşım']
+	},
+	{
+		id: 'bike',
+		name: 'BikeIcon',
+		component: BikeIcon,
+		category: 'Transportation',
+		tags: ['bisiklet', 'pedal', 'spor']
+	},
+	{
+		id: 'navigation',
+		name: 'NavigationIcon',
+		component: NavigationIcon,
+		category: 'Transportation',
+		tags: ['navigasyon', 'yön', 'konum']
+	},
+
+	// Business kategorisi - Yeni ikonlar
+	{
+		id: 'wallet',
+		name: 'WalletIcon',
+		component: WalletIcon,
+		category: 'Business',
+		tags: ['cüzdan', 'para', 'ödeme']
+	},
+	{
+		id: 'percent',
+		name: 'PercentIcon',
+		component: PercentIcon,
+		category: 'Business',
+		tags: ['yüzde', 'indirim', 'oran']
+	},
+	{
+		id: 'receipt',
+		name: 'ReceiptIcon',
+		component: ReceiptIcon,
+		category: 'Business',
+		tags: ['fiş', 'makbuz', 'fatura']
+	},
+	{
+		id: 'store',
+		name: 'StoreIcon',
+		component: StoreIcon,
+		category: 'Business',
+		tags: ['mağaza', 'dükkân', 'alışveriş']
+	},
+	{
+		id: 'truck',
+		name: 'TruckIcon',
+		component: TruckIcon,
+		category: 'Business',
+		tags: ['kamyon', 'nakliye', 'teslimat']
+	},
+
+	// Food kategorisi - Yeni ikonlar
+	{
+		id: 'coffee',
+		name: 'CoffeeIcon',
+		component: CoffeeIcon,
+		category: 'Food',
+		tags: ['kahve', 'içecek', 'fincan']
+	},
+	{
+		id: 'pizza',
+		name: 'PizzaIcon',
+		component: PizzaIcon,
+		category: 'Food',
+		tags: ['pizza', 'yemek', 'italyan']
+	},
+	{
+		id: 'apple',
+		name: 'AppleIcon',
+		component: AppleIcon,
+		category: 'Food',
+		tags: ['elma', 'meyve', 'sağlık']
+	},
+	{
+		id: 'heart-pulse',
+		name: 'HeartPulseIcon',
+		component: HeartPulseIcon,
+		category: 'Food',
+		tags: ['kalp', 'nabız', 'sağlık']
+	},
+
+	// Editor kategorisi - Yeni ikonlar
+	{
+		id: 'bold',
+		name: 'BoldIcon',
+		component: BoldIcon,
+		category: 'Editor',
+		tags: ['kalın', 'yazı', 'metin']
+	},
+	{
+		id: 'underline',
+		name: 'UnderlineIcon',
+		component: UnderlineIcon,
+		category: 'Editor',
+		tags: ['altı çizili', 'yazı', 'metin']
+	},
+	{
+		id: 'align-left',
+		name: 'AlignLeftIcon',
+		component: AlignLeftIcon,
+		category: 'Editor',
+		tags: ['sola hizala', 'metin', 'düzen']
+	},
+	{
+		id: 'align-center',
+		name: 'AlignCenterIcon',
+		component: AlignCenterIcon,
+		category: 'Editor',
+		tags: ['ortaya hizala', 'metin', 'düzen']
 	}
 ]
