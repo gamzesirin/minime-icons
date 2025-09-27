@@ -13,6 +13,8 @@ interface IconSidebarProps {
 	setColor: (color: string) => void
 	strokeWidth: number
 	setStrokeWidth: (width: number) => void
+	sidebarOpen?: boolean
+	setSidebarOpen?: (open: boolean) => void
 }
 
 function SidebarContent({ size, setSize, color, setColor, strokeWidth, setStrokeWidth }: IconSidebarProps) {
@@ -50,45 +52,66 @@ function SidebarContent({ size, setSize, color, setColor, strokeWidth, setStroke
 	)
 }
 
+interface IconSidebarMobileProps extends IconSidebarProps {
+	// Mobile sidebar component
+}
+
+export function IconSidebarMobile(props: IconSidebarMobileProps) {
+	return (
+		<Sheet>
+			<SheetTrigger asChild>
+				<Button variant="outline" size="sm" className="px-2">
+					<Settings className="h-4 w-4" />
+					<span className="sr-only">İkon Ayarları</span>
+				</Button>
+			</SheetTrigger>
+			<SheetContent side="left" className="w-[280px]">
+				<div className="py-6">
+					<h3 className="text-lg font-medium mb-6">İkon Ayarları</h3>
+					<SidebarContent {...props} />
+				</div>
+			</SheetContent>
+		</Sheet>
+	)
+}
+
 export function IconSidebar(props: IconSidebarProps) {
-	const [isOpen, setIsOpen] = React.useState(true)
+	const { sidebarOpen = true, setSidebarOpen } = props
+	const isOpen = sidebarOpen
+	const setIsOpen = setSidebarOpen || (() => {})
 
 	return (
 		<div
-			className={cn('fixed left-0 top-0 h-screen transition-all duration-300 z-[51]', isOpen ? 'w-[240px]' : 'w-12')}
+			className={cn(
+				'fixed left-0 top-14 h-[calc(100vh-3.5rem)] transition-all duration-300 z-30 hidden lg:flex',
+				isOpen ? 'w-[300px]' : 'w-[50px]'
+			)}
 		>
-			{/* Mobil Görünüm */}
-			<div className="lg:hidden fixed top-4 left-4 z-50">
-				<Sheet>
-					<SheetTrigger asChild>
-						<Button variant="outline" size="icon" className="rounded-lg shadow-lg">
-							<Settings className="h-4 w-4" />
-						</Button>
-					</SheetTrigger>
-					<SheetContent side="left" className="w-[240px]">
-						<div className="py-6">
-							<h3 className="text-sm font-medium mb-4">İkon Ayarları</h3>
-							<SidebarContent {...props} />
-						</div>
-					</SheetContent>
-				</Sheet>
-			</div>
-
 			{/* Masaüstü Görünüm */}
-			<div className="hidden lg:flex flex-col h-full border-r bg-background/80 backdrop-blur-sm">
+			<div
+				className={cn(
+					'flex flex-col h-full border-r bg-background/80 backdrop-blur-sm',
+					isOpen ? 'w-[450px]' : 'w-[80px]'
+				)}
+			>
 				<Button
 					variant="ghost"
 					size="icon"
-					className="absolute -right-4 top-6 rounded-full bg-background border shadow-md"
+					className={cn(
+						'rounded-full bg-background border shadow-md z-10 transition-all duration-300',
+						isOpen ? 'absolute -right-4 top-6' : 'absolute right-[-16px] top-6'
+					)}
 					onClick={() => setIsOpen(!isOpen)}
 				>
 					{isOpen ? <ChevronLeft className="h-4 w-4" /> : <ChevronRight className="h-4 w-4" />}
 				</Button>
 
-				<div className={cn('p-6 space-y-6', !isOpen && 'hidden')}>
-					<h3 className="text-sm font-medium">İkon Ayarları</h3>
-					<SidebarContent {...props} />
-				</div>
+				{isOpen ? (
+					<div className="p-6 space-y-6">
+						<h3 className="text-sm font-medium">İkon Ayarları</h3>
+						<SidebarContent {...props} />
+					</div>
+				) : null}
 			</div>
 		</div>
 	)

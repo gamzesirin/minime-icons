@@ -3,7 +3,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import { Paintbrush, Package, Sparkles, Zap, Users } from 'lucide-react'
+import { Paintbrush, Package, Sparkles, Users } from 'lucide-react'
 import NET, { VantaEffect } from 'vanta/dist/vanta.net.min'
 import * as THREE from 'three'
 import FeatureCard from '@/components/global/FeaturedCard'
@@ -27,12 +27,6 @@ const features = [
 		title: 'Kolay Entegrasyon',
 		description: "React, Next.js ve diğer modern framework'ler ile hızlıca entegre edin.",
 		area: 'md:[grid-area:2/1/3/7] xl:[grid-area:1/5/3/8]'
-	},
-	{
-		icon: <Zap className="h-4 w-4" />,
-		title: 'Yüksek Performans',
-		description: 'Optimize edilmiş SVG ikonlar ile projelerinizde maksimum performans.',
-		area: 'md:[grid-area:2/7/3/13] xl:[grid-area:1/8/2/13]'
 	},
 	{
 		icon: <Users className="h-4 w-4" />,

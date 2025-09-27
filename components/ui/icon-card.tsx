@@ -51,7 +51,7 @@ export function IconCard({
 					</div>
 				)}
 			</div>
-			<span className="text-sm text-center group-hover:text-primary transition-colors">{name}</span>
+			<span className="text-sm text-center group-hover:text-primary transition-colors w-full truncate px-1" title={name}>{name}</span>
 		</div>
 	)
 }

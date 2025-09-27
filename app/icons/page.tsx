@@ -10,8 +10,9 @@ import { Slider } from '@/components/ui/slider'
 import { IconList, categories } from '@/data/icons'
 import { toast } from 'sonner'
 import { IconData } from '@/data/icons'
-import { IconSidebar } from '@/components/sidebar/IconSidebar'
+import { IconSidebar, IconSidebarMobile } from '@/components/sidebar/IconSidebar'
 import { IconCard } from '@/components/ui/icon-card'
+import { Header } from '@/components/layout/header'
 
 export default function IconsPage() {
 	const [mounted, setMounted] = React.useState(false)
@@ -21,6 +22,7 @@ export default function IconsPage() {
 	const [size, setSize] = React.useState(24)
 	const [color, setColor] = React.useState('#000000')
 	const [strokeWidth, setStrokeWidth] = React.useState(2)
+	const [sidebarOpen, setSidebarOpen] = React.useState(true)
 
 	React.useEffect(() => {
 		setMounted(true)
@@ -79,70 +81,79 @@ export default function IconsPage() {
 		strokeWidth: strokeWidth
 	}
 
+	const iconSidebarProps = {
+		size,
+		setSize,
+		color,
+		setColor,
+		strokeWidth,
+		setStrokeWidth,
+		sidebarOpen,
+		setSidebarOpen
+	}
+
 	return (
 		<>
-		<div className="min-h-screen bg-background">
-			<IconSidebar
-				size={size}
-				setSize={setSize}
-				color={color}
-				setColor={setColor}
-				strokeWidth={strokeWidth}
-				setStrokeWidth={setStrokeWidth}
-			/>
+			<div className="min-h-screen bg-background">
+				<IconSidebar {...iconSidebarProps} />
 
-			{/* Main Content */}
-			<div className="lg:ml-[240px]">
-				<div className="container py-4 sm:py-6 lg:py-8">
-					{/* Arama ve Filtreleme */}
-					<div className="mb-6 sm:mb-8 space-y-4">
-						<div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-							<Input
-								type="search"
-								placeholder="İkon ara..."
-								className="w-full sm:max-w-sm"
-								value={searchQuery}
-								onChange={(e) => setSearchQuery(e.target.value)}
-							/>
-							<select
-								className="px-3 py-2 rounded-md border bg-background w-full sm:w-auto min-w-[180px]"
-								value={selectedCategory || ''}
-								onChange={(e) => setSelectedCategory(e.target.value || null)}
-							>
-								<option value="">Tüm Kategoriler</option>
-								{categories.map((category) => (
-									<option key={category} value={category}>
-										{category}
-									</option>
-								))}
-							</select>
+				{/* Main Content */}
+				<div className={`transition-all duration-300 ${sidebarOpen ? 'lg:ml-[240px]' : 'lg:ml-16'}`}>
+					<div className="container py-4 sm:py-6 lg:py-8">
+						{/* Arama ve Filtreleme */}
+						<div className="mb-6 sm:mb-8 space-y-4">
+							<div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+								<Input
+									type="search"
+									placeholder="İkon ara..."
+									className="w-full sm:max-w-sm"
+									value={searchQuery}
+									onChange={(e) => setSearchQuery(e.target.value)}
+								/>
+								<select
+									className="px-3 py-2 rounded-md border bg-background w-full sm:w-auto min-w-[180px]"
+									value={selectedCategory || ''}
+									onChange={(e) => setSelectedCategory(e.target.value || null)}
+								>
+									<option value="">Tüm Kategoriler</option>
+									{categories.map((category) => (
+										<option key={category} value={category}>
+											{category}
+										</option>
+									))}
+								</select>
+							</div>
+							{filteredIcons.length === 0 && (
+								<p className="text-muted-foreground text-center py-8">Aramanızla eşleşen ikon bulunamadı.</p>
+							)}
+							{filteredIcons.length > 0 && (
+								<p className="text-muted-foreground text-sm">{filteredIcons.length} ikon bulundu</p>
+							)}
 						</div>
-						{filteredIcons.length === 0 && (
-							<p className="text-muted-foreground text-center py-8">Aramanızla eşleşen ikon bulunamadı.</p>
-						)}
-						{filteredIcons.length > 0 && (
-							<p className="text-muted-foreground text-sm">{filteredIcons.length} ikon bulundu</p>
-						)}
-					</div>
 
-					<div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 gap-2 sm:gap-3 lg:gap-4">
-						{filteredIcons.map((icon) => (
-							<IconCard
-								key={icon.id}
-								icon={icon.component}
-								name={icon.name}
-								onClick={() => setSelectedIcon(icon)}
-								size={size}
-								color={color}
-								strokeWidth={strokeWidth}
-							/>
-						))}
+						<div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 gap-2 sm:gap-3 lg:gap-4">
+							{filteredIcons.map((icon) => (
+								<IconCard
+									key={icon.id}
+									icon={icon.component}
+									name={icon.name}
+									onClick={() => setSelectedIcon(icon)}
+									size={size}
+									color={color}
+									strokeWidth={strokeWidth}
+								/>
+							))}
+						</div>
 					</div>
 				</div>
-			</div>
-		</div>
 
-		{/* Icon Detail Modal */}
+				{/* Mobile Settings Button - Fixed Position */}
+				<div className="lg:hidden fixed top-16 left-4 z-50 bg-background border rounded-lg shadow-lg">
+					<IconSidebarMobile {...iconSidebarProps} />
+				</div>
+			</div>
+
+			{/* Icon Detail Modal */}
 			<Dialog open={!!selectedIcon} onOpenChange={() => setSelectedIcon(null)}>
 				<DialogContent className="max-w-xl mx-4 sm:mx-auto max-h-[90vh] overflow-y-auto">
 					<DialogHeader>

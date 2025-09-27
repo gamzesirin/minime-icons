@@ -6,12 +6,23 @@ import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { ThemeToggle } from '@/components/theme-toggle'
 import { MenuIcon, X } from 'lucide-react'
+import { IconSidebarMobile } from '@/components/sidebar/IconSidebar'
+
+interface IconSidebarProps {
+	size: number
+	setSize: (size: number) => void
+	color: string
+	setColor: (color: string) => void
+	strokeWidth: number
+	setStrokeWidth: (width: number) => void
+}
 
 interface HeaderProps {
 	showSearch?: boolean
+	iconSidebarProps?: IconSidebarProps
 }
 
-export function Header({ showSearch = true }: HeaderProps) {
+export function Header({ showSearch = true, iconSidebarProps }: HeaderProps) {
 	const [isOpen, setIsOpen] = useState(false)
 
 	return (
@@ -50,6 +61,7 @@ export function Header({ showSearch = true }: HeaderProps) {
 
 				{/* Mobile Actions */}
 				<div className="flex md:hidden items-center gap-2">
+					{iconSidebarProps && <IconSidebarMobile {...iconSidebarProps} />}
 					<ThemeToggle />
 					<Sheet open={isOpen} onOpenChange={setIsOpen}>
 						<SheetTrigger asChild>
@@ -60,8 +72,8 @@ export function Header({ showSearch = true }: HeaderProps) {
 						</SheetTrigger>
 						<SheetContent side="right" className="w-[280px] sm:w-[300px]">
 							<div className="flex flex-col space-y-6 mt-6">
-								<Link 
-									href="/icons" 
+								<Link
+									href="/icons"
 									className="text-lg font-medium text-primary hover:text-primary/80"
 									onClick={() => setIsOpen(false)}
 								>
@@ -69,30 +81,29 @@ export function Header({ showSearch = true }: HeaderProps) {
 								</Link>
 								<div className="border-b" />
 								<div className="flex flex-col space-y-4">
-									<h4 className="font-medium text-sm text-muted-foreground">DOKÜMANTASYON</h4>
-									<Link 
-										href="/docs/about" 
+									<Link
+										href="/docs/about"
 										className="text-sm transition-colors hover:text-foreground text-muted-foreground"
 										onClick={() => setIsOpen(false)}
 									>
 										Hakkında
 									</Link>
-									<Link 
-										href="/docs/installation" 
+									<Link
+										href="/docs/installation"
 										className="text-sm transition-colors hover:text-foreground text-muted-foreground"
 										onClick={() => setIsOpen(false)}
 									>
 										Kurulum
 									</Link>
-									<Link 
-										href="/docs/getting-started" 
+									<Link
+										href="/docs/getting-started"
 										className="text-sm transition-colors hover:text-foreground text-muted-foreground"
 										onClick={() => setIsOpen(false)}
 									>
 										Başlangıç
 									</Link>
-									<Link 
-										href="/docs/customization" 
+									<Link
+										href="/docs/customization"
 										className="text-sm transition-colors hover:text-foreground text-muted-foreground"
 										onClick={() => setIsOpen(false)}
 									>
