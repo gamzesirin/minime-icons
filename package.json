@@ -1,6 +1,6 @@
 {
 	"name": "@gamzesirin/minime-icons",
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"description": "Modern ve minimal tasarlanmış SVG ikon kütüphanesi. React ve Next.js ile kolayca kullanın.",
 	"keywords": [
 		"icons",
