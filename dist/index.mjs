@@ -2225,7 +2225,25 @@ function FilterIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
 }
 
 // components/icons/SortIcon.tsx
-function SortIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+function SortIcon({ size = 24, color = "currentColor", strokeWidth = 2, variant = "outline" }) {
+  if (variant === "duotone") {
+    return /* @__PURE__ */ React.createElement(
+      "svg",
+      {
+        width: size,
+        height: size,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        stroke: color,
+        strokeWidth,
+        strokeLinecap: "round",
+        strokeLinejoin: "round"
+      },
+      /* @__PURE__ */ React.createElement("path", { d: "M3 6h18", stroke: color, strokeWidth, strokeOpacity: "0.3" }),
+      /* @__PURE__ */ React.createElement("path", { d: "M6 12h12", stroke: color, strokeWidth, strokeOpacity: "0.6" }),
+      /* @__PURE__ */ React.createElement("path", { d: "M9 18h6", stroke: color, strokeWidth })
+    );
+  }
   return /* @__PURE__ */ React.createElement(
     "svg",
     {
@@ -2364,7 +2382,25 @@ function TrendingUpIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) 
 }
 
 // components/icons/TrendingDownIcon.tsx
-function TrendingDownIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+function TrendingDownIcon({ size = 24, color = "currentColor", strokeWidth = 2, variant = "outline" }) {
+  if (variant === "duotone") {
+    return /* @__PURE__ */ React.createElement(
+      "svg",
+      {
+        width: size,
+        height: size,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        stroke: color,
+        strokeWidth,
+        strokeLinecap: "round",
+        strokeLinejoin: "round"
+      },
+      /* @__PURE__ */ React.createElement("polyline", { points: "22,17 13.5,8.5 8.5,13.5 2,7" }),
+      /* @__PURE__ */ React.createElement("polyline", { points: "16,17 22,17 22,11", fill: color, fillOpacity: "0.2" }),
+      /* @__PURE__ */ React.createElement("polyline", { points: "16,17 22,17 22,11", stroke: color, strokeWidth, fill: "none" })
+    );
+  }
   return /* @__PURE__ */ React.createElement(
     "svg",
     {
@@ -2377,8 +2413,8 @@ function TrendingDownIcon({ size = 24, color = "currentColor", strokeWidth = 2 }
       strokeLinecap: "round",
       strokeLinejoin: "round"
     },
-    /* @__PURE__ */ React.createElement("polyline", { points: "23 18 13.5 8.5 8.5 13.5 1 6" }),
-    /* @__PURE__ */ React.createElement("polyline", { points: "17 18 23 18 23 12" })
+    /* @__PURE__ */ React.createElement("polyline", { points: "22,17 13.5,8.5 8.5,13.5 2,7" }),
+    /* @__PURE__ */ React.createElement("polyline", { points: "16,17 22,17 22,11" })
   );
 }
 
@@ -2441,7 +2477,32 @@ function AwardIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
 }
 
 // components/icons/SunIcon.tsx
-function SunIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+function SunIcon({ size = 24, color = "currentColor", strokeWidth = 2, variant = "outline" }) {
+  if (variant === "duotone") {
+    return /* @__PURE__ */ React.createElement(
+      "svg",
+      {
+        width: size,
+        height: size,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        stroke: color,
+        strokeWidth,
+        strokeLinecap: "round",
+        strokeLinejoin: "round"
+      },
+      /* @__PURE__ */ React.createElement("circle", { cx: "12", cy: "12", r: "5", fill: color, fillOpacity: "0.2" }),
+      /* @__PURE__ */ React.createElement("circle", { cx: "12", cy: "12", r: "5", stroke: color, strokeWidth, fill: "none" }),
+      /* @__PURE__ */ React.createElement("line", { x1: "12", y1: "1", x2: "12", y2: "3" }),
+      /* @__PURE__ */ React.createElement("line", { x1: "12", y1: "21", x2: "12", y2: "23" }),
+      /* @__PURE__ */ React.createElement("line", { x1: "4.22", y1: "4.22", x2: "5.64", y2: "5.64" }),
+      /* @__PURE__ */ React.createElement("line", { x1: "18.36", y1: "18.36", x2: "19.78", y2: "19.78" }),
+      /* @__PURE__ */ React.createElement("line", { x1: "1", y1: "12", x2: "3", y2: "12" }),
+      /* @__PURE__ */ React.createElement("line", { x1: "21", y1: "12", x2: "23", y2: "12" }),
+      /* @__PURE__ */ React.createElement("line", { x1: "4.22", y1: "19.78", x2: "5.64", y2: "18.36" }),
+      /* @__PURE__ */ React.createElement("line", { x1: "18.36", y1: "5.64", x2: "19.78", y2: "4.22" })
+    );
+  }
   return /* @__PURE__ */ React.createElement(
     "svg",
     {
@@ -2524,7 +2585,20 @@ function CloudRainIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
 }
 
 // components/icons/ZapIcon.tsx
-function ZapIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+function ZapIcon({ size = 24, color = "currentColor", strokeWidth = 2, variant = "outline" }) {
+  if (variant === "duotone") {
+    return /* @__PURE__ */ React.createElement(
+      "svg",
+      {
+        width: size,
+        height: size,
+        viewBox: "0 0 24 24",
+        fill: "none"
+      },
+      /* @__PURE__ */ React.createElement("polygon", { points: "13 2 3 14 12 14 11 22 21 10 12 10 13 2", fill: color, fillOpacity: "0.2" }),
+      /* @__PURE__ */ React.createElement("polygon", { points: "13 2 3 14 12 14 11 22 21 10 12 10 13 2", stroke: color, strokeWidth, strokeLinecap: "round", strokeLinejoin: "round" })
+    );
+  }
   return /* @__PURE__ */ React.createElement(
     "svg",
     {
@@ -2542,7 +2616,24 @@ function ZapIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
 }
 
 // components/icons/TerminalIcon.tsx
-function TerminalIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+function TerminalIcon({ size = 24, color = "currentColor", strokeWidth = 2, variant = "outline" }) {
+  if (variant === "duotone") {
+    return /* @__PURE__ */ React.createElement(
+      "svg",
+      {
+        width: size,
+        height: size,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        stroke: color,
+        strokeWidth,
+        strokeLinecap: "round",
+        strokeLinejoin: "round"
+      },
+      /* @__PURE__ */ React.createElement("polyline", { points: "4 17 10 11 4 5", stroke: color, strokeOpacity: "0.7" }),
+      /* @__PURE__ */ React.createElement("line", { x1: "12", y1: "19", x2: "20", y2: "19", stroke: color, strokeOpacity: "0.4" })
+    );
+  }
   return /* @__PURE__ */ React.createElement(
     "svg",
     {
@@ -2625,7 +2716,28 @@ function BugIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
 }
 
 // components/icons/ServerIcon.tsx
-function ServerIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+function ServerIcon({ size = 24, color = "currentColor", strokeWidth = 2, variant = "outline" }) {
+  if (variant === "duotone") {
+    return /* @__PURE__ */ React.createElement(
+      "svg",
+      {
+        width: size,
+        height: size,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        stroke: color,
+        strokeWidth,
+        strokeLinecap: "round",
+        strokeLinejoin: "round"
+      },
+      /* @__PURE__ */ React.createElement("rect", { x: "2", y: "2", width: "20", height: "8", rx: "2", ry: "2", fill: color, fillOpacity: "0.2" }),
+      /* @__PURE__ */ React.createElement("rect", { x: "2", y: "14", width: "20", height: "8", rx: "2", ry: "2", fill: color, fillOpacity: "0.2" }),
+      /* @__PURE__ */ React.createElement("rect", { x: "2", y: "2", width: "20", height: "8", rx: "2", ry: "2", stroke: color, strokeWidth, fill: "none" }),
+      /* @__PURE__ */ React.createElement("rect", { x: "2", y: "14", width: "20", height: "8", rx: "2", ry: "2", stroke: color, strokeWidth, fill: "none" }),
+      /* @__PURE__ */ React.createElement("line", { x1: "6", y1: "6", x2: "6.01", y2: "6" }),
+      /* @__PURE__ */ React.createElement("line", { x1: "6", y1: "18", x2: "6.01", y2: "18" })
+    );
+  }
   return /* @__PURE__ */ React.createElement(
     "svg",
     {
@@ -2762,7 +2874,24 @@ function UnlockIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
 }
 
 // components/icons/ShieldIcon.tsx
-function ShieldIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+function ShieldIcon({ size = 24, color = "currentColor", strokeWidth = 2, variant = "outline" }) {
+  if (variant === "duotone") {
+    return /* @__PURE__ */ React.createElement(
+      "svg",
+      {
+        width: size,
+        height: size,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        stroke: color,
+        strokeWidth,
+        strokeLinecap: "round",
+        strokeLinejoin: "round"
+      },
+      /* @__PURE__ */ React.createElement("path", { d: "M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z", fill: color, fillOpacity: "0.2" }),
+      /* @__PURE__ */ React.createElement("path", { d: "M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z", stroke: color, strokeWidth, fill: "none" })
+    );
+  }
   return /* @__PURE__ */ React.createElement(
     "svg",
     {
@@ -2876,7 +3005,25 @@ function CornerDownRightIcon({ size = 24, color = "currentColor", strokeWidth = 
 }
 
 // components/icons/RotateCwIcon.tsx
-function RotateCwIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+function RotateCwIcon({ size = 24, color = "currentColor", strokeWidth = 2, variant = "outline" }) {
+  if (variant === "duotone") {
+    return /* @__PURE__ */ React.createElement(
+      "svg",
+      {
+        width: size,
+        height: size,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        stroke: color,
+        strokeWidth,
+        strokeLinecap: "round",
+        strokeLinejoin: "round"
+      },
+      /* @__PURE__ */ React.createElement("path", { d: "M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8", fill: color, fillOpacity: "0.2" }),
+      /* @__PURE__ */ React.createElement("path", { d: "M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8", stroke: color, strokeWidth, fill: "none" }),
+      /* @__PURE__ */ React.createElement("path", { d: "M21 3v5h-5" })
+    );
+  }
   return /* @__PURE__ */ React.createElement(
     "svg",
     {
@@ -2889,8 +3036,8 @@ function RotateCwIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
       strokeLinecap: "round",
       strokeLinejoin: "round"
     },
-    /* @__PURE__ */ React.createElement("polyline", { points: "23 4 23 10 17 10" }),
-    /* @__PURE__ */ React.createElement("path", { d: "M20.49 15a9 9 0 1 1-2.12-9.36L23 10" })
+    /* @__PURE__ */ React.createElement("path", { d: "M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M21 3v5h-5" })
   );
 }
 
@@ -2964,7 +3111,25 @@ function MonitorIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
 }
 
 // components/icons/SmartphoneIcon.tsx
-function SmartphoneIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+function SmartphoneIcon({ size = 24, color = "currentColor", strokeWidth = 2, variant = "outline" }) {
+  if (variant === "duotone") {
+    return /* @__PURE__ */ React.createElement(
+      "svg",
+      {
+        width: size,
+        height: size,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        stroke: color,
+        strokeWidth,
+        strokeLinecap: "round",
+        strokeLinejoin: "round"
+      },
+      /* @__PURE__ */ React.createElement("rect", { x: "5", y: "2", width: "14", height: "20", rx: "2", ry: "2", fill: color, fillOpacity: "0.2" }),
+      /* @__PURE__ */ React.createElement("rect", { x: "5", y: "2", width: "14", height: "20", rx: "2", ry: "2", stroke: color, strokeWidth, fill: "none" }),
+      /* @__PURE__ */ React.createElement("line", { x1: "12", y1: "18", x2: "12.01", y2: "18" })
+    );
+  }
   return /* @__PURE__ */ React.createElement(
     "svg",
     {
@@ -2983,7 +3148,25 @@ function SmartphoneIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) 
 }
 
 // components/icons/TabletIcon.tsx
-function TabletIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+function TabletIcon({ size = 24, color = "currentColor", strokeWidth = 2, variant = "outline" }) {
+  if (variant === "duotone") {
+    return /* @__PURE__ */ React.createElement(
+      "svg",
+      {
+        width: size,
+        height: size,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        stroke: color,
+        strokeWidth,
+        strokeLinecap: "round",
+        strokeLinejoin: "round"
+      },
+      /* @__PURE__ */ React.createElement("rect", { x: "4", y: "3", width: "16", height: "18", rx: "2", ry: "2", fill: color, fillOpacity: "0.2" }),
+      /* @__PURE__ */ React.createElement("rect", { x: "4", y: "3", width: "16", height: "18", rx: "2", ry: "2", stroke: color, strokeWidth, fill: "none" }),
+      /* @__PURE__ */ React.createElement("line", { x1: "12", y1: "17", x2: "12.01", y2: "17" })
+    );
+  }
   return /* @__PURE__ */ React.createElement(
     "svg",
     {
@@ -2996,8 +3179,8 @@ function TabletIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
       strokeLinecap: "round",
       strokeLinejoin: "round"
     },
-    /* @__PURE__ */ React.createElement("rect", { x: "4", y: "2", width: "16", height: "20", rx: "2", ry: "2" }),
-    /* @__PURE__ */ React.createElement("line", { x1: "12", y1: "18", x2: "12.01", y2: "18" })
+    /* @__PURE__ */ React.createElement("rect", { x: "4", y: "3", width: "16", height: "18", rx: "2", ry: "2" }),
+    /* @__PURE__ */ React.createElement("line", { x1: "12", y1: "17", x2: "12.01", y2: "17" })
   );
 }
 
@@ -3061,7 +3244,26 @@ function Package2Icon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
 }
 
 // components/icons/ToggleLeftIcon.tsx
-function ToggleLeftIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+function ToggleLeftIcon({ size = 24, color = "currentColor", strokeWidth = 2, variant = "outline" }) {
+  if (variant === "duotone") {
+    return /* @__PURE__ */ React.createElement(
+      "svg",
+      {
+        width: size,
+        height: size,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        stroke: color,
+        strokeWidth,
+        strokeLinecap: "round",
+        strokeLinejoin: "round"
+      },
+      /* @__PURE__ */ React.createElement("rect", { x: "1", y: "5", width: "22", height: "14", rx: "7", ry: "7", fill: color, fillOpacity: "0.2" }),
+      /* @__PURE__ */ React.createElement("circle", { cx: "8", cy: "12", r: "3", fill: color, fillOpacity: "0.3" }),
+      /* @__PURE__ */ React.createElement("rect", { x: "1", y: "5", width: "22", height: "14", rx: "7", ry: "7", stroke: color, strokeWidth, fill: "none" }),
+      /* @__PURE__ */ React.createElement("circle", { cx: "8", cy: "12", r: "3", stroke: color, strokeWidth, fill: "none" })
+    );
+  }
   return /* @__PURE__ */ React.createElement(
     "svg",
     {
@@ -3080,7 +3282,26 @@ function ToggleLeftIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) 
 }
 
 // components/icons/ToggleRightIcon.tsx
-function ToggleRightIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+function ToggleRightIcon({ size = 24, color = "currentColor", strokeWidth = 2, variant = "outline" }) {
+  if (variant === "duotone") {
+    return /* @__PURE__ */ React.createElement(
+      "svg",
+      {
+        width: size,
+        height: size,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        stroke: color,
+        strokeWidth,
+        strokeLinecap: "round",
+        strokeLinejoin: "round"
+      },
+      /* @__PURE__ */ React.createElement("rect", { x: "1", y: "5", width: "22", height: "14", rx: "7", ry: "7", fill: color, fillOpacity: "0.2" }),
+      /* @__PURE__ */ React.createElement("circle", { cx: "16", cy: "12", r: "3", fill: color, fillOpacity: "0.3" }),
+      /* @__PURE__ */ React.createElement("rect", { x: "1", y: "5", width: "22", height: "14", rx: "7", ry: "7", stroke: color, strokeWidth, fill: "none" }),
+      /* @__PURE__ */ React.createElement("circle", { cx: "16", cy: "12", r: "3", stroke: color, strokeWidth, fill: "none" })
+    );
+  }
   return /* @__PURE__ */ React.createElement(
     "svg",
     {
@@ -3099,7 +3320,34 @@ function ToggleRightIcon({ size = 24, color = "currentColor", strokeWidth = 2 })
 }
 
 // components/icons/SlidersIcon.tsx
-function SlidersIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+function SlidersIcon({ size = 24, color = "currentColor", strokeWidth = 2, variant = "outline" }) {
+  if (variant === "duotone") {
+    return /* @__PURE__ */ React.createElement(
+      "svg",
+      {
+        width: size,
+        height: size,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        stroke: color,
+        strokeWidth,
+        strokeLinecap: "round",
+        strokeLinejoin: "round"
+      },
+      /* @__PURE__ */ React.createElement("line", { x1: "4", y1: "21", x2: "4", y2: "14" }),
+      /* @__PURE__ */ React.createElement("line", { x1: "4", y1: "10", x2: "4", y2: "3" }),
+      /* @__PURE__ */ React.createElement("line", { x1: "12", y1: "21", x2: "12", y2: "12" }),
+      /* @__PURE__ */ React.createElement("line", { x1: "12", y1: "8", x2: "12", y2: "3" }),
+      /* @__PURE__ */ React.createElement("line", { x1: "20", y1: "21", x2: "20", y2: "16" }),
+      /* @__PURE__ */ React.createElement("line", { x1: "20", y1: "12", x2: "20", y2: "3" }),
+      /* @__PURE__ */ React.createElement("circle", { cx: "4", cy: "12", r: "2", fill: color, fillOpacity: "0.2" }),
+      /* @__PURE__ */ React.createElement("circle", { cx: "12", cy: "10", r: "2", fill: color, fillOpacity: "0.2" }),
+      /* @__PURE__ */ React.createElement("circle", { cx: "20", cy: "14", r: "2", fill: color, fillOpacity: "0.2" }),
+      /* @__PURE__ */ React.createElement("circle", { cx: "4", cy: "12", r: "2", stroke: color, strokeWidth, fill: "none" }),
+      /* @__PURE__ */ React.createElement("circle", { cx: "12", cy: "10", r: "2", stroke: color, strokeWidth, fill: "none" }),
+      /* @__PURE__ */ React.createElement("circle", { cx: "20", cy: "14", r: "2", stroke: color, strokeWidth, fill: "none" })
+    );
+  }
   return /* @__PURE__ */ React.createElement(
     "svg",
     {
@@ -3118,9 +3366,9 @@ function SlidersIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
     /* @__PURE__ */ React.createElement("line", { x1: "12", y1: "8", x2: "12", y2: "3" }),
     /* @__PURE__ */ React.createElement("line", { x1: "20", y1: "21", x2: "20", y2: "16" }),
     /* @__PURE__ */ React.createElement("line", { x1: "20", y1: "12", x2: "20", y2: "3" }),
-    /* @__PURE__ */ React.createElement("line", { x1: "1", y1: "14", x2: "7", y2: "14" }),
-    /* @__PURE__ */ React.createElement("line", { x1: "9", y1: "8", x2: "15", y2: "8" }),
-    /* @__PURE__ */ React.createElement("line", { x1: "17", y1: "16", x2: "23", y2: "16" })
+    /* @__PURE__ */ React.createElement("circle", { cx: "4", cy: "12", r: "2" }),
+    /* @__PURE__ */ React.createElement("circle", { cx: "12", cy: "10", r: "2" }),
+    /* @__PURE__ */ React.createElement("circle", { cx: "20", cy: "14", r: "2" })
   );
 }
 
@@ -3243,7 +3491,26 @@ function VolumeXIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
 }
 
 // components/icons/SkipBackIcon.tsx
-function SkipBackIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+function SkipBackIcon({ size = 24, color = "currentColor", strokeWidth = 2, variant = "outline" }) {
+  if (variant === "duotone") {
+    return /* @__PURE__ */ React.createElement(
+      "svg",
+      {
+        width: size,
+        height: size,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        stroke: color,
+        strokeWidth,
+        strokeLinecap: "round",
+        strokeLinejoin: "round"
+      },
+      /* @__PURE__ */ React.createElement("polygon", { points: "19,20 9,12 19,4", fill: color, fillOpacity: "0.2" }),
+      /* @__PURE__ */ React.createElement("line", { x1: "5", y1: "19", x2: "5", y2: "5", fill: color, fillOpacity: "0.2" }),
+      /* @__PURE__ */ React.createElement("polygon", { points: "19,20 9,12 19,4", stroke: color, strokeWidth, fill: "none" }),
+      /* @__PURE__ */ React.createElement("line", { x1: "5", y1: "19", x2: "5", y2: "5", stroke: color, strokeWidth })
+    );
+  }
   return /* @__PURE__ */ React.createElement(
     "svg",
     {
@@ -3256,13 +3523,32 @@ function SkipBackIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
       strokeLinecap: "round",
       strokeLinejoin: "round"
     },
-    /* @__PURE__ */ React.createElement("polygon", { points: "19 20 9 12 19 4 19 20" }),
+    /* @__PURE__ */ React.createElement("polygon", { points: "19,20 9,12 19,4" }),
     /* @__PURE__ */ React.createElement("line", { x1: "5", y1: "19", x2: "5", y2: "5" })
   );
 }
 
 // components/icons/SkipForwardIcon.tsx
-function SkipForwardIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+function SkipForwardIcon({ size = 24, color = "currentColor", strokeWidth = 2, variant = "outline" }) {
+  if (variant === "duotone") {
+    return /* @__PURE__ */ React.createElement(
+      "svg",
+      {
+        width: size,
+        height: size,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        stroke: color,
+        strokeWidth,
+        strokeLinecap: "round",
+        strokeLinejoin: "round"
+      },
+      /* @__PURE__ */ React.createElement("polygon", { points: "5,4 15,12 5,20", fill: color, fillOpacity: "0.2" }),
+      /* @__PURE__ */ React.createElement("line", { x1: "19", y1: "5", x2: "19", y2: "19", fill: color, fillOpacity: "0.2" }),
+      /* @__PURE__ */ React.createElement("polygon", { points: "5,4 15,12 5,20", stroke: color, strokeWidth, fill: "none" }),
+      /* @__PURE__ */ React.createElement("line", { x1: "19", y1: "5", x2: "19", y2: "19", stroke: color, strokeWidth })
+    );
+  }
   return /* @__PURE__ */ React.createElement(
     "svg",
     {
@@ -3275,7 +3561,7 @@ function SkipForwardIcon({ size = 24, color = "currentColor", strokeWidth = 2 })
       strokeLinecap: "round",
       strokeLinejoin: "round"
     },
-    /* @__PURE__ */ React.createElement("polygon", { points: "5 4 15 12 5 20 5 4" }),
+    /* @__PURE__ */ React.createElement("polygon", { points: "5,4 15,12 5,20" }),
     /* @__PURE__ */ React.createElement("line", { x1: "19", y1: "5", x2: "19", y2: "19" })
   );
 }
@@ -3361,7 +3647,32 @@ function PlaneIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
 }
 
 // components/icons/TrainIcon.tsx
-function TrainIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+function TrainIcon({ size = 24, color = "currentColor", strokeWidth = 2, variant = "outline" }) {
+  if (variant === "duotone") {
+    return /* @__PURE__ */ React.createElement(
+      "svg",
+      {
+        width: size,
+        height: size,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        stroke: color,
+        strokeWidth,
+        strokeLinecap: "round",
+        strokeLinejoin: "round"
+      },
+      /* @__PURE__ */ React.createElement("rect", { x: "4", y: "4", width: "16", height: "16", rx: "2", fill: color, fillOpacity: "0.2" }),
+      /* @__PURE__ */ React.createElement("rect", { x: "4", y: "4", width: "16", height: "16", rx: "2", stroke: color, strokeWidth, fill: "none" }),
+      /* @__PURE__ */ React.createElement("line", { x1: "4", y1: "12", x2: "20", y2: "12" }),
+      /* @__PURE__ */ React.createElement("line", { x1: "12", y1: "4", x2: "12", y2: "20" }),
+      /* @__PURE__ */ React.createElement("circle", { cx: "8.5", cy: "8.5", r: "0.5", fill: color }),
+      /* @__PURE__ */ React.createElement("circle", { cx: "15.5", cy: "8.5", r: "0.5", fill: color }),
+      /* @__PURE__ */ React.createElement("circle", { cx: "8.5", cy: "15.5", r: "0.5", fill: color }),
+      /* @__PURE__ */ React.createElement("circle", { cx: "15.5", cy: "15.5", r: "0.5", fill: color }),
+      /* @__PURE__ */ React.createElement("path", { d: "m8.5 21 1.5-1.5L8.5 18" }),
+      /* @__PURE__ */ React.createElement("path", { d: "m15.5 21-1.5-1.5 1.5-1.5" })
+    );
+  }
   return /* @__PURE__ */ React.createElement(
     "svg",
     {
@@ -3377,8 +3688,12 @@ function TrainIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
     /* @__PURE__ */ React.createElement("rect", { x: "4", y: "4", width: "16", height: "16", rx: "2" }),
     /* @__PURE__ */ React.createElement("line", { x1: "4", y1: "12", x2: "20", y2: "12" }),
     /* @__PURE__ */ React.createElement("line", { x1: "12", y1: "4", x2: "12", y2: "20" }),
-    /* @__PURE__ */ React.createElement("line", { x1: "4", y1: "8", x2: "8", y2: "8" }),
-    /* @__PURE__ */ React.createElement("line", { x1: "16", y1: "8", x2: "20", y2: "8" })
+    /* @__PURE__ */ React.createElement("circle", { cx: "8.5", cy: "8.5", r: "0.5", fill: color }),
+    /* @__PURE__ */ React.createElement("circle", { cx: "15.5", cy: "8.5", r: "0.5", fill: color }),
+    /* @__PURE__ */ React.createElement("circle", { cx: "8.5", cy: "15.5", r: "0.5", fill: color }),
+    /* @__PURE__ */ React.createElement("circle", { cx: "15.5", cy: "15.5", r: "0.5", fill: color }),
+    /* @__PURE__ */ React.createElement("path", { d: "m8.5 21 1.5-1.5L8.5 18" }),
+    /* @__PURE__ */ React.createElement("path", { d: "m15.5 21-1.5-1.5 1.5-1.5" })
   );
 }
 
@@ -3507,7 +3822,28 @@ function ReceiptIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
 }
 
 // components/icons/StoreIcon.tsx
-function StoreIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
+function StoreIcon({ size = 24, color = "currentColor", strokeWidth = 2, variant = "outline" }) {
+  if (variant === "duotone") {
+    return /* @__PURE__ */ React.createElement(
+      "svg",
+      {
+        width: size,
+        height: size,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        stroke: color,
+        strokeWidth,
+        strokeLinecap: "round",
+        strokeLinejoin: "round"
+      },
+      /* @__PURE__ */ React.createElement("path", { d: "m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7" }),
+      /* @__PURE__ */ React.createElement("path", { d: "M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" }),
+      /* @__PURE__ */ React.createElement("path", { d: "M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4", fill: color, fillOpacity: "0.2" }),
+      /* @__PURE__ */ React.createElement("path", { d: "M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4", stroke: color, strokeWidth, fill: "none" }),
+      /* @__PURE__ */ React.createElement("path", { d: "M2 7h20" }),
+      /* @__PURE__ */ React.createElement("path", { d: "M22 7v3a2 2 0 0 1-2 2v0a2.07 2.07 0 0 1-2.17 0 2.07 2.07 0 0 0-2.16 0v0a2.07 2.07 0 0 1-2.17 0 2.07 2.07 0 0 0-2.16 0v0a2.07 2.07 0 0 1-2.17 0 2.07 2.07 0 0 0-2.16 0v0a2.07 2.07 0 0 1-2.17 0A2 2 0 0 1 2 10V7" })
+    );
+  }
   return /* @__PURE__ */ React.createElement(
     "svg",
     {
@@ -3520,9 +3856,11 @@ function StoreIcon({ size = 24, color = "currentColor", strokeWidth = 2 }) {
       strokeLinecap: "round",
       strokeLinejoin: "round"
     },
-    /* @__PURE__ */ React.createElement("path", { d: "M3 7v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v0z" }),
-    /* @__PURE__ */ React.createElement("path", { d: "M3 7l2-4h14l2 4" }),
-    /* @__PURE__ */ React.createElement("line", { x1: "12", y1: "11", x2: "12", y2: "19" })
+    /* @__PURE__ */ React.createElement("path", { d: "m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M2 7h20" }),
+    /* @__PURE__ */ React.createElement("path", { d: "M22 7v3a2 2 0 0 1-2 2v0a2.07 2.07 0 0 1-2.17 0 2.07 2.07 0 0 0-2.16 0v0a2.07 2.07 0 0 1-2.17 0 2.07 2.07 0 0 0-2.16 0v0a2.07 2.07 0 0 1-2.17 0 2.07 2.07 0 0 0-2.16 0v0a2.07 2.07 0 0 1-2.17 0A2 2 0 0 1 2 10V7" })
   );
 }
 

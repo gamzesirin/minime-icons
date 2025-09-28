@@ -5,6 +5,7 @@ interface IconProps extends SVGProps<SVGSVGElement> {
     size?: number;
     color?: string;
     strokeWidth?: number;
+    variant?: 'outline' | 'duotone';
 }
 type Icon = React.FC<IconProps>;
 type IconCategory = 'Arrows' | 'Interface' | 'Communication' | 'Business' | 'Development' | 'Media' | 'Social' | 'Weather' | 'Other';
