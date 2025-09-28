@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Icon } from '@/types/Icon-type'
+import { Icon } from '@/lib/types/Icon-type'
 import { copyToClipboard } from '@/utils/copyToClipboard'
 
 interface IconCardProps {

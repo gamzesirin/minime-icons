@@ -1,4 +1,4 @@
-import { IconProps } from '@/types/Icon-type'
+import { IconProps } from '@/lib/types/Icon-type'
 
 export function ZapIcon({ size = 24, color = 'currentColor', strokeWidth = 2, variant = 'outline' }: IconProps) {
 	// Solid shapes support 2 variants - outline and duotone

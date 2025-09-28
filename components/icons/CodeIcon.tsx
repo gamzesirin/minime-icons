@@ -1,5 +1,5 @@
 import React from 'react'
-import { IconProps } from '@/types/Icon-type'
+import { IconProps } from '@/lib/types/Icon-type'
 
 export const CodeIcon: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className = '' }) => {
 	return (

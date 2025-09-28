@@ -1,4 +1,4 @@
-import { IconProps } from '@/types/Icon-type'
+import { IconProps } from '@/lib/types/Icon-type'
 
 export const ListIcon = ({ size = 24, color = 'currentColor', strokeWidth = 2 }: IconProps) => {
 	return (
