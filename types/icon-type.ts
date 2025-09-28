@@ -4,6 +4,7 @@ export interface IconProps extends SVGProps<SVGSVGElement> {
 	size?: number
 	color?: string
 	strokeWidth?: number
+	variant?: 'outline' | 'duotone'
 }
 
 export type Icon = React.FC<IconProps>
