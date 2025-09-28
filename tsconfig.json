@@ -18,11 +18,11 @@
 				"name": "next"
 			}
 		],
+		"baseUrl": ".",
 		"paths": {
 			"@/*": ["./*"]
 		},
 		"typeRoots": ["./node_modules/@types", "./types"],
-		"baseUrl": ".",
 		"outDir": "dist",
 		"declaration": true
 	},
